@@ -1,14 +1,9 @@
 import 'package:final_assignment_on_flutter/text_files/arrival.dart';
 import 'package:flutter/material.dart';
 
-class Arrival extends StatefulWidget {
+class Arrival extends StatelessWidget {
   const Arrival({super.key});
 
-  @override
-  State<Arrival> createState() => _ArrivalState();
-}
-
-class _ArrivalState extends State<Arrival> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

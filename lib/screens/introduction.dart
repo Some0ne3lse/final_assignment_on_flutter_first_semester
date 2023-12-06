@@ -2,14 +2,9 @@ import 'package:final_assignment_on_flutter/routes/routes.dart';
 import 'package:final_assignment_on_flutter/text_files/introduction.dart';
 import 'package:flutter/material.dart';
 
-class Introduction extends StatefulWidget {
+class Introduction extends StatelessWidget {
   const Introduction({super.key});
 
-  @override
-  State<Introduction> createState() => _IntroductionState();
-}
-
-class _IntroductionState extends State<Introduction> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -42,7 +37,9 @@ class _IntroductionState extends State<Introduction> {
                   height: 50,
                 ),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).pushNamed(RouteManager.cryEnding);
+                  },
                   child: const Text('Sit down and cry with your wife'),
                 ),
                 ElevatedButton(
