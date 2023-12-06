@@ -1,3 +1,4 @@
+import 'package:final_assignment_on_flutter/routes/routes.dart';
 import 'package:final_assignment_on_flutter/text_files/arrival.dart';
 import 'package:flutter/material.dart';
 
@@ -11,7 +12,10 @@ class Arrival extends StatelessWidget {
       appBar: AppBar(
         automaticallyImplyLeading: false,
         backgroundColor: Colors.black,
-        title: const Text('Arrival', style: TextStyle(color: Colors.white)),
+        foregroundColor: Colors.white,
+        title: const Text(
+          'Arrival',
+        ),
       ),
       body: Column(
         children: [
@@ -35,7 +39,9 @@ class Arrival extends StatelessWidget {
                   height: 50,
                 ),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).pushNamed(RouteManager.entrance);
+                  },
                   child: const Text('Go inside'),
                 ),
               ],
@@ -50,7 +56,9 @@ class Arrival extends StatelessWidget {
           children: [
             TextButton(
               style: TextButton.styleFrom(foregroundColor: Colors.white),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context).pushNamed(RouteManager.inventory);
+              },
               child: const Row(
                 children: [
                   Text('Inventory'),

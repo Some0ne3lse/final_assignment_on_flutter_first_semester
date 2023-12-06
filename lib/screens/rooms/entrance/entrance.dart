@@ -1,9 +1,9 @@
 import 'package:final_assignment_on_flutter/routes/routes.dart';
-import 'package:final_assignment_on_flutter/text_files/introduction.dart';
+import 'package:final_assignment_on_flutter/text_files/rooms/room_description/entrance_description.dart';
 import 'package:flutter/material.dart';
 
-class Introduction extends StatelessWidget {
-  const Introduction({super.key});
+class Entrance extends StatelessWidget {
+  const Entrance({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +13,7 @@ class Introduction extends StatelessWidget {
         automaticallyImplyLeading: false,
         backgroundColor: Colors.black,
         foregroundColor: Colors.white,
-        title: const Text('Getting the cake back'),
+        title: const Text('Entrance'),
       ),
       body: Column(
         children: [
@@ -26,7 +26,7 @@ class Introduction extends StatelessWidget {
                 SizedBox(
                   width: 300,
                   child: Text(
-                    introductionText(),
+                    entranceDescription(),
                     style: const TextStyle(
                       color: Colors.white,
                       fontSize: 15,
@@ -38,15 +38,22 @@ class Introduction extends StatelessWidget {
                 ),
                 ElevatedButton(
                   onPressed: () {
-                    Navigator.of(context).pushNamed(RouteManager.cryEnding);
+                    Navigator.of(context)
+                        .pushNamed(RouteManager.entranceExamination);
                   },
-                  child: const Text('Sit down and cry with your wife'),
+                  child: const Text('Examine the room'),
                 ),
                 ElevatedButton(
-                  onPressed: () {
-                    Navigator.of(context).pushNamed(RouteManager.arrival);
-                  },
-                  child: const Text('Go to Bob the Burly mans home'),
+                  onPressed: () {},
+                  child: const Text('Go to the Kitchen'),
+                ),
+                ElevatedButton(
+                  onPressed: () {},
+                  child: const Text('Go to the Main Hall'),
+                ),
+                ElevatedButton(
+                  onPressed: () {},
+                  child: const Text('Go to the Library'),
                 ),
               ],
             ),

@@ -12,7 +12,8 @@ class CryEnding extends StatelessWidget {
       appBar: AppBar(
         automaticallyImplyLeading: false,
         backgroundColor: Colors.black,
-        title: const Text('Buhuuu', style: TextStyle(color: Colors.white)),
+        foregroundColor: Colors.white,
+        title: const Text('Buhuuu'),
       ),
       body: Column(
         children: [
