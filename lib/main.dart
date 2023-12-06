@@ -1,7 +1,4 @@
-import 'package:final_assignment_on_flutter/screens/arrival.dart';
-import 'package:final_assignment_on_flutter/screens/introduction.dart';
-import 'package:final_assignment_on_flutter/screens/start_screen.dart';
-import 'package:final_assignment_on_flutter/text_files/introduction.dart';
+import 'package:final_assignment_on_flutter/routes/routes.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,8 +10,9 @@ class MyGame extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: StartScreen(),
+    return const MaterialApp(
+      initialRoute: RouteManager.startScreen,
+      onGenerateRoute: RouteManager.generateRoute,
     );
   }
 }

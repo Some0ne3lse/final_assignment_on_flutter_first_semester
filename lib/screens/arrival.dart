@@ -14,6 +14,7 @@ class _ArrivalState extends State<Arrival> {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 69, 74, 73),
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         backgroundColor: Colors.black,
         title: const Text('Arrival', style: TextStyle(color: Colors.white)),
       ),

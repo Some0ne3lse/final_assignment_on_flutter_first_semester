@@ -1,3 +1,4 @@
+import 'package:final_assignment_on_flutter/routes/routes.dart';
 import 'package:final_assignment_on_flutter/text_files/introduction.dart';
 import 'package:flutter/material.dart';
 
@@ -14,6 +15,7 @@ class _IntroductionState extends State<Introduction> {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 69, 74, 73),
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         backgroundColor: Colors.black,
         title: const Text('Getting the cake back',
             style: TextStyle(color: Colors.white)),
@@ -44,7 +46,9 @@ class _IntroductionState extends State<Introduction> {
                   child: const Text('Sit down and cry with your wife'),
                 ),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).pushNamed(RouteManager.arrival);
+                  },
                   child: const Text('Go to Bob the Burly mans home'),
                 ),
               ],

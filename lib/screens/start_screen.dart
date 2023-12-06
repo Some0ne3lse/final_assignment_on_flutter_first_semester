@@ -1,3 +1,4 @@
+import 'package:final_assignment_on_flutter/routes/routes.dart';
 import 'package:flutter/material.dart';
 
 class StartScreen extends StatefulWidget {
@@ -31,7 +32,9 @@ class _StartScreenState extends State<StartScreen> {
             height: 20,
           ),
           ElevatedButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.of(context).pushNamed(RouteManager.introduction);
+            },
             child: const Text('Start The Hunt'),
           ),
         ],
