@@ -41,7 +41,6 @@ class EntranceExamination extends StatelessWidget {
                       'The shoes are too big for you. They have chewing marks on them.',
                 ),
               );
-              shoesTaken = true;
               Navigator.pop(context);
             },
             child: const Text('Take the shoes'),
@@ -72,8 +71,8 @@ class EntranceExamination extends StatelessWidget {
         ],
       ),
     );
-
-    if (shoesTaken == true) {
+    String itemToCheck = 'Shoes';
+    if (pickedUpItems.any((item) => item.title == itemToCheck)) {
       mainContent = const Center(
         child: SizedBox(
           width: 300,

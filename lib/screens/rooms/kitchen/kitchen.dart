@@ -45,7 +45,10 @@ class Kitchen extends StatelessWidget {
                     height: 50,
                   ),
                   ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.of(context)
+                          .pushNamed(RouteManager.kitchenExamination);
+                    },
                     child: const Text('Examine the room'),
                   ),
                   ElevatedButton(

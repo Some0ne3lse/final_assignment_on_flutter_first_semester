@@ -5,6 +5,7 @@ import 'package:final_assignment_on_flutter/screens/introduction.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/entrance/entrance.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/entrance/entrance_examination.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/kitchen/kitchen.dart';
+import 'package:final_assignment_on_flutter/screens/rooms/kitchen/kitchen_examination.dart';
 import 'package:final_assignment_on_flutter/screens/start_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -17,6 +18,7 @@ class RouteManager {
   static const String entrance = '/entrance';
   static const String entranceExamination = '/entranceExamination';
   static const String kitchen = '/kitchen';
+  static const String kitchenExamination = '/kitchenExamination';
 
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
@@ -51,6 +53,10 @@ class RouteManager {
       case kitchen:
         return MaterialPageRoute(
           builder: (context) => const Kitchen(),
+        );
+      case kitchenExamination:
+        return MaterialPageRoute(
+          builder: (context) => const KitchenExamination(),
         );
       default:
         throw const FormatException('Route not found!');
