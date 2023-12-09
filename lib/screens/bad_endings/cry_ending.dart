@@ -15,34 +15,43 @@ class CryEnding extends StatelessWidget {
         foregroundColor: Colors.white,
         title: const Text('Buhuuu'),
       ),
-      body: Column(
-        children: [
-          const SizedBox(
-            height: 20,
-          ),
-          Center(
-            child: Column(
-              children: [
-                SizedBox(
-                  width: 300,
-                  child: Text(
-                    cryBaby(),
-                    style: const TextStyle(
-                      color: Colors.white,
-                      fontSize: 15,
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            const SizedBox(
+              height: 20,
+            ),
+            Center(
+              child: Column(
+                children: [
+                  Image.asset(
+                    'assets/images/sitAndCry.png',
+                    width: 200,
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  SizedBox(
+                    width: 300,
+                    child: Text(
+                      cryBaby(),
+                      style: const TextStyle(
+                        color: Colors.white,
+                        fontSize: 15,
+                      ),
                     ),
                   ),
-                ),
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.of(context).pushNamed(RouteManager.startScreen);
-                  },
-                  child: const Text('Try Again'),
-                ),
-              ],
-            ),
-          )
-        ],
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.of(context).pushNamed(RouteManager.startScreen);
+                    },
+                    child: const Text('Try Again'),
+                  ),
+                ],
+              ),
+            )
+          ],
+        ),
       ),
     );
   }

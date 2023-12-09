@@ -1,9 +1,9 @@
 import 'package:final_assignment_on_flutter/routes/routes.dart';
-import 'package:final_assignment_on_flutter/text_files/arrival.dart';
+import 'package:final_assignment_on_flutter/text_files/rooms/room_description.dart';
 import 'package:flutter/material.dart';
 
-class Arrival extends StatelessWidget {
-  const Arrival({super.key});
+class Kitchen extends StatelessWidget {
+  const Kitchen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -13,9 +13,7 @@ class Arrival extends StatelessWidget {
         automaticallyImplyLeading: false,
         backgroundColor: Colors.black,
         foregroundColor: Colors.white,
-        title: const Text(
-          'Arrival',
-        ),
+        title: const Text('Kitchen'),
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -27,7 +25,7 @@ class Arrival extends StatelessWidget {
               child: Column(
                 children: [
                   Image.asset(
-                    'assets/images/arrival.png',
+                    'assets/images/kitchen.png',
                     width: 200,
                   ),
                   const SizedBox(
@@ -36,7 +34,7 @@ class Arrival extends StatelessWidget {
                   SizedBox(
                     width: 300,
                     child: Text(
-                      arrivalText(),
+                      kitchenDescription(),
                       style: const TextStyle(
                         color: Colors.white,
                         fontSize: 15,
@@ -47,17 +45,25 @@ class Arrival extends StatelessWidget {
                     height: 50,
                   ),
                   ElevatedButton(
+                    onPressed: () {},
+                    child: const Text('Examine the room'),
+                  ),
+                  ElevatedButton(
+                    onPressed: () {},
+                    child: const Text('Go to the Storage'),
+                  ),
+                  ElevatedButton(
                     onPressed: () {
                       Navigator.of(context).pushNamed(RouteManager.entrance);
                     },
-                    child: const Text('Go inside'),
+                    child: const Text('Go to the Entrance'),
                   ),
                   const SizedBox(
                     height: 30,
                   ),
                 ],
               ),
-            )
+            ),
           ],
         ),
       ),

@@ -1,7 +1,9 @@
 import 'package:final_assignment_on_flutter/lists/items.dart';
 import 'package:final_assignment_on_flutter/routes/routes.dart';
-import 'package:final_assignment_on_flutter/text_files/rooms/room_examination/entrance_examination.dart';
+import 'package:final_assignment_on_flutter/text_files/rooms/room_examination.dart';
 import 'package:flutter/material.dart';
+
+bool shoesTaken = false;
 
 class EntranceExamination extends StatelessWidget {
   const EntranceExamination({super.key});
@@ -11,30 +13,52 @@ class EntranceExamination extends StatelessWidget {
     Widget mainContent = Center(
       child: Column(
         children: [
-          Text(
-              style: TextStyle(color: Colors.white, fontSize: 15),
-              entranceExamination()),
+          const SizedBox(
+            height: 30,
+          ),
+          Image.asset(
+            'assets/images/shoes.png',
+            width: 200,
+          ),
+          const SizedBox(
+            height: 20,
+          ),
+          SizedBox(
+            width: 300,
+            child: Text(
+                style: const TextStyle(color: Colors.white, fontSize: 15),
+                entranceExamination()),
+          ),
           const SizedBox(
             height: 50,
           ),
           ElevatedButton(
             onPressed: () {
-              items.add('shoes');
+              pickedUpItems.add(
+                Item(
+                  title: 'Shoes',
+                  description:
+                      'The shoes are too big for you. They have chewing marks on them.',
+                ),
+              );
+              shoesTaken = true;
+              Navigator.pop(context);
             },
             child: const Text('Take the shoes'),
           ),
           ElevatedButton(
             onPressed: () {
-              SimpleDialog(
-                title: const Text('The shoes are too big for you'),
-                children: [
-                  SimpleDialogOption(
-                    onPressed: () {
-                      Navigator.pop(context);
-                    },
-                    child: const Text('Okay'),
-                  ),
-                ],
+              showDialog(
+                context: context,
+                builder: (context) => AlertDialog(
+                  content: const Text(
+                      'The shoes are too big for you. They have chewing marks on them.'),
+                  actions: [
+                    TextButton(
+                        onPressed: () => Navigator.pop(context),
+                        child: const Text('Okay!'))
+                  ],
+                ),
               );
             },
             child: const Text('Try the shoes on'),
@@ -49,9 +73,21 @@ class EntranceExamination extends StatelessWidget {
       ),
     );
 
-    if (items.contains('shoes')) {
-      mainContent = Text('There is nothing else of interest');
+    if (shoesTaken == true) {
+      mainContent = const Center(
+        child: SizedBox(
+          width: 300,
+          child: Text(
+            'You find nothing else of value',
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 15,
+            ),
+          ),
+        ),
+      );
     }
+
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 69, 74, 73),
       appBar: AppBar(
@@ -59,8 +95,13 @@ class EntranceExamination extends StatelessWidget {
         foregroundColor: Colors.white,
         title: const Text('Entrance'),
       ),
-      body: Column(
-        children: [mainContent],
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            const SizedBox(height: 20),
+            mainContent,
+          ],
+        ),
       ),
     );
   }

@@ -1,5 +1,5 @@
 import 'package:final_assignment_on_flutter/routes/routes.dart';
-import 'package:final_assignment_on_flutter/text_files/rooms/room_description/entrance_description.dart';
+import 'package:final_assignment_on_flutter/text_files/rooms/room_description.dart';
 import 'package:flutter/material.dart';
 
 class Entrance extends StatelessWidget {
@@ -15,50 +15,64 @@ class Entrance extends StatelessWidget {
         foregroundColor: Colors.white,
         title: const Text('Entrance'),
       ),
-      body: Column(
-        children: [
-          const SizedBox(
-            height: 20,
-          ),
-          Center(
-            child: Column(
-              children: [
-                SizedBox(
-                  width: 300,
-                  child: Text(
-                    entranceDescription(),
-                    style: const TextStyle(
-                      color: Colors.white,
-                      fontSize: 15,
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            const SizedBox(
+              height: 20,
+            ),
+            Center(
+              child: Column(
+                children: [
+                  Image.asset(
+                    'assets/images/entrance.png',
+                    width: 200,
+                  ),
+                  const SizedBox(
+                    height: 20,
+                  ),
+                  SizedBox(
+                    width: 300,
+                    child: Text(
+                      entranceDescription(),
+                      style: const TextStyle(
+                        color: Colors.white,
+                        fontSize: 15,
+                      ),
                     ),
                   ),
-                ),
-                const SizedBox(
-                  height: 50,
-                ),
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.of(context)
-                        .pushNamed(RouteManager.entranceExamination);
-                  },
-                  child: const Text('Examine the room'),
-                ),
-                ElevatedButton(
-                  onPressed: () {},
-                  child: const Text('Go to the Kitchen'),
-                ),
-                ElevatedButton(
-                  onPressed: () {},
-                  child: const Text('Go to the Main Hall'),
-                ),
-                ElevatedButton(
-                  onPressed: () {},
-                  child: const Text('Go to the Library'),
-                ),
-              ],
-            ),
-          )
-        ],
+                  const SizedBox(
+                    height: 50,
+                  ),
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.of(context)
+                          .pushNamed(RouteManager.entranceExamination);
+                    },
+                    child: const Text('Examine the room'),
+                  ),
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.of(context).pushNamed(RouteManager.kitchen);
+                    },
+                    child: const Text('Go to the Kitchen'),
+                  ),
+                  ElevatedButton(
+                    onPressed: () {},
+                    child: const Text('Go to the Main Hall'),
+                  ),
+                  ElevatedButton(
+                    onPressed: () {},
+                    child: const Text('Go to the Library'),
+                  ),
+                  const SizedBox(
+                    height: 30,
+                  ),
+                ],
+              ),
+            )
+          ],
+        ),
       ),
       bottomNavigationBar: BottomAppBar(
         height: kBottomNavigationBarHeight,
