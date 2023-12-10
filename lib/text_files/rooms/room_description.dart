@@ -21,3 +21,10 @@ String libraryDescription() {
   return ('''This room is filled with books. Looks like you stumbled into a library!
 The only door in this area is the one back to the entrance.''');
 }
+
+String mainHallDescription() {
+  return ('''It seems like you've arrived in the Main Hall!
+It is filled with beautiful furniture and art.
+But there is no cake in here...
+There are three doors. One straight ahead towards what seems like another hall, one on the right towards something that looks like something more private, and one back to the entrance.''');
+}

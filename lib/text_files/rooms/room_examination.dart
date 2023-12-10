@@ -27,3 +27,8 @@ String libraryExamination() {
   return ('''You look around for something worth knowing about in the library.
 After some time you find a note.''');
 }
+
+String mainHallExamination() {
+  return ('''You look around for anything worth examining.
+After some time you find a letter.''');
+}

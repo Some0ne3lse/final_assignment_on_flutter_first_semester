@@ -143,7 +143,7 @@ class KitchenExamination extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.black,
         foregroundColor: Colors.white,
-        title: const Text('Entrance'),
+        title: const Text('Kitchen'),
       ),
       body: SingleChildScrollView(
         child: Column(

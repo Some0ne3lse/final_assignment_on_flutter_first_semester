@@ -3,8 +3,8 @@ import 'package:final_assignment_on_flutter/text_files/notes/notes.dart';
 import 'package:final_assignment_on_flutter/text_files/rooms/room_examination.dart';
 import 'package:flutter/material.dart';
 
-class LibraryExamination extends StatelessWidget {
-  const LibraryExamination({super.key});
+class MainHallExamination extends StatelessWidget {
+  const MainHallExamination({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +13,7 @@ class LibraryExamination extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.black,
         foregroundColor: Colors.white,
-        title: const Text('Library'),
+        title: const Text('Main Hall'),
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -26,7 +26,7 @@ class LibraryExamination extends StatelessWidget {
                     height: 30,
                   ),
                   Image.asset(
-                    'assets/images/library_note.png',
+                    'assets/images/letter.png',
                     width: 200,
                   ),
                   const SizedBox(
@@ -36,7 +36,7 @@ class LibraryExamination extends StatelessWidget {
                     width: 300,
                     child: Text(
                       style: const TextStyle(color: Colors.white, fontSize: 15),
-                      libraryExamination(),
+                      mainHallExamination(),
                     ),
                   ),
                   const SizedBox(
@@ -47,7 +47,7 @@ class LibraryExamination extends StatelessWidget {
                       showDialog(
                         context: context,
                         builder: (context) => AlertDialog(
-                          content: Text(basementNote()),
+                          content: Text(letter()),
                           actions: [
                             TextButton(
                                 onPressed: () => Navigator.pop(context),
@@ -56,13 +56,13 @@ class LibraryExamination extends StatelessWidget {
                         ),
                       );
                     },
-                    child: const Text('Read the note'),
+                    child: const Text('Read the letter'),
                   ),
                   ElevatedButton(
                     onPressed: () {
-                      Navigator.of(context).pushNamed(RouteManager.library);
+                      Navigator.of(context).pushNamed(RouteManager.mainHall);
                     },
-                    child: const Text('Leave the note'),
+                    child: const Text('Leave the letter'),
                   ),
                 ],
               ),

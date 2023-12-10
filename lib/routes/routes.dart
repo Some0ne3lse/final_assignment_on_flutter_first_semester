@@ -4,11 +4,14 @@ import 'package:final_assignment_on_flutter/screens/bad_endings/cry_ending.dart'
 import 'package:final_assignment_on_flutter/screens/introduction.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/entrance/entrance.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/entrance/entrance_examination.dart';
+import 'package:final_assignment_on_flutter/screens/rooms/hall/hall.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/kitchen/kitchen.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/kitchen/kitchen_examination.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/library/library.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/library/library_examination.dart';
+import 'package:final_assignment_on_flutter/screens/rooms/living_room/living_room.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/main_hall/main_hall.dart';
+import 'package:final_assignment_on_flutter/screens/rooms/main_hall/main_hall_examination.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/storage/storage.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/storage/storage_examination.dart';
 import 'package:final_assignment_on_flutter/screens/start_screen.dart';
@@ -29,6 +32,9 @@ class RouteManager {
   static const String library = '/library';
   static const String libraryExamination = '/libraryExamination';
   static const String mainHall = '/mainHall';
+  static const String mainHallExamination = '/mainHallExamination';
+  static const String hall = '/hall';
+  static const String livingRoom = '/livingRoom';
 
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
@@ -74,7 +80,7 @@ class RouteManager {
         );
       case storageExamination:
         return MaterialPageRoute(
-          builder: (context) => StorageExamination(),
+          builder: (context) => const StorageExamination(),
         );
       case library:
         return MaterialPageRoute(
@@ -87,6 +93,18 @@ class RouteManager {
       case mainHall:
         return MaterialPageRoute(
           builder: (context) => const MainHall(),
+        );
+      case mainHallExamination:
+        return MaterialPageRoute(
+          builder: (context) => const MainHallExamination(),
+        );
+      case hall:
+        return MaterialPageRoute(
+          builder: (context) => const Hall(),
+        );
+      case livingRoom:
+        return MaterialPageRoute(
+          builder: (context) => const LivingRoom(),
         );
       default:
         throw const FormatException('Route not found!');
