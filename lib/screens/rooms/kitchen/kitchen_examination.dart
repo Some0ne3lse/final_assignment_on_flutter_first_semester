@@ -100,29 +100,33 @@ class KitchenExamination extends StatelessWidget {
               },
               child: const Text('Eat a doughnut'),
             ),
-            ElevatedButton(
-              onPressed: () {
-                pickedUpItems.add(
-                  Item(
-                      title: 'Spiked Doughnut',
-                      description:
-                          'You have spiked this doughnut with sleeping pills. I know it\'s difficult, but you should not eat this'),
-                );
-                showDialog(
-                  context: context,
-                  builder: (context) => AlertDialog(
-                    content: const Text(
-                        'You insert a few pills into one of the doughnuts.'),
-                    actions: [
-                      TextButton(
-                          onPressed: () => Navigator.pop(context),
-                          child: const Text('Okay!'))
-                    ],
-                  ),
-                );
-              },
-              child: const Text('Insert pills into douhnut'),
-            ),
+            if (pickedUpItems.any((item) => item.title == itemToCheck))
+              ElevatedButton(
+                onPressed: () {
+                  pickedUpItems.add(
+                    Item(
+                        title: 'Spiked Doughnut',
+                        description:
+                            'You have spiked this doughnut with sleeping pills. I know it\'s difficult, but you should not eat this'),
+                  );
+                  pickedUpItems.removeWhere((pickedUpItems) =>
+                      pickedUpItems.title == 'Sleeping-Pills');
+                  showDialog(
+                    context: context,
+                    builder: (context) => AlertDialog(
+                      content: const Text(
+                          'You insert a few pills into one of the doughnuts, and add it to your inventory.'),
+                      actions: [
+                        TextButton(
+                            onPressed: () => Navigator.of(context)
+                                .pushNamed(RouteManager.kitchen),
+                            child: const Text('Okay!'))
+                      ],
+                    ),
+                  );
+                },
+                child: const Text('Insert pills into doughnut'),
+              ),
             ElevatedButton(
               onPressed: () {
                 Navigator.of(context).pushNamed(RouteManager.kitchen);
