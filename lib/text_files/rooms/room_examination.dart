@@ -22,3 +22,8 @@ String storageExaminationAxe() {
 String storageExaminationSaw() {
   return ('''You look around, and you find a saw hanging on the wall.''');
 }
+
+String libraryExamination() {
+  return ('''You look around for something worth knowing about in the library.
+After some time you find a note.''');
+}

@@ -1,3 +1,6 @@
+import 'package:final_assignment_on_flutter/routes/routes.dart';
+import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/one_door_one_option.dart';
+import 'package:final_assignment_on_flutter/text_files/rooms/room_description.dart';
 import 'package:flutter/material.dart';
 
 class Library extends StatelessWidget {
@@ -5,6 +8,13 @@ class Library extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return OneDoorOneOption(
+        title: 'Library',
+        imgPath: 'assets/images/library.png',
+        description: libraryDescription(),
+        optionText: 'Examine the room',
+        optionAction: RouteManager.libraryExamination,
+        firstDoorText: 'Go to the Entrance',
+        firstDoorAction: RouteManager.entrance);
   }
 }

@@ -7,6 +7,7 @@ import 'package:final_assignment_on_flutter/screens/rooms/entrance/entrance_exam
 import 'package:final_assignment_on_flutter/screens/rooms/kitchen/kitchen.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/kitchen/kitchen_examination.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/library/library.dart';
+import 'package:final_assignment_on_flutter/screens/rooms/library/library_examination.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/main_hall/main_hall.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/storage/storage.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/storage/storage_examination.dart';
@@ -26,6 +27,7 @@ class RouteManager {
   static const String storage = '/storage';
   static const String storageExamination = '/storageExamination';
   static const String library = '/library';
+  static const String libraryExamination = '/libraryExamination';
   static const String mainHall = '/mainHall';
 
   static Route<dynamic> generateRoute(RouteSettings settings) {
@@ -77,6 +79,10 @@ class RouteManager {
       case library:
         return MaterialPageRoute(
           builder: (context) => const Library(),
+        );
+      case libraryExamination:
+        return MaterialPageRoute(
+          builder: (context) => const LibraryExamination(),
         );
       case mainHall:
         return MaterialPageRoute(
