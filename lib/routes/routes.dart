@@ -6,6 +6,10 @@ import 'package:final_assignment_on_flutter/screens/rooms/entrance/entrance.dart
 import 'package:final_assignment_on_flutter/screens/rooms/entrance/entrance_examination.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/kitchen/kitchen.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/kitchen/kitchen_examination.dart';
+import 'package:final_assignment_on_flutter/screens/rooms/library/library.dart';
+import 'package:final_assignment_on_flutter/screens/rooms/main_hall/main_hall.dart';
+import 'package:final_assignment_on_flutter/screens/rooms/storage/storage.dart';
+import 'package:final_assignment_on_flutter/screens/rooms/storage/storage_examination.dart';
 import 'package:final_assignment_on_flutter/screens/start_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -19,6 +23,10 @@ class RouteManager {
   static const String entranceExamination = '/entranceExamination';
   static const String kitchen = '/kitchen';
   static const String kitchenExamination = '/kitchenExamination';
+  static const String storage = '/storage';
+  static const String storageExamination = '/storageExamination';
+  static const String library = '/library';
+  static const String mainHall = '/mainHall';
 
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
@@ -57,6 +65,22 @@ class RouteManager {
       case kitchenExamination:
         return MaterialPageRoute(
           builder: (context) => const KitchenExamination(),
+        );
+      case storage:
+        return MaterialPageRoute(
+          builder: (context) => const Storage(),
+        );
+      case storageExamination:
+        return MaterialPageRoute(
+          builder: (context) => StorageExamination(),
+        );
+      case library:
+        return MaterialPageRoute(
+          builder: (context) => const Library(),
+        );
+      case mainHall:
+        return MaterialPageRoute(
+          builder: (context) => const MainHall(),
         );
       default:
         throw const FormatException('Route not found!');

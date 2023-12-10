@@ -3,8 +3,6 @@ import 'package:final_assignment_on_flutter/routes/routes.dart';
 import 'package:final_assignment_on_flutter/text_files/rooms/room_examination.dart';
 import 'package:flutter/material.dart';
 
-bool shoesTaken = false;
-
 class EntranceExamination extends StatelessWidget {
   const EntranceExamination({super.key});
 
@@ -26,8 +24,9 @@ class EntranceExamination extends StatelessWidget {
           SizedBox(
             width: 300,
             child: Text(
-                style: const TextStyle(color: Colors.white, fontSize: 15),
-                entranceExamination()),
+              style: const TextStyle(color: Colors.white, fontSize: 15),
+              entranceExamination(),
+            ),
           ),
           const SizedBox(
             height: 50,

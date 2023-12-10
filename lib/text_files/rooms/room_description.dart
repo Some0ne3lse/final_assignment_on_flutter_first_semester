@@ -11,3 +11,8 @@ This is not the kitchen of someone who makes his own cake.
 There are two doors in here. One back to the Entrance,
 the other one smaller and old in the corner of the room.''');
 }
+
+String storageDescription() {
+  return ('''This area looks like a storage room of some kind.
+The only door in this area is the one back to the kitchen.''');
+}
