@@ -1,3 +1,4 @@
+import 'package:final_assignment_on_flutter/lists/items.dart';
 import 'package:final_assignment_on_flutter/routes/routes.dart';
 import 'package:final_assignment_on_flutter/text_files/endings/bad_endings.dart';
 import 'package:flutter/material.dart';
@@ -28,7 +29,7 @@ class CryEnding extends StatelessWidget {
                     'assets/images/sitAndCry.png',
                     width: 200,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   SizedBox(
@@ -44,6 +45,7 @@ class CryEnding extends StatelessWidget {
                   ElevatedButton(
                     onPressed: () {
                       Navigator.of(context).pushNamed(RouteManager.startScreen);
+                      pickedUpItems.clear();
                     },
                     child: const Text('Try Again'),
                   ),

@@ -61,29 +61,6 @@ class Arrival extends StatelessWidget {
           ],
         ),
       ),
-      bottomNavigationBar: BottomAppBar(
-        height: kBottomNavigationBarHeight,
-        color: Colors.black,
-        child: Row(
-          children: [
-            TextButton(
-              style: TextButton.styleFrom(foregroundColor: Colors.white),
-              onPressed: () {
-                Navigator.of(context).pushNamed(RouteManager.inventory);
-              },
-              child: const Row(
-                children: [
-                  Text('Inventory'),
-                  SizedBox(
-                    width: 10,
-                  ),
-                  Icon(Icons.build)
-                ],
-              ),
-            ),
-          ],
-        ),
-      ),
     );
   }
 }

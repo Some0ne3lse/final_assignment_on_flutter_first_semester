@@ -1,3 +1,4 @@
+import 'package:final_assignment_on_flutter/lists/items.dart';
 import 'package:final_assignment_on_flutter/routes/routes.dart';
 import 'package:flutter/material.dart';
 
@@ -92,6 +93,7 @@ class TwoDoorsOneOption extends StatelessWidget {
         height: kBottomNavigationBarHeight,
         color: Colors.black,
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             TextButton(
               style: TextButton.styleFrom(foregroundColor: Colors.white),
@@ -105,6 +107,22 @@ class TwoDoorsOneOption extends StatelessWidget {
                     width: 10,
                   ),
                   Icon(Icons.build)
+                ],
+              ),
+            ),
+            TextButton(
+              style: TextButton.styleFrom(foregroundColor: Colors.white),
+              onPressed: () {
+                Navigator.of(context).pushNamed(RouteManager.startScreen);
+                pickedUpItems.clear();
+              },
+              child: const Row(
+                children: [
+                  Text('Exit'),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  Icon(Icons.exit_to_app),
                 ],
               ),
             ),
