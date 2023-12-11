@@ -113,8 +113,27 @@ class TwoDoorsOneOption extends StatelessWidget {
             TextButton(
               style: TextButton.styleFrom(foregroundColor: Colors.white),
               onPressed: () {
-                Navigator.of(context).pushNamed(RouteManager.startScreen);
-                pickedUpItems.clear();
+                showDialog(
+                  context: context,
+                  builder: (context) => AlertDialog(
+                    content: const Text(
+                        'Are you sure you want to Exit? All data will be cleared.'),
+                    actions: [
+                      TextButton(
+                        onPressed: () => Navigator.pop(context),
+                        child: const Text('NO!'),
+                      ),
+                      TextButton(
+                        onPressed: () {
+                          Navigator.of(context)
+                              .pushNamed(RouteManager.startScreen);
+                          pickedUpItems.clear();
+                        },
+                        child: const Text('YES!'),
+                      ),
+                    ],
+                  ),
+                );
               },
               child: const Row(
                 children: [
