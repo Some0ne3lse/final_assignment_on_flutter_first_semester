@@ -100,6 +100,8 @@ class DogAttack extends StatelessWidget {
             ),
             ElevatedButton(
               onPressed: () {
+                pickedUpItems.removeWhere(
+                    (pickedUpItems) => pickedUpItems.title == 'Shoes');
                 dogTamed = true;
                 showDialog(
                   context: context,
@@ -167,6 +169,8 @@ class DogAttack extends StatelessWidget {
             ElevatedButton(
               onPressed: () {
                 dogTamed = true;
+                pickedUpItems.removeWhere(
+                    (pickedUpItems) => pickedUpItems.title == 'Shoes');
                 showDialog(
                   context: context,
                   builder: (context) => AlertDialog(

@@ -52,5 +52,17 @@ here is also the door back to the main hall.''');
 
 String gardenDescription() {
   return ('''The garden is a mess.
-It seems like no one has kept it nice, and there is poo everywhere.''');
+It seems like no one has kept it nice, and there is poo everywhere.
+There is a Kennel in the corner, but the dog won't let you in there.''');
+}
+
+String dogDescription() {
+  return ('''The dog looks at you with happiness.
+All threat is gone, but it won't let you into it's kennel.''');
+}
+
+String kennelDescription() {
+  return ('''It is dark inside the kennel, but to your surprise, kinda cozy.
+You get the feeling that no human has been in here for a long time.
+''');
 }

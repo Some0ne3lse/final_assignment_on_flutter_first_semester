@@ -10,7 +10,9 @@ class Item {
   final String description;
 }
 
-final List<Item> pickedUpItems = [];
+final List<Item> pickedUpItems = [
+  Item(title: 'Sleeping-Pills', description: 'test')
+];
 
 class Inventory extends StatefulWidget {
   const Inventory({super.key});

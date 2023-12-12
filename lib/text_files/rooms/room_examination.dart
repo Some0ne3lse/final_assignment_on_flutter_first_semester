@@ -32,3 +32,9 @@ String mainHallExamination() {
   return ('''You look around for anything worth examining.
 After some time you find a letter.''');
 }
+
+String kennelExamination() {
+  return ('''You look around the Kennel.
+In the corner you find a small notebook labeled Homework.
+''');
+}

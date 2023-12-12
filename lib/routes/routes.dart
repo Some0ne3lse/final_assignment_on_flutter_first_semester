@@ -13,6 +13,7 @@ import 'package:final_assignment_on_flutter/screens/rooms/garden/dog.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/garden/garden.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/hall/hall.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/kennel/kennel.dart';
+import 'package:final_assignment_on_flutter/screens/rooms/kennel/kennel_examination.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/kitchen/kitchen.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/kitchen/kitchen_examination.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/library/library.dart';
@@ -51,6 +52,7 @@ class RouteManager {
   static const String basement = '/basement';
   static const String dog = '/dog';
   static const String kennel = '/kennel';
+  static const String kennelExamination = '/kennelExamination';
 
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
@@ -152,7 +154,11 @@ class RouteManager {
         );
       case kennel:
         return MaterialPageRoute(
-          builder: (context) => Kennel(),
+          builder: (context) => const Kennel(),
+        );
+      case kennelExamination:
+        return MaterialPageRoute(
+          builder: (context) => const KennelExamination(),
         );
       default:
         throw const FormatException('Route not found!');
