@@ -1,6 +1,7 @@
 import 'package:final_assignment_on_flutter/lists/items.dart';
 import 'package:final_assignment_on_flutter/routes/routes.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/hall/hall.dart';
+import 'package:final_assignment_on_flutter/screens/rooms/basement/basement_examination.dart';
 import 'package:flutter/material.dart';
 
 class TwoDoorsOneOption extends StatelessWidget {
@@ -130,6 +131,7 @@ class TwoDoorsOneOption extends StatelessWidget {
                               .pushNamed(RouteManager.startScreen);
                           pickedUpItems.clear();
                           dogTamed = false;
+                          hiddenDoorFound = false;
                         },
                         child: const Text('YES!'),
                       ),

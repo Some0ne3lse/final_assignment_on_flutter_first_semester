@@ -66,3 +66,13 @@ String kennelDescription() {
 You get the feeling that no human has been in here for a long time.
 ''');
 }
+
+String basementDescriptionOne() {
+  return ('''The basement is well lit. You only see the door leading back upstairs.
+There is a bookshelf, and the room is very clean.''');
+}
+
+String basementDescriptionTwo() {
+  return ('''The basement is well lit. You see the door leading back upstairs and the door to the hidden room.
+There is a bookshelf, and the room is very clean.''');
+}

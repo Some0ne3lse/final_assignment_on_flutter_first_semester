@@ -7,11 +7,13 @@ import 'package:final_assignment_on_flutter/screens/bad_endings/pet_dog_ending.d
 import 'package:final_assignment_on_flutter/screens/good_endings/give_up_on_life.dart';
 import 'package:final_assignment_on_flutter/screens/introduction.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/basement/basement.dart';
+import 'package:final_assignment_on_flutter/screens/rooms/basement/basement_examination.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/entrance/entrance.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/entrance/entrance_examination.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/garden/dog.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/garden/garden.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/hall/hall.dart';
+import 'package:final_assignment_on_flutter/screens/rooms/hidden_room/hidden_room.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/kennel/kennel.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/kennel/kennel_examination.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/kitchen/kitchen.dart';
@@ -50,6 +52,8 @@ class RouteManager {
   static const String livingRoom = '/livingRoom';
   static const String garden = '/garden';
   static const String basement = '/basement';
+  static const String basementExamination = '/basementExamination';
+  static const String hiddenRoom = '/hiddenRoom';
   static const String dog = '/dog';
   static const String kennel = '/kennel';
   static const String kennelExamination = '/kennelExamination';
@@ -151,6 +155,14 @@ class RouteManager {
       case basement:
         return MaterialPageRoute(
           builder: (context) => const Basement(),
+        );
+      case basementExamination:
+        return MaterialPageRoute(
+          builder: (context) => const BasementExamination(),
+        );
+      case hiddenRoom:
+        return MaterialPageRoute(
+          builder: (context) => const HiddenRoom(),
         );
       case kennel:
         return MaterialPageRoute(
