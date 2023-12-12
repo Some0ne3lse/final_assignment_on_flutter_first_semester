@@ -1,10 +1,18 @@
 import 'package:final_assignment_on_flutter/lists/items.dart';
 import 'package:final_assignment_on_flutter/screens/arrival.dart';
 import 'package:final_assignment_on_flutter/screens/bad_endings/cry_ending.dart';
+import 'package:final_assignment_on_flutter/screens/bad_endings/give_up_on_life_no_axe.dart';
+import 'package:final_assignment_on_flutter/screens/bad_endings/monster_ending.dart';
+import 'package:final_assignment_on_flutter/screens/bad_endings/pet_dog_ending.dart';
+import 'package:final_assignment_on_flutter/screens/good_endings/give_up_on_life.dart';
 import 'package:final_assignment_on_flutter/screens/introduction.dart';
+import 'package:final_assignment_on_flutter/screens/rooms/basement/basement.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/entrance/entrance.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/entrance/entrance_examination.dart';
+import 'package:final_assignment_on_flutter/screens/rooms/garden/dog.dart';
+import 'package:final_assignment_on_flutter/screens/rooms/garden/garden.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/hall/hall.dart';
+import 'package:final_assignment_on_flutter/screens/rooms/kennel/kennel.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/kitchen/kitchen.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/kitchen/kitchen_examination.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/library/library.dart';
@@ -22,6 +30,10 @@ class RouteManager {
   static const String introduction = '/introduction';
   static const String arrival = '/arrival';
   static const String cryEnding = '/cryEnding';
+  static const String petDogEnding = '/petDogEnding';
+  static const String giveUpOnLifeNoAxe = '/giveUpOnLifeNoAxe';
+  static const String giveUpOnLife = '/giveUpOnLife';
+  static const String monster = '/monster';
   static const String inventory = '/inventory';
   static const String entrance = '/entrance';
   static const String entranceExamination = '/entranceExamination';
@@ -35,6 +47,10 @@ class RouteManager {
   static const String mainHallExamination = '/mainHallExamination';
   static const String hall = '/hall';
   static const String livingRoom = '/livingRoom';
+  static const String garden = '/garden';
+  static const String basement = '/basement';
+  static const String dog = '/dog';
+  static const String kennel = '/kennel';
 
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
@@ -57,6 +73,22 @@ class RouteManager {
       case cryEnding:
         return MaterialPageRoute(
           builder: (context) => const CryEnding(),
+        );
+      case petDogEnding:
+        return MaterialPageRoute(
+          builder: (context) => const PetDogEnding(),
+        );
+      case giveUpOnLifeNoAxe:
+        return MaterialPageRoute(
+          builder: (context) => const GiveUpOnLifeNoAxe(),
+        );
+      case giveUpOnLife:
+        return MaterialPageRoute(
+          builder: (context) => const GiveUpOnLife(),
+        );
+      case monster:
+        return MaterialPageRoute(
+          builder: (context) => const Monster(),
         );
       case entrance:
         return MaterialPageRoute(
@@ -105,6 +137,22 @@ class RouteManager {
       case livingRoom:
         return MaterialPageRoute(
           builder: (context) => const LivingRoom(),
+        );
+      case garden:
+        return MaterialPageRoute(
+          builder: (context) => const Garden(),
+        );
+      case dog:
+        return MaterialPageRoute(
+          builder: (context) => Dog(),
+        );
+      case basement:
+        return MaterialPageRoute(
+          builder: (context) => const Basement(),
+        );
+      case kennel:
+        return MaterialPageRoute(
+          builder: (context) => Kennel(),
         );
       default:
         throw const FormatException('Route not found!');

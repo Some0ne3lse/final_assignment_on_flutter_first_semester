@@ -3,14 +3,12 @@ import 'package:final_assignment_on_flutter/routes/routes.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/hall/hall.dart';
 import 'package:flutter/material.dart';
 
-class ThreeDoorsOneOption extends StatelessWidget {
-  const ThreeDoorsOneOption({
+class ThreeDoorsNoOption extends StatelessWidget {
+  const ThreeDoorsNoOption({
     super.key,
     required this.title,
     required this.imgPath,
     required this.description,
-    required this.optionText,
-    required this.optionAction,
     required this.firstDoorText,
     required this.firstDoorAction,
     required this.secondDoorText,
@@ -22,8 +20,6 @@ class ThreeDoorsOneOption extends StatelessWidget {
   final String title;
   final String imgPath;
   final String description;
-  final String optionText;
-  final String optionAction;
   final String firstDoorText;
   final String firstDoorAction;
   final String secondDoorText;
@@ -69,12 +65,6 @@ class ThreeDoorsOneOption extends StatelessWidget {
                   ),
                   const SizedBox(
                     height: 50,
-                  ),
-                  ElevatedButton(
-                    onPressed: () {
-                      Navigator.of(context).pushNamed(optionAction);
-                    },
-                    child: Text(optionText),
                   ),
                   ElevatedButton(
                     onPressed: () {

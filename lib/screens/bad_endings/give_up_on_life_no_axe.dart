@@ -4,8 +4,8 @@ import 'package:final_assignment_on_flutter/screens/rooms/hall/hall.dart';
 import 'package:final_assignment_on_flutter/text_files/endings/bad_endings.dart';
 import 'package:flutter/material.dart';
 
-class CryEnding extends StatelessWidget {
-  const CryEnding({super.key});
+class GiveUpOnLifeNoAxe extends StatelessWidget {
+  const GiveUpOnLifeNoAxe({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +15,7 @@ class CryEnding extends StatelessWidget {
         automaticallyImplyLeading: false,
         backgroundColor: Colors.black,
         foregroundColor: Colors.white,
-        title: const Text('Buhuuu'),
+        title: const Text('Goodnight'),
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -27,7 +27,7 @@ class CryEnding extends StatelessWidget {
               child: Column(
                 children: [
                   Image.asset(
-                    'assets/images/sitAndCry.png',
+                    'assets/images/pet_dog_ending.png',
                     width: 200,
                   ),
                   const SizedBox(
@@ -36,7 +36,7 @@ class CryEnding extends StatelessWidget {
                   SizedBox(
                     width: 300,
                     child: Text(
-                      cryBaby(),
+                      giveUpOnLifeNoAxe(),
                       style: const TextStyle(
                         color: Colors.white,
                         fontSize: 15,

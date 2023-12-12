@@ -53,8 +53,9 @@ class EntranceExamination extends StatelessWidget {
                       'The shoes are too big for you. They have chewing marks on them.'),
                   actions: [
                     TextButton(
-                        onPressed: () => Navigator.pop(context),
-                        child: const Text('Okay!'))
+                      onPressed: () => Navigator.pop(context),
+                      child: const Text('Okay!'),
+                    ),
                   ],
                 ),
               );

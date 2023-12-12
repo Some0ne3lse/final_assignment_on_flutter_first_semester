@@ -9,3 +9,30 @@ You cannot believe what she's saying.
 The End
 ''');
 }
+
+String petDog() {
+  return ('''You get ready and try to pet the dog. You gather all of you love and send it to your hand. You reach your hand out to the dog, and get ready.
+The dog doesn't care.
+It attacks you and bites you to death.
+Your last thought as your life leaves you is of cake.
+If you could just eat it one more time...
+  
+The End''');
+}
+
+String giveUpOnLifeNoAxe() {
+  return ('''As the dog runs towards you, you decide that a life as cruel as this is not worth it.
+It attacks you and bites you to death.
+  
+The End''');
+}
+
+String monster() {
+  return ('''You take your axe. You gather all your strength, as the dog comes towards you.
+As it attacks you lift your axe, and strike.
+You manage to kill the dog, but suddenly a voice comes from above.
+"You killed an innocent creature just for cake. What a monster you are. Judgement comes for us all."
+Suddenly a portal opens from the ground. Satan's hands reach out for you and drags you to hell. A place where there is no cake...
+  
+The End''');
+}

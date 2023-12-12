@@ -28,3 +28,29 @@ It is filled with beautiful furniture and art.
 But there is no cake in here...
 There are three doors. One straight ahead towards what seems like another hall, one on the right towards something that looks like something more private, and one back to the entrance.''');
 }
+
+String hallDescriptionOne() {
+  return ('''You come into a hall. There is nothing interesting in here.
+There are stairs going downwards to something that looks like a basement, and a door towards the garden.
+The dog stands ready. You should not go out there unless you are ready.
+There is also the door back to the main hall.''');
+}
+
+String hallDescriptionTwo() {
+  return ('''You come into a hall. There is nothing interesting in here.
+There are stairs going downwards to something that looks like a basement, and a door towards the garden.
+The dog seems relaxed.
+here is also the door back to the main hall.''');
+}
+
+String hallDescriptionThree() {
+  return ('''You come into a hall. There is nothing interesting in here.
+There are stairs going downwards to something that looks like a basement, and a door towards the garden.
+The dog is sleeping.
+here is also the door back to the main hall.''');
+}
+
+String gardenDescription() {
+  return ('''The garden is a mess.
+It seems like no one has kept it nice, and there is poo everywhere.''');
+}

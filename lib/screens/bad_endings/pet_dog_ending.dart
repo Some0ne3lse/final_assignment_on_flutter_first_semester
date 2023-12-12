@@ -1,11 +1,10 @@
 import 'package:final_assignment_on_flutter/lists/items.dart';
 import 'package:final_assignment_on_flutter/routes/routes.dart';
-import 'package:final_assignment_on_flutter/screens/rooms/hall/hall.dart';
 import 'package:final_assignment_on_flutter/text_files/endings/bad_endings.dart';
 import 'package:flutter/material.dart';
 
-class CryEnding extends StatelessWidget {
-  const CryEnding({super.key});
+class PetDogEnding extends StatelessWidget {
+  const PetDogEnding({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +14,7 @@ class CryEnding extends StatelessWidget {
         automaticallyImplyLeading: false,
         backgroundColor: Colors.black,
         foregroundColor: Colors.white,
-        title: const Text('Buhuuu'),
+        title: const Text('At least you tried...'),
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -27,7 +26,7 @@ class CryEnding extends StatelessWidget {
               child: Column(
                 children: [
                   Image.asset(
-                    'assets/images/sitAndCry.png',
+                    'assets/images/pet_dog_ending.png',
                     width: 200,
                   ),
                   const SizedBox(
@@ -36,7 +35,7 @@ class CryEnding extends StatelessWidget {
                   SizedBox(
                     width: 300,
                     child: Text(
-                      cryBaby(),
+                      petDog(),
                       style: const TextStyle(
                         color: Colors.white,
                         fontSize: 15,
