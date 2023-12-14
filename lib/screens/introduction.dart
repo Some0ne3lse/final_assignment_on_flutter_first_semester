@@ -38,13 +38,15 @@ class Introduction extends StatelessWidget {
                 ),
                 ElevatedButton(
                   onPressed: () {
-                    Navigator.of(context).pushNamed(RouteManager.cryEnding);
+                    Navigator.of(context)
+                        .pushReplacementNamed(RouteManager.cryEnding);
                   },
                   child: const Text('Sit down and cry with your wife'),
                 ),
                 ElevatedButton(
                   onPressed: () {
-                    Navigator.of(context).pushNamed(RouteManager.arrival);
+                    Navigator.of(context)
+                        .pushReplacementNamed(RouteManager.arrival);
                   },
                   child: const Text('Go to Bob the Burly mans home'),
                 ),

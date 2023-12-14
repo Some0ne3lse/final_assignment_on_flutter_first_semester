@@ -11,8 +11,7 @@ class StartScreen extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.black,
         foregroundColor: Colors.white,
-        title: const Text(
-          'Getting the Cake Back!'),
+        title: const Text('Getting the Cake Back!'),
       ),
       body: Column(
         children: [
@@ -27,7 +26,8 @@ class StartScreen extends StatelessWidget {
           ),
           ElevatedButton(
             onPressed: () {
-              Navigator.of(context).pushNamed(RouteManager.introduction);
+              Navigator.of(context)
+                  .pushReplacementNamed(RouteManager.introduction);
             },
             child: const Text('Start The Hunt'),
           ),

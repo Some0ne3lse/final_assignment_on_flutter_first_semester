@@ -33,7 +33,6 @@ class TwoDoorsOneOption extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 69, 74, 73),
       appBar: AppBar(
-        automaticallyImplyLeading: false,
         backgroundColor: Colors.black,
         foregroundColor: Colors.white,
         title: Text(title),
@@ -73,13 +72,17 @@ class TwoDoorsOneOption extends StatelessWidget {
                     child: Text(optionText),
                   ),
                   ElevatedButton(
-                    onPressed: () =>
-                        Navigator.of(context).pushNamed(firstDoorAction),
+                    onPressed: () {
+                      Navigator.of(context).pushNamedAndRemoveUntil(
+                          firstDoorAction, (Route<dynamic> route) => false);
+                    },
                     child: Text(firstDoorText),
                   ),
                   ElevatedButton(
-                    onPressed: () =>
-                        Navigator.of(context).pushNamed(secondDoorAction),
+                    onPressed: () {
+                      Navigator.of(context).pushNamedAndRemoveUntil(
+                          secondDoorAction, (Route<dynamic> route) => false);
+                    },
                     child: Text(secondDoorText),
                   ),
                   const SizedBox(
@@ -127,8 +130,9 @@ class TwoDoorsOneOption extends StatelessWidget {
                       ),
                       TextButton(
                         onPressed: () {
-                          Navigator.of(context)
-                              .pushNamed(RouteManager.startScreen);
+                          Navigator.of(context).pushNamedAndRemoveUntil(
+                              RouteManager.startScreen,
+                              (Route<dynamic> route) => false);
                           pickedUpItems.clear();
                           dogTamed = false;
                           hiddenDoorFound = false;

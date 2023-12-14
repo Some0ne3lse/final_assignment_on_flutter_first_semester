@@ -48,7 +48,8 @@ class Arrival extends StatelessWidget {
                   ),
                   ElevatedButton(
                     onPressed: () {
-                      Navigator.of(context).pushNamed(RouteManager.entrance);
+                      Navigator.of(context)
+                          .pushReplacementNamed(RouteManager.entrance);
                     },
                     child: const Text('Go inside'),
                   ),

@@ -52,6 +52,17 @@ class Kennel extends StatelessWidget {
                         ),
                       ),
                     ),
+                    const SizedBox(
+                      height: 50,
+                    ),
+                    ElevatedButton(
+                      onPressed: () {
+                        Navigator.of(context).pushNamedAndRemoveUntil(
+                            RouteManager.garden,
+                            (Route<dynamic> route) => false);
+                      },
+                      child: const Text('Go back to the Garden'),
+                    ),
                   ],
                 ),
               ),

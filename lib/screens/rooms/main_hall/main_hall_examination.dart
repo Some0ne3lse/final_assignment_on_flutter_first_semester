@@ -60,7 +60,9 @@ class MainHallExamination extends StatelessWidget {
                   ),
                   ElevatedButton(
                     onPressed: () {
-                      Navigator.of(context).pushNamed(RouteManager.mainHall);
+                      Navigator.of(context).pushNamedAndRemoveUntil(
+                          RouteManager.mainHall,
+                          (Route<dynamic> route) => false);
                     },
                     child: const Text('Leave the letter'),
                   ),

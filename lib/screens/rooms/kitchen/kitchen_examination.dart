@@ -53,7 +53,9 @@ class KitchenExamination extends StatelessWidget {
           ),
           ElevatedButton(
             onPressed: () {
-              Navigator.of(context).pushNamed(RouteManager.kitchen);
+              Navigator.of(context).pushNamedAndRemoveUntil(
+                  RouteManager.kitchen, (Route<dynamic> route) => false);
+              //Navigator.of(context).pushReplacementNamed(RouteManager.kitchen);
             },
             child: const Text('Leave the Doughnuts'),
           ),
@@ -120,8 +122,11 @@ class KitchenExamination extends StatelessWidget {
                         'You insert a few pills into one of the doughnuts, and add it to your inventory.'),
                     actions: [
                       TextButton(
-                          onPressed: () => Navigator.of(context)
-                              .pushNamed(RouteManager.kitchen),
+                          onPressed: () {
+                            Navigator.of(context).pushNamedAndRemoveUntil(
+                                RouteManager.kitchen,
+                                (Route<dynamic> route) => false);
+                          },
                           child: const Text('Okay!'))
                     ],
                   ),
@@ -131,7 +136,8 @@ class KitchenExamination extends StatelessWidget {
             ),
             ElevatedButton(
               onPressed: () {
-                Navigator.of(context).pushNamed(RouteManager.kitchen);
+                Navigator.of(context).pushNamedAndRemoveUntil(
+                    RouteManager.kitchen, (Route<dynamic> route) => false);
               },
               child: const Text('Leave the Doughnuts'),
             ),

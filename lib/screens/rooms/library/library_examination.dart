@@ -60,7 +60,9 @@ class LibraryExamination extends StatelessWidget {
                   ),
                   ElevatedButton(
                     onPressed: () {
-                      Navigator.of(context).pushNamed(RouteManager.library);
+                      Navigator.of(context).pushNamedAndRemoveUntil(
+                          RouteManager.library,
+                          (Route<dynamic> route) => false);
                     },
                     child: const Text('Leave the note'),
                   ),

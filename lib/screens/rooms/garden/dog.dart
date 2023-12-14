@@ -56,7 +56,8 @@ class Dog extends StatelessWidget {
           ),
           ElevatedButton(
             onPressed: () {
-              Navigator.of(context).pushNamed(RouteManager.garden);
+              Navigator.of(context).pushNamedAndRemoveUntil(
+                  RouteManager.garden, (Route<dynamic> route) => false);
             },
             child: const Text('Leave the Dog'),
           ),
@@ -122,7 +123,9 @@ class Dog extends StatelessWidget {
                     actions: [
                       TextButton(
                         onPressed: () {
-                          Navigator.of(context).pushNamed(RouteManager.garden);
+                          Navigator.of(context).pushNamedAndRemoveUntil(
+                              RouteManager.garden,
+                              (Route<dynamic> route) => false);
                         },
                         child: const Text('Okay!'),
                       ),
@@ -134,7 +137,8 @@ class Dog extends StatelessWidget {
             ),
             ElevatedButton(
               onPressed: () {
-                Navigator.of(context).pushNamed(RouteManager.garden);
+                Navigator.of(context).pushNamedAndRemoveUntil(
+                    RouteManager.garden, (Route<dynamic> route) => false);
               },
               child: const Text('Leave the Dog'),
             ),

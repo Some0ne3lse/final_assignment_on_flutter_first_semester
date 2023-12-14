@@ -60,7 +60,8 @@ class KennelExamination extends StatelessWidget {
                   ),
                   ElevatedButton(
                     onPressed: () {
-                      Navigator.of(context).pushNamed(RouteManager.kennel);
+                      Navigator.of(context).pushNamedAndRemoveUntil(
+                          RouteManager.kennel, (Route<dynamic> route) => false);
                     },
                     child: const Text('Leave the homework'),
                   ),

@@ -34,19 +34,23 @@ class DogAttack extends StatelessWidget {
           ),
           ElevatedButton(
             onPressed: () {
-              Navigator.of(context).pushNamed(RouteManager.hall);
+              Navigator.of(context).pushNamedAndRemoveUntil(
+                  RouteManager.hall, (Route<dynamic> route) => false);
             },
             child: const Text('Run back inside'),
           ),
           ElevatedButton(
             onPressed: () {
-              Navigator.of(context).pushNamed(RouteManager.petDogEnding);
+              Navigator.of(context).pushNamedAndRemoveUntil(
+                  RouteManager.petDogEnding, (Route<dynamic> route) => false);
             },
             child: const Text('Try to pet the dog'),
           ),
           ElevatedButton(
             onPressed: () {
-              Navigator.of(context).pushNamed(RouteManager.giveUpOnLifeNoAxe);
+              Navigator.of(context).pushNamedAndRemoveUntil(
+                  RouteManager.giveUpOnLifeNoAxe,
+                  (Route<dynamic> route) => false);
             },
             child: const Text('Give up on life'),
           ),
@@ -82,19 +86,22 @@ class DogAttack extends StatelessWidget {
             ),
             ElevatedButton(
               onPressed: () {
-                Navigator.of(context).pushNamed(RouteManager.hall);
+                Navigator.of(context).pushNamedAndRemoveUntil(
+                    RouteManager.hall, (Route<dynamic> route) => false);
               },
               child: const Text('Run back inside'),
             ),
             ElevatedButton(
               onPressed: () {
-                Navigator.of(context).pushNamed(RouteManager.petDogEnding);
+                Navigator.of(context).pushNamedAndRemoveUntil(
+                    RouteManager.petDogEnding, (Route<dynamic> route) => false);
               },
               child: const Text('Try to pet the dog'),
             ),
             ElevatedButton(
               onPressed: () {
-                Navigator.of(context).pushNamed(RouteManager.monster);
+                Navigator.of(context).pushNamedAndRemoveUntil(
+                    RouteManager.monster, (Route<dynamic> route) => false);
               },
               child: const Text('Try to kill the dog with axe'),
             ),
@@ -111,7 +118,9 @@ class DogAttack extends StatelessWidget {
                     actions: [
                       TextButton(
                         onPressed: () {
-                          Navigator.of(context).pushNamed(RouteManager.garden);
+                          Navigator.of(context).pushNamedAndRemoveUntil(
+                              RouteManager.garden,
+                              (Route<dynamic> route) => false);
                         },
                         child: const Text('Okay!'),
                       ),
@@ -123,7 +132,8 @@ class DogAttack extends StatelessWidget {
             ),
             ElevatedButton(
               onPressed: () {
-                Navigator.of(context).pushNamed(RouteManager.giveUpOnLife);
+                Navigator.of(context).pushNamedAndRemoveUntil(
+                    RouteManager.giveUpOnLife, (Route<dynamic> route) => false);
               },
               child: const Text('Give up on life'),
             ),
@@ -156,13 +166,15 @@ class DogAttack extends StatelessWidget {
             ),
             ElevatedButton(
               onPressed: () {
-                Navigator.of(context).pushNamed(RouteManager.hall);
+                Navigator.of(context).pushNamedAndRemoveUntil(
+                    RouteManager.hall, (Route<dynamic> route) => false);
               },
               child: const Text('Run back inside'),
             ),
             ElevatedButton(
               onPressed: () {
-                Navigator.of(context).pushNamed(RouteManager.petDogEnding);
+                Navigator.of(context).pushNamedAndRemoveUntil(
+                    RouteManager.petDogEnding, (Route<dynamic> route) => false);
               },
               child: const Text('Try to pet the dog'),
             ),
@@ -179,7 +191,9 @@ class DogAttack extends StatelessWidget {
                     actions: [
                       TextButton(
                         onPressed: () {
-                          Navigator.of(context).pushNamed(RouteManager.garden);
+                          Navigator.of(context).pushNamedAndRemoveUntil(
+                              RouteManager.garden,
+                              (Route<dynamic> route) => false);
                         },
                         child: const Text('Okay!'),
                       ),
@@ -191,7 +205,9 @@ class DogAttack extends StatelessWidget {
             ),
             ElevatedButton(
               onPressed: () {
-                Navigator.of(context).pushNamed(RouteManager.giveUpOnLifeNoAxe);
+                Navigator.of(context).pushNamedAndRemoveUntil(
+                    RouteManager.giveUpOnLifeNoAxe,
+                    (Route<dynamic> route) => false);
               },
               child: const Text('Give up on life'),
             ),
@@ -224,25 +240,29 @@ class DogAttack extends StatelessWidget {
             ),
             ElevatedButton(
               onPressed: () {
-                Navigator.of(context).pushNamed(RouteManager.hall);
+                Navigator.of(context).pushNamedAndRemoveUntil(
+                    RouteManager.hall, (Route<dynamic> route) => false);
               },
               child: const Text('Run back inside'),
             ),
             ElevatedButton(
               onPressed: () {
-                Navigator.of(context).pushNamed(RouteManager.petDogEnding);
+                Navigator.of(context).pushNamedAndRemoveUntil(
+                    RouteManager.petDogEnding, (Route<dynamic> route) => false);
               },
               child: const Text('Try to pet the dog'),
             ),
             ElevatedButton(
               onPressed: () {
-                Navigator.of(context).pushNamed(RouteManager.monster);
+                Navigator.of(context).pushNamedAndRemoveUntil(
+                    RouteManager.monster, (Route<dynamic> route) => false);
               },
               child: const Text('Try to kill the dog with axe'),
             ),
             ElevatedButton(
               onPressed: () {
-                Navigator.of(context).pushNamed(RouteManager.giveUpOnLife);
+                Navigator.of(context).pushNamedAndRemoveUntil(
+                    RouteManager.giveUpOnLife, (Route<dynamic> route) => false);
               },
               child: const Text('Give up on life'),
             ),

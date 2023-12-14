@@ -37,7 +37,6 @@ class ThreeDoorsOneOption extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 69, 74, 73),
       appBar: AppBar(
-        automaticallyImplyLeading: false,
         backgroundColor: Colors.black,
         foregroundColor: Colors.white,
         title: Text(title),
@@ -79,19 +78,22 @@ class ThreeDoorsOneOption extends StatelessWidget {
                   ),
                   ElevatedButton(
                     onPressed: () {
-                      Navigator.of(context).pushNamed(firstDoorAction);
+                      Navigator.of(context).pushNamedAndRemoveUntil(
+                          firstDoorAction, (Route<dynamic> route) => false);
                     },
                     child: Text(firstDoorText),
                   ),
                   ElevatedButton(
                     onPressed: () {
-                      Navigator.of(context).pushNamed(secondDoorAction);
+                      Navigator.of(context).pushNamedAndRemoveUntil(
+                          secondDoorAction, (Route<dynamic> route) => false);
                     },
                     child: Text(secondDoorText),
                   ),
                   ElevatedButton(
                     onPressed: () {
-                      Navigator.of(context).pushNamed(thirdDoorAction);
+                      Navigator.of(context).pushNamedAndRemoveUntil(
+                          thirdDoorAction, (Route<dynamic> route) => false);
                     },
                     child: Text(thirdDoorText),
                   ),
@@ -140,8 +142,9 @@ class ThreeDoorsOneOption extends StatelessWidget {
                       ),
                       TextButton(
                         onPressed: () {
-                          Navigator.of(context)
-                              .pushNamed(RouteManager.startScreen);
+                          Navigator.of(context).pushNamedAndRemoveUntil(
+                              RouteManager.startScreen,
+                              (Route<dynamic> route) => false);
                           pickedUpItems.clear();
                           dogTamed = false;
                           hiddenDoorFound = false;

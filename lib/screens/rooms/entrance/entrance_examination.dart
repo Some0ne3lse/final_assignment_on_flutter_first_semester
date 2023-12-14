@@ -64,7 +64,8 @@ class EntranceExamination extends StatelessWidget {
           ),
           ElevatedButton(
             onPressed: () {
-              Navigator.of(context).pushNamed(RouteManager.entrance);
+              Navigator.of(context).pushNamedAndRemoveUntil(
+                  RouteManager.entrance, (Route<dynamic> route) => false);
             },
             child: const Text('Leave the shoes'),
           ),

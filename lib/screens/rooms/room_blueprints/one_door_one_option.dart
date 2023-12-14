@@ -29,7 +29,6 @@ class OneDoorOneOption extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 69, 74, 73),
       appBar: AppBar(
-        automaticallyImplyLeading: false,
         backgroundColor: Colors.black,
         foregroundColor: Colors.white,
         title: Text(title),
@@ -64,13 +63,16 @@ class OneDoorOneOption extends StatelessWidget {
                     height: 50,
                   ),
                   ElevatedButton(
-                    onPressed: () =>
-                        Navigator.of(context).pushNamed(optionAction),
+                    onPressed: () {
+                      Navigator.of(context).pushNamed(optionAction);
+                    },
                     child: Text(optionText),
                   ),
                   ElevatedButton(
-                    onPressed: () =>
-                        Navigator.of(context).pushNamed(firstDoorAction),
+                    onPressed: () {
+                      Navigator.of(context).pushNamedAndRemoveUntil(
+                          firstDoorAction, (Route<dynamic> route) => false);
+                    },
                     child: Text(firstDoorText),
                   ),
                   const SizedBox(
@@ -118,8 +120,9 @@ class OneDoorOneOption extends StatelessWidget {
                       ),
                       TextButton(
                         onPressed: () {
-                          Navigator.of(context)
-                              .pushNamed(RouteManager.startScreen);
+                          Navigator.of(context).pushNamedAndRemoveUntil(
+                              RouteManager.startScreen,
+                              (Route<dynamic> route) => false);
                           pickedUpItems.clear();
                           dogTamed = false;
                           hiddenDoorFound = false;

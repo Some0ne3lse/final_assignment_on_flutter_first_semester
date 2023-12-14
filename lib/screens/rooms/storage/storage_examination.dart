@@ -58,7 +58,8 @@ class StorageExamination extends StatelessWidget {
           ),
           ElevatedButton(
             onPressed: () {
-              Navigator.of(context).pushNamed(RouteManager.storage);
+              Navigator.of(context).pushNamedAndRemoveUntil(
+                  RouteManager.storage, (Route<dynamic> route) => false);
             },
             child: const Text('Leave the axe and saw'),
           ),
@@ -119,7 +120,8 @@ class StorageExamination extends StatelessWidget {
             ),
             ElevatedButton(
               onPressed: () {
-                Navigator.of(context).pushNamed(RouteManager.storage);
+                Navigator.of(context).pushNamedAndRemoveUntil(
+                    RouteManager.storage, (Route<dynamic> route) => false);
               },
               child: const Text('Leave the axe'),
             ),
@@ -165,7 +167,8 @@ class StorageExamination extends StatelessWidget {
             ),
             ElevatedButton(
               onPressed: () {
-                Navigator.of(context).pushNamed(RouteManager.storage);
+                Navigator.of(context).pushNamedAndRemoveUntil(
+                    RouteManager.storage, (Route<dynamic> route) => false);
               },
               child: const Text('Leave the saw'),
             ),

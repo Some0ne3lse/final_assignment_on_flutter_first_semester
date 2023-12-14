@@ -45,7 +45,9 @@ class GiveUpOnLife extends StatelessWidget {
                   ),
                   ElevatedButton(
                     onPressed: () {
-                      Navigator.of(context).pushNamed(RouteManager.startScreen);
+                      Navigator.of(context).pushNamedAndRemoveUntil(
+                          RouteManager.startScreen,
+                          (Route<dynamic> route) => false);
                       pickedUpItems.clear();
                       hiddenDoorFound = false;
                     },
