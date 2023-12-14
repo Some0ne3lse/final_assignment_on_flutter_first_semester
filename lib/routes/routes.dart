@@ -8,12 +8,14 @@ import 'package:final_assignment_on_flutter/screens/good_endings/give_up_on_life
 import 'package:final_assignment_on_flutter/screens/introduction.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/basement/basement.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/basement/basement_examination.dart';
+import 'package:final_assignment_on_flutter/screens/rooms/bedroom/bedroom.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/entrance/entrance.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/entrance/entrance_examination.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/garden/dog.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/garden/garden.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/hall/hall.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/hidden_room/hidden_room.dart';
+import 'package:final_assignment_on_flutter/screens/rooms/hidden_room/hidden_room_examination.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/kennel/kennel.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/kennel/kennel_examination.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/kitchen/kitchen.dart';
@@ -54,9 +56,12 @@ class RouteManager {
   static const String basement = '/basement';
   static const String basementExamination = '/basementExamination';
   static const String hiddenRoom = '/hiddenRoom';
+  static const String hiddenRoomExamination = '/hiddenRoomExamination';
   static const String dog = '/dog';
   static const String kennel = '/kennel';
   static const String kennelExamination = '/kennelExamination';
+  static const String bedroom = '/bedroom';
+  static const String giantSafe = '/giantSafe';
 
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
@@ -164,6 +169,10 @@ class RouteManager {
         return MaterialPageRoute(
           builder: (context) => const HiddenRoom(),
         );
+      case hiddenRoomExamination:
+        return MaterialPageRoute(
+          builder: (context) => const HiddenRoomExamination(),
+        );
       case kennel:
         return MaterialPageRoute(
           builder: (context) => const Kennel(),
@@ -171,6 +180,14 @@ class RouteManager {
       case kennelExamination:
         return MaterialPageRoute(
           builder: (context) => const KennelExamination(),
+        );
+      case bedroom:
+        return MaterialPageRoute(
+          builder: (context) => const Bedroom(),
+        );
+      case giantSafe:
+        return MaterialPageRoute(
+          builder: (context) => const Bedroom(),
         );
       default:
         throw const FormatException('Route not found!');

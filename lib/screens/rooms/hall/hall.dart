@@ -1,5 +1,5 @@
 import 'package:final_assignment_on_flutter/routes/routes.dart';
-import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/three_doors.dart';
+import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/three_doors_no_option.dart';
 import 'package:final_assignment_on_flutter/text_files/rooms/room_description.dart';
 import 'package:flutter/material.dart';
 

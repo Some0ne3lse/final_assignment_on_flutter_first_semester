@@ -76,3 +76,14 @@ String basementDescriptionTwo() {
   return ('''The basement is well lit. You see the door leading back upstairs and the door to the hidden room.
 There is a bookshelf, and the room is very clean.''');
 }
+
+String hiddenRoomDescription() {
+  return ('''The room is filled with different kinds of treasure.
+But you're not here for gold. You're here for cake.''');
+}
+
+String livingRoomDescription() {
+  return ('''You look around the living room.
+There is a killer sound system, and a great TV, but nothing else of interest...
+Except for the big door in the middle of one of the walls.''');
+}

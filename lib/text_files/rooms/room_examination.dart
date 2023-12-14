@@ -35,6 +35,13 @@ After some time you find a letter.''');
 
 String kennelExamination() {
   return ('''You look around the Kennel.
-In the corner you find a small notebook labeled Homework.
-''');
+In the corner you find a small notebook labeled Homework.''');
+}
+
+String basementExamination() {
+  return ('''You look around and after some time you find something that looks like a hidden mechanism.''');
+}
+
+String hiddenRoomExamination() {
+  return ('''You see all the riches you can imagine, and one huge gold key.''');
 }
