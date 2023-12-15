@@ -36,3 +36,17 @@ Suddenly a portal opens from the ground. Satan's hands reach out for you and dra
   
 The End''');
 }
+
+String doorInTheWay() {
+  return ('''You try to run away, but unfortunately you run into the half open door.
+You fall to the ground, and the last thing you see is a big burly man jumping on your face.
+  
+The End''');
+}
+
+String giveUpOnLifeBob() {
+  return ('''You can't take it anymore. All these challenges just for cake.
+As Bob grabs your neck with his hands, life ebbs away from you.
+
+The End''');
+}

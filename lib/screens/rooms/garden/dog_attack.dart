@@ -1,7 +1,7 @@
 import 'package:final_assignment_on_flutter/lists/items.dart';
 import 'package:final_assignment_on_flutter/routes/routes.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/hall/hall.dart';
-import 'package:final_assignment_on_flutter/text_files/drama_actions_text/dog_attack.dart';
+import 'package:final_assignment_on_flutter/text_files/drama_actions_text/attack_text.dart';
 import 'package:flutter/material.dart';
 
 class DogAttack extends StatelessWidget {

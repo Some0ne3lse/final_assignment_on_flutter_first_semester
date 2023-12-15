@@ -1,3 +1,4 @@
+import 'package:final_assignment_on_flutter/buttons/try_again_button.dart';
 import 'package:final_assignment_on_flutter/lists/items.dart';
 import 'package:final_assignment_on_flutter/routes/routes.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/basement/basement_examination.dart';
@@ -43,16 +44,7 @@ class GiveUpOnLife extends StatelessWidget {
                       ),
                     ),
                   ),
-                  ElevatedButton(
-                    onPressed: () {
-                      Navigator.of(context).pushNamedAndRemoveUntil(
-                          RouteManager.startScreen,
-                          (Route<dynamic> route) => false);
-                      pickedUpItems.clear();
-                      hiddenDoorFound = false;
-                    },
-                    child: const Text('Try Again'),
-                  ),
+                  const TryAgainButton(),
                 ],
               ),
             )

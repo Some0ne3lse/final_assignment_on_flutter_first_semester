@@ -1,12 +1,9 @@
 import 'package:final_assignment_on_flutter/buttons/try_again_button.dart';
-import 'package:final_assignment_on_flutter/lists/items.dart';
-import 'package:final_assignment_on_flutter/routes/routes.dart';
-import 'package:final_assignment_on_flutter/screens/rooms/basement/basement_examination.dart';
 import 'package:final_assignment_on_flutter/text_files/endings/bad_endings.dart';
 import 'package:flutter/material.dart';
 
-class PetDogEnding extends StatelessWidget {
-  const PetDogEnding({super.key});
+class GiveUpOnLifeBob extends StatelessWidget {
+  const GiveUpOnLifeBob({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +13,7 @@ class PetDogEnding extends StatelessWidget {
         automaticallyImplyLeading: false,
         backgroundColor: Colors.black,
         foregroundColor: Colors.white,
-        title: const Text('At least you tried...'),
+        title: const Text('All for nothing...'),
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -28,7 +25,7 @@ class PetDogEnding extends StatelessWidget {
               child: Column(
                 children: [
                   Image.asset(
-                    'assets/images/pet_dog_ending.png',
+                    'assets/images/everything_for_nothing.png',
                     width: 200,
                   ),
                   const SizedBox(
@@ -37,7 +34,7 @@ class PetDogEnding extends StatelessWidget {
                   SizedBox(
                     width: 300,
                     child: Text(
-                      petDog(),
+                      giveUpOnLifeBob(),
                       style: const TextStyle(
                         color: Colors.white,
                         fontSize: 15,

@@ -1,15 +1,18 @@
 import 'package:final_assignment_on_flutter/lists/items.dart';
 import 'package:final_assignment_on_flutter/screens/arrival.dart';
 import 'package:final_assignment_on_flutter/screens/bad_endings/cry_ending.dart';
+import 'package:final_assignment_on_flutter/screens/bad_endings/give_up_on_life_bob.dart';
 import 'package:final_assignment_on_flutter/screens/bad_endings/give_up_on_life_no_axe.dart';
 import 'package:final_assignment_on_flutter/screens/bad_endings/monster_ending.dart';
 import 'package:final_assignment_on_flutter/screens/bad_endings/pet_dog_ending.dart';
+import 'package:final_assignment_on_flutter/screens/bad_endings/run_away_from_bob.dart';
 import 'package:final_assignment_on_flutter/screens/good_endings/give_up_on_life.dart';
 import 'package:final_assignment_on_flutter/screens/introduction.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/basement/basement.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/basement/basement_examination.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/bedroom/bedroom.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/bedroom/bedroom_examination.dart';
+import 'package:final_assignment_on_flutter/screens/rooms/bedroom/bob_attack.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/bedroom/bob_examination.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/entrance/entrance.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/entrance/entrance_examination.dart';
@@ -41,6 +44,8 @@ class RouteManager {
   static const String giveUpOnLifeNoAxe = '/giveUpOnLifeNoAxe';
   static const String giveUpOnLife = '/giveUpOnLife';
   static const String monster = '/monster';
+  static const String runAwayFromBob = '/runAwayFromBob';
+  static const String giveUpOnLifeBob = '/giveUpOnLifeBob';
   static const String inventory = '/inventory';
   static const String entrance = '/entrance';
   static const String entranceExamination = '/entranceExamination';
@@ -66,6 +71,7 @@ class RouteManager {
   static const String bedroomExamination = '/bedroomExamination';
   static const String bobExamination = '/bobExamination';
   static const String giantSafe = '/giantSafe';
+  static const String bobAttack = '/bobAttack';
 
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
@@ -104,6 +110,14 @@ class RouteManager {
       case monster:
         return MaterialPageRoute(
           builder: (context) => const Monster(),
+        );
+      case runAwayFromBob:
+        return MaterialPageRoute(
+          builder: (context) => const RunAwayFromBob(),
+        );
+      case giveUpOnLifeBob:
+        return MaterialPageRoute(
+          builder: (context) => const GiveUpOnLifeBob(),
         );
       case entrance:
         return MaterialPageRoute(
@@ -196,6 +210,10 @@ class RouteManager {
       case bobExamination:
         return MaterialPageRoute(
           builder: (context) => const BobExamination(),
+        );
+      case bobAttack:
+        return MaterialPageRoute(
+          builder: (context) => const BobAttack(),
         );
       case giantSafe:
         return MaterialPageRoute(

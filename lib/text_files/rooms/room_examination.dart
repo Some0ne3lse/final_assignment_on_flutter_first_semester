@@ -49,3 +49,7 @@ String hiddenRoomExamination() {
 String bedroomExamination() {
   return ('''You look around the room without disturbing Bob. You find some sleeping pills.''');
 }
+
+String bobKilled() {
+  return ('''Bobs corpse lies on the bed. He seems strangely at peace.''');
+}

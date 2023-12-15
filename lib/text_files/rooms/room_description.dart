@@ -92,3 +92,12 @@ String bedroomDescription() {
   return ('''You come into the bedroom. Bob is sleeping in his bed, with his clothes on.
 It seems like something knocked him out.''');
 }
+
+String bedroomDescriptionDead() {
+  return ('''Bobs corpse lies on the bed, with his clothes on.
+He will eat no more cake.''');
+}
+
+String bobDescription() {
+  return ('''Bob is sleeping peacefully. Under his pillow you see a book.''');
+}
