@@ -21,7 +21,7 @@ class Bedroom extends StatelessWidget {
     return OneDoorTwoOptions(
         title: 'Bedroom',
         imgPath: image,
-        description: bedroomDescription(),
+        description: description,
         optionOneText: 'Examine the room',
         optionOneAction: RouteManager.bedroomExamination,
         optionTwoText: 'Examine Bob',

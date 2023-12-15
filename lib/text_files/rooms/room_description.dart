@@ -101,3 +101,7 @@ He will eat no more cake.''');
 String bobDescription() {
   return ('''Bob is sleeping peacefully. Under his pillow you see a book.''');
 }
+
+String giantSafe() {
+  return ('''The terminal of the safe turns on when you approach it.''');
+}

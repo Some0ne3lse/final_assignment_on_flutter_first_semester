@@ -18,6 +18,8 @@ import 'package:final_assignment_on_flutter/screens/rooms/entrance/entrance.dart
 import 'package:final_assignment_on_flutter/screens/rooms/entrance/entrance_examination.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/garden/dog.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/garden/garden.dart';
+import 'package:final_assignment_on_flutter/screens/rooms/giant_safe/giant_safe.dart';
+import 'package:final_assignment_on_flutter/screens/rooms/giant_safe/password_terminal.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/hall/hall.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/hidden_room/hidden_room.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/hidden_room/hidden_room_examination.dart';
@@ -71,6 +73,7 @@ class RouteManager {
   static const String bedroomExamination = '/bedroomExamination';
   static const String bobExamination = '/bobExamination';
   static const String giantSafe = '/giantSafe';
+  static const String passwordTerminal = '/passwordTerminal';
   static const String bobAttack = '/bobAttack';
 
   static Route<dynamic> generateRoute(RouteSettings settings) {
@@ -217,7 +220,11 @@ class RouteManager {
         );
       case giantSafe:
         return MaterialPageRoute(
-          builder: (context) => const Bedroom(),
+          builder: (context) => const GiantSafe(),
+        );
+      case passwordTerminal:
+        return MaterialPageRoute(
+          builder: (context) => PasswordTerminal(),
         );
       default:
         throw const FormatException('Route not found!');

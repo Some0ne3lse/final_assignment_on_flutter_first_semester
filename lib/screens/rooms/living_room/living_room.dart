@@ -10,7 +10,7 @@ class LivingRoom extends StatelessWidget {
   Widget build(BuildContext context) {
     return ThreeDoorsNoOption(
         title: 'Living Room',
-        imgPath: 'assets/images/giant_safe.png',
+        imgPath: 'assets/images/living_room.png',
         description: livingRoomDescription(),
         firstDoorText: 'Go to the Bedroom',
         firstDoorAction: RouteManager.bedroom,

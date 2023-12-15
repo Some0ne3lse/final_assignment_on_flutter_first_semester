@@ -3,6 +3,8 @@ import 'package:final_assignment_on_flutter/routes/routes.dart';
 import 'package:final_assignment_on_flutter/text_files/rooms/room_examination.dart';
 import 'package:flutter/material.dart';
 
+bool sawTaken = false;
+
 class StorageExamination extends StatelessWidget {
   const StorageExamination({super.key});
 
@@ -33,6 +35,7 @@ class StorageExamination extends StatelessWidget {
           ),
           ElevatedButton(
             onPressed: () {
+              sawTaken = true;
               pickedUpItems.add(
                 Item(
                   title: 'Saw',
@@ -154,6 +157,7 @@ class StorageExamination extends StatelessWidget {
             ),
             ElevatedButton(
               onPressed: () {
+                sawTaken = true;
                 pickedUpItems.add(
                   Item(
                     title: 'Saw',

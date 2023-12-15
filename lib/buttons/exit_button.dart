@@ -2,7 +2,10 @@ import 'package:final_assignment_on_flutter/lists/items.dart';
 import 'package:final_assignment_on_flutter/routes/routes.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/basement/basement_examination.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/bedroom/bob_examination.dart';
+import 'package:final_assignment_on_flutter/screens/rooms/bedroom/dead_bob.dart';
+import 'package:final_assignment_on_flutter/screens/rooms/entrance/entrance_examination.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/hall/hall.dart';
+import 'package:final_assignment_on_flutter/screens/rooms/storage/storage_examination.dart';
 import 'package:flutter/material.dart';
 
 class ExitButton extends StatelessWidget {
@@ -34,6 +37,10 @@ class ExitButton extends StatelessWidget {
                   dogSleeping = false;
                   bobDead = false;
                   bobSleeping = true;
+                  shoesTaken = false;
+                  bookTaken = false;
+                  handTaken = false;
+                  sawTaken = false;
                 },
                 child: const Text('YES!'),
               ),

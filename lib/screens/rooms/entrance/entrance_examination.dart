@@ -3,6 +3,8 @@ import 'package:final_assignment_on_flutter/routes/routes.dart';
 import 'package:final_assignment_on_flutter/text_files/rooms/room_examination.dart';
 import 'package:flutter/material.dart';
 
+bool shoesTaken = false;
+
 class EntranceExamination extends StatelessWidget {
   const EntranceExamination({super.key});
 
@@ -33,6 +35,7 @@ class EntranceExamination extends StatelessWidget {
           ),
           ElevatedButton(
             onPressed: () {
+              shoesTaken = true;
               pickedUpItems.add(
                 Item(
                   title: 'Shoes',
@@ -72,8 +75,7 @@ class EntranceExamination extends StatelessWidget {
         ],
       ),
     );
-    String itemToCheck = 'Shoes';
-    if (pickedUpItems.any((item) => item.title == itemToCheck)) {
+    if (shoesTaken == true) {
       mainContent = const Center(
         child: SizedBox(
           width: 300,
