@@ -7,6 +7,7 @@ import 'package:final_assignment_on_flutter/screens/bad_endings/monster_ending.d
 import 'package:final_assignment_on_flutter/screens/bad_endings/pet_dog_ending.dart';
 import 'package:final_assignment_on_flutter/screens/bad_endings/run_away_from_bob.dart';
 import 'package:final_assignment_on_flutter/screens/good_endings/give_up_on_life.dart';
+import 'package:final_assignment_on_flutter/screens/good_endings/got_the_cake.dart';
 import 'package:final_assignment_on_flutter/screens/introduction.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/basement/basement.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/basement/basement_examination.dart';
@@ -48,6 +49,7 @@ class RouteManager {
   static const String monster = '/monster';
   static const String runAwayFromBob = '/runAwayFromBob';
   static const String giveUpOnLifeBob = '/giveUpOnLifeBob';
+  static const String gotTheCake = '/gotTheCake';
   static const String inventory = '/inventory';
   static const String entrance = '/entrance';
   static const String entranceExamination = '/entranceExamination';
@@ -121,6 +123,10 @@ class RouteManager {
       case giveUpOnLifeBob:
         return MaterialPageRoute(
           builder: (context) => const GiveUpOnLifeBob(),
+        );
+      case gotTheCake:
+        return MaterialPageRoute(
+          builder: (context) => const GotTheCake(),
         );
       case entrance:
         return MaterialPageRoute(
@@ -226,6 +232,7 @@ class RouteManager {
         return MaterialPageRoute(
           builder: (context) => PasswordTerminal(),
         );
+
       default:
         throw const FormatException('Route not found!');
     }

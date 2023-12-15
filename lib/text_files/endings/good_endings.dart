@@ -7,3 +7,12 @@ Now join us."
   
 The End''');
 }
+
+String gettingTheCake() {
+  return ('''The door to the giant safe opens. And there it is! In all it's glory.
+Your cake. 
+You take it and go home. When you get there you make up with your wife.
+You eat the cake together, and life is good.
+  
+The End''');
+}

@@ -1,3 +1,4 @@
+import 'package:final_assignment_on_flutter/routes/routes.dart';
 import 'package:flutter/material.dart';
 
 class PasswordTerminal extends StatefulWidget {
@@ -15,6 +16,8 @@ class _PasswordTerminalState extends State<PasswordTerminal> {
     passWordController.dispose();
     super.dispose();
   }
+
+  String password = 'cakeisawesomeyouknow';
 
   @override
   Widget build(BuildContext context) {
@@ -34,7 +37,7 @@ class _PasswordTerminalState extends State<PasswordTerminal> {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              TextField(
+              TextFormField(
                 controller: passWordController,
                 textAlign: TextAlign.center,
                 cursorColor: const Color.fromARGB(255, 0, 0, 255),
@@ -47,6 +50,23 @@ class _PasswordTerminalState extends State<PasswordTerminal> {
               ),
               const SizedBox(
                 height: 20,
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  String enteredText = passWordController.text.trim();
+                  if (enteredText == 'cakeisawesomeyouknow') {
+                    Navigator.of(context).pushNamedAndRemoveUntil(
+                        RouteManager.gotTheCake,
+                        (Route<dynamic> route) => false);
+                  } else {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      const SnackBar(
+                        content: Text('Please enter correct password'),
+                      ),
+                    );
+                  }
+                },
+                child: const Text('Submit'),
               ),
               TextButton(
                 onPressed: () {

@@ -1,10 +1,9 @@
 import 'package:final_assignment_on_flutter/buttons/try_again_button.dart';
-import 'package:final_assignment_on_flutter/routes/routes.dart';
-import 'package:final_assignment_on_flutter/text_files/endings/bad_endings.dart';
+import 'package:final_assignment_on_flutter/text_files/endings/good_endings.dart';
 import 'package:flutter/material.dart';
 
-class CryEnding extends StatelessWidget {
-  const CryEnding({super.key});
+class GotTheCake extends StatelessWidget {
+  const GotTheCake({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +12,7 @@ class CryEnding extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.black,
         foregroundColor: Colors.white,
-        title: const Text('Buhuuu'),
+        title: const Text('You got it!'),
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -25,7 +24,7 @@ class CryEnding extends StatelessWidget {
               child: Column(
                 children: [
                   Image.asset(
-                    'assets/images/sitAndCry.png',
+                    'assets/images/the_cake.png',
                     width: 200,
                   ),
                   const SizedBox(
@@ -34,7 +33,7 @@ class CryEnding extends StatelessWidget {
                   SizedBox(
                     width: 300,
                     child: Text(
-                      cryBaby(),
+                      gettingTheCake(),
                       style: const TextStyle(
                         color: Colors.white,
                         fontSize: 15,
