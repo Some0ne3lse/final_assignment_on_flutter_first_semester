@@ -1,6 +1,7 @@
 import 'package:final_assignment_on_flutter/lists/items.dart';
 import 'package:final_assignment_on_flutter/routes/routes.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/basement/basement_examination.dart';
+import 'package:final_assignment_on_flutter/screens/rooms/bedroom/bedroom_examination.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/bedroom/bob_examination.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/bedroom/dead_bob.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/entrance/entrance_examination.dart';
@@ -27,6 +28,7 @@ class TryAgainButton extends StatelessWidget {
         handTaken = false;
         bookTaken = false;
         sawTaken = false;
+        pillsTaken = false;
       },
       child: const Text('Try Again'),
     );

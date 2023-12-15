@@ -3,6 +3,8 @@ import 'package:final_assignment_on_flutter/routes/routes.dart';
 import 'package:final_assignment_on_flutter/text_files/rooms/room_examination.dart';
 import 'package:flutter/material.dart';
 
+bool pillsTaken = false;
+
 class BedroomExamination extends StatelessWidget {
   const BedroomExamination({super.key});
 
@@ -46,6 +48,7 @@ class BedroomExamination extends StatelessWidget {
           ),
           ElevatedButton(
             onPressed: () {
+              pillsTaken = true;
               showDialog(
                 context: context,
                 builder: (context) => AlertDialog(
@@ -72,8 +75,7 @@ class BedroomExamination extends StatelessWidget {
         ],
       ),
     );
-    String itemToCheck = 'Sleeping-Pills';
-    if (pickedUpItems.any((item) => item.title == itemToCheck)) {
+    if (pillsTaken == true) {
       mainContent = const Center(
         child: SizedBox(
           width: 300,
