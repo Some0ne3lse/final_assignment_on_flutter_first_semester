@@ -9,6 +9,8 @@ import 'package:final_assignment_on_flutter/screens/introduction.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/basement/basement.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/basement/basement_examination.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/bedroom/bedroom.dart';
+import 'package:final_assignment_on_flutter/screens/rooms/bedroom/bedroom_examination.dart';
+import 'package:final_assignment_on_flutter/screens/rooms/bedroom/bob_examination.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/entrance/entrance.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/entrance/entrance_examination.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/garden/dog.dart';
@@ -61,6 +63,8 @@ class RouteManager {
   static const String kennel = '/kennel';
   static const String kennelExamination = '/kennelExamination';
   static const String bedroom = '/bedroom';
+  static const String bedroomExamination = '/bedroomExamination';
+  static const String bobExamination = '/bobExamination';
   static const String giantSafe = '/giantSafe';
 
   static Route<dynamic> generateRoute(RouteSettings settings) {
@@ -184,6 +188,14 @@ class RouteManager {
       case bedroom:
         return MaterialPageRoute(
           builder: (context) => const Bedroom(),
+        );
+      case bedroomExamination:
+        return MaterialPageRoute(
+          builder: (context) => const BedroomExamination(),
+        );
+      case bobExamination:
+        return MaterialPageRoute(
+          builder: (context) => const BobExamination(),
         );
       case giantSafe:
         return MaterialPageRoute(

@@ -45,3 +45,7 @@ String basementExamination() {
 String hiddenRoomExamination() {
   return ('''You see all the riches you can imagine, and one huge gold key.''');
 }
+
+String bedroomExamination() {
+  return ('''You look around the room without disturbing Bob. You find some sleeping pills.''');
+}

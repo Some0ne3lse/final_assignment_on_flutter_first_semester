@@ -87,3 +87,8 @@ String livingRoomDescription() {
 There is a killer sound system, and a great TV, but nothing else of interest...
 Except for the big door in the middle of one of the walls.''');
 }
+
+String bedroomDescription() {
+  return ('''You come into the bedroom. Bob is sleeping in his bed, with his clothes on.
+It seems like something knocked him out.''');
+}

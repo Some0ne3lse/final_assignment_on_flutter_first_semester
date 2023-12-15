@@ -1,5 +1,5 @@
 import 'package:final_assignment_on_flutter/routes/routes.dart';
-import 'package:final_assignment_on_flutter/screens/drama_actions/dog_attack.dart';
+import 'package:final_assignment_on_flutter/screens/rooms/garden/dog_attack.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/hall/hall.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/two_doors_one_option.dart';
 import 'package:final_assignment_on_flutter/text_files/rooms/room_description.dart';
