@@ -35,6 +35,7 @@ class BedroomExamination extends StatelessWidget {
           ),
           ElevatedButton(
             onPressed: () {
+              pillsTaken = true;
               pickedUpItems.add(
                 Item(
                   title: 'Sleeping-Pills',
@@ -48,7 +49,6 @@ class BedroomExamination extends StatelessWidget {
           ),
           ElevatedButton(
             onPressed: () {
-              pillsTaken = true;
               showDialog(
                 context: context,
                 builder: (context) => AlertDialog(
