@@ -13,8 +13,8 @@ class Storage extends StatelessWidget {
         imgPath: 'assets/images/storage.png',
         description: storageDescription(),
         optionText: 'Examine the room',
-        optionAction: RouteManager.storageExamination,
+        optionRoute: RouteManager.storageExamination,
         firstDoorText: 'Go to the Kitchen',
-        firstDoorAction: RouteManager.kitchen);
+        firstDoorRoute: RouteManager.kitchen);
   }
 }

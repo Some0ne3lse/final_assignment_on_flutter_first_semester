@@ -1,3 +1,5 @@
+import 'package:final_assignment_on_flutter/buttons/go_back_from_item.dart';
+import 'package:final_assignment_on_flutter/buttons/tryItem.dart';
 import 'package:final_assignment_on_flutter/routes/routes.dart';
 import 'package:final_assignment_on_flutter/text_files/notes/notes.dart';
 import 'package:final_assignment_on_flutter/text_files/rooms/room_examination.dart';
@@ -42,29 +44,12 @@ class KennelExamination extends StatelessWidget {
                   const SizedBox(
                     height: 50,
                   ),
-                  ElevatedButton(
-                    onPressed: () {
-                      showDialog(
-                        context: context,
-                        builder: (context) => AlertDialog(
-                          content: Text(homework()),
-                          actions: [
-                            TextButton(
-                                onPressed: () => Navigator.pop(context),
-                                child: const Text('Okay!'))
-                          ],
-                        ),
-                      );
-                    },
-                    child: const Text('Read the homework'),
-                  ),
-                  ElevatedButton(
-                    onPressed: () {
-                      Navigator.of(context).pushNamedAndRemoveUntil(
-                          RouteManager.kennel, (Route<dynamic> route) => false);
-                    },
-                    child: const Text('Leave the homework'),
-                  ),
+                  TryItem(
+                      itemDescription: homework(),
+                      interactWithItem: 'Read the homework'),
+                  GoBackFromItem(
+                      routeManagerLocation: RouteManager.kennel,
+                      leaveItemText: 'Leave the homework'),
                 ],
               ),
             ),

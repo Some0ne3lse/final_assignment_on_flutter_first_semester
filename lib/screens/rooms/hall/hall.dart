@@ -28,10 +28,10 @@ class Hall extends StatelessWidget {
         imgPath: image,
         description: descriptionHall,
         firstDoorText: 'Go to the Garden',
-        firstDoorAction: RouteManager.garden,
+        firstDoorRoute: RouteManager.garden,
         secondDoorText: 'Go to the Basement',
-        secondDoorAction: RouteManager.basement,
+        secondDoorRoute: RouteManager.basement,
         thirdDoorText: 'Go to the Main Hall',
-        thirdDoorAction: RouteManager.mainHall);
+        thirdDoorRoute: RouteManager.mainHall);
   }
 }

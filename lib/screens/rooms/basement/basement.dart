@@ -17,20 +17,20 @@ class Basement extends StatelessWidget {
           imgPath: 'assets/images/basement.png',
           description: basementDescriptionOne(),
           optionText: "Examine the room",
-          optionAction: RouteManager.basementExamination,
+          optionRoute: RouteManager.basementExamination,
           firstDoorText: 'Go to the Hall',
-          firstDoorAction: RouteManager.hall);
+          firstDoorRoute: RouteManager.hall);
     } else {
       mainContent = TwoDoorsOneOption(
           title: 'Basement',
           imgPath: 'assets/images/basement.png',
           description: basementDescriptionTwo(),
           optionText: 'Examine the room',
-          optionAction: RouteManager.basementExamination,
+          optionRoute: RouteManager.basementExamination,
           firstDoorText: 'Go to the hidden room',
-          firstDoorAction: RouteManager.hiddenRoom,
+          firstDoorRoute: RouteManager.hiddenRoom,
           secondDoorText: 'Go to the hall',
-          secondDoorAction: RouteManager.hall);
+          secondDoorRoute: RouteManager.hall);
     }
     return mainContent;
   }

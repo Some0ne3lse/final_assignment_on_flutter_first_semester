@@ -1,3 +1,4 @@
+import 'package:final_assignment_on_flutter/buttons/go_back_from_item.dart';
 import 'package:final_assignment_on_flutter/routes/routes.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/garden/dog.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/one_door_one_option.dart';
@@ -14,9 +15,9 @@ class Kennel extends StatelessWidget {
         imgPath: 'assets/images/kennel.png',
         description: kennelDescription(),
         optionText: 'Examine the room',
-        optionAction: RouteManager.kennelExamination,
+        optionRoute: RouteManager.kennelExamination,
         firstDoorText: 'Go to the Garden',
-        firstDoorAction: RouteManager.garden);
+        firstDoorRoute: RouteManager.garden);
     if (dogSleeping == false) {
       mainContent = Scaffold(
         backgroundColor: const Color.fromARGB(255, 69, 74, 73),
@@ -55,14 +56,9 @@ class Kennel extends StatelessWidget {
                     const SizedBox(
                       height: 50,
                     ),
-                    ElevatedButton(
-                      onPressed: () {
-                        Navigator.of(context).pushNamedAndRemoveUntil(
-                            RouteManager.garden,
-                            (Route<dynamic> route) => false);
-                      },
-                      child: const Text('Go back to the Garden'),
-                    ),
+                    GoBackFromItem(
+                        routeManagerLocation: RouteManager.garden,
+                        leaveItemText: 'Go back to the garden'),
                   ],
                 ),
               ),

@@ -9,22 +9,22 @@ class ThreeDoorsNoOption extends StatelessWidget {
     required this.imgPath,
     required this.description,
     required this.firstDoorText,
-    required this.firstDoorAction,
+    required this.firstDoorRoute,
     required this.secondDoorText,
-    required this.secondDoorAction,
+    required this.secondDoorRoute,
     required this.thirdDoorText,
-    required this.thirdDoorAction,
+    required this.thirdDoorRoute,
   });
 
   final String title;
   final String imgPath;
   final String description;
   final String firstDoorText;
-  final String firstDoorAction;
+  final String firstDoorRoute;
   final String secondDoorText;
-  final String secondDoorAction;
+  final String secondDoorRoute;
   final String thirdDoorText;
-  final String thirdDoorAction;
+  final String thirdDoorRoute;
 
   @override
   Widget build(BuildContext context) {
@@ -67,21 +67,21 @@ class ThreeDoorsNoOption extends StatelessWidget {
                   ElevatedButton(
                     onPressed: () {
                       Navigator.of(context).pushNamedAndRemoveUntil(
-                          firstDoorAction, (Route<dynamic> route) => false);
+                          firstDoorRoute, (Route<dynamic> route) => false);
                     },
                     child: Text(firstDoorText),
                   ),
                   ElevatedButton(
                     onPressed: () {
                       Navigator.of(context).pushNamedAndRemoveUntil(
-                          secondDoorAction, (Route<dynamic> route) => false);
+                          secondDoorRoute, (Route<dynamic> route) => false);
                     },
                     child: Text(secondDoorText),
                   ),
                   ElevatedButton(
                     onPressed: () {
                       Navigator.of(context).pushNamedAndRemoveUntil(
-                          thirdDoorAction, (Route<dynamic> route) => false);
+                          thirdDoorRoute, (Route<dynamic> route) => false);
                     },
                     child: Text(thirdDoorText),
                   ),

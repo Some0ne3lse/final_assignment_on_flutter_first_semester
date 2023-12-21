@@ -13,12 +13,12 @@ class MainHall extends StatelessWidget {
         imgPath: 'assets/images/main_hall.png',
         description: mainHallDescription(),
         optionText: 'Examine the room',
-        optionAction: RouteManager.mainHallExamination,
+        optionRoute: RouteManager.mainHallExamination,
         firstDoorText: 'Go to the Hall',
-        firstDoorAction: RouteManager.hall,
+        firstDoorRoute: RouteManager.hall,
         secondDoorText: 'Go to the Living Room',
-        secondDoorAction: RouteManager.livingRoom,
+        secondDoorRoute: RouteManager.livingRoom,
         thirdDoorText: 'Go to the Entrance',
-        thirdDoorAction: RouteManager.entrance);
+        thirdDoorRoute: RouteManager.entrance);
   }
 }

@@ -23,10 +23,10 @@ class Bedroom extends StatelessWidget {
         imgPath: image,
         description: description,
         optionOneText: 'Examine the room',
-        optionOneAction: RouteManager.bedroomExamination,
+        optionOneRoute: RouteManager.bedroomExamination,
         optionTwoText: 'Examine Bob',
-        optionTwoAction: RouteManager.bobExamination,
+        optionTwoRoute: RouteManager.bobExamination,
         firstDoorText: 'Go to the Living room',
-        firstDoorAction: RouteManager.livingRoom);
+        firstDoorRoute: RouteManager.livingRoom);
   }
 }

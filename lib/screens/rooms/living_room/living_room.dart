@@ -13,10 +13,10 @@ class LivingRoom extends StatelessWidget {
         imgPath: 'assets/images/living_room.png',
         description: livingRoomDescription(),
         firstDoorText: 'Go to the Bedroom',
-        firstDoorAction: RouteManager.bedroom,
+        firstDoorRoute: RouteManager.bedroom,
         secondDoorText: 'Go to the giant safe',
-        secondDoorAction: RouteManager.giantSafe,
+        secondDoorRoute: RouteManager.giantSafe,
         thirdDoorText: 'Go to the Main Hall',
-        thirdDoorAction: RouteManager.mainHall);
+        thirdDoorRoute: RouteManager.mainHall);
   }
 }

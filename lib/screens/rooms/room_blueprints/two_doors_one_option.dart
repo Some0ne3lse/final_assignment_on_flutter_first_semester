@@ -9,22 +9,22 @@ class TwoDoorsOneOption extends StatelessWidget {
     required this.imgPath,
     required this.description,
     required this.optionText,
-    required this.optionAction,
+    required this.optionRoute,
     required this.firstDoorText,
-    required this.firstDoorAction,
+    required this.firstDoorRoute,
     required this.secondDoorText,
-    required this.secondDoorAction,
+    required this.secondDoorRoute,
   });
 
   final String title;
   final String imgPath;
   final String description;
   final String optionText;
-  final String optionAction;
+  final String optionRoute;
   final String firstDoorText;
-  final String firstDoorAction;
+  final String firstDoorRoute;
   final String secondDoorText;
-  final String secondDoorAction;
+  final String secondDoorRoute;
 
   @override
   Widget build(BuildContext context) {
@@ -66,20 +66,20 @@ class TwoDoorsOneOption extends StatelessWidget {
                   ),
                   ElevatedButton(
                     onPressed: () =>
-                        Navigator.of(context).pushNamed(optionAction),
+                        Navigator.of(context).pushNamed(optionRoute),
                     child: Text(optionText),
                   ),
                   ElevatedButton(
                     onPressed: () {
                       Navigator.of(context).pushNamedAndRemoveUntil(
-                          firstDoorAction, (Route<dynamic> route) => false);
+                          firstDoorRoute, (Route<dynamic> route) => false);
                     },
                     child: Text(firstDoorText),
                   ),
                   ElevatedButton(
                     onPressed: () {
                       Navigator.of(context).pushNamedAndRemoveUntil(
-                          secondDoorAction, (Route<dynamic> route) => false);
+                          secondDoorRoute, (Route<dynamic> route) => false);
                     },
                     child: Text(secondDoorText),
                   ),

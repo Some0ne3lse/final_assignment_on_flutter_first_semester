@@ -13,8 +13,8 @@ class Library extends StatelessWidget {
         imgPath: 'assets/images/library.png',
         description: libraryDescription(),
         optionText: 'Examine the room',
-        optionAction: RouteManager.libraryExamination,
+        optionRoute: RouteManager.libraryExamination,
         firstDoorText: 'Go to the Entrance',
-        firstDoorAction: RouteManager.entrance);
+        firstDoorRoute: RouteManager.entrance);
   }
 }

@@ -1,6 +1,8 @@
+import 'package:final_assignment_on_flutter/buttons/go_back_from_item.dart';
+import 'package:final_assignment_on_flutter/buttons/tryItem.dart';
 import 'package:final_assignment_on_flutter/lists/items.dart';
 import 'package:final_assignment_on_flutter/routes/routes.dart';
-import 'package:final_assignment_on_flutter/screens/rooms/hall/hall.dart';
+import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/screen_base.dart';
 import 'package:final_assignment_on_flutter/text_files/rooms/room_description.dart';
 import 'package:flutter/material.dart';
 
@@ -37,30 +39,13 @@ class Dog extends StatelessWidget {
           const SizedBox(
             height: 50,
           ),
-          ElevatedButton(
-            onPressed: () {
-              showDialog(
-                context: context,
-                builder: (context) => AlertDialog(
-                  content: const Text(
-                      'The dog accepts your petting, but it doesn\'t trust you completely.'),
-                  actions: [
-                    TextButton(
-                        onPressed: () => Navigator.pop(context),
-                        child: const Text('Okay!'))
-                  ],
-                ),
-              );
-            },
-            child: const Text('Pet the dog'),
-          ),
-          ElevatedButton(
-            onPressed: () {
-              Navigator.of(context).pushNamedAndRemoveUntil(
-                  RouteManager.garden, (Route<dynamic> route) => false);
-            },
-            child: const Text('Leave the Dog'),
-          ),
+          TryItem(
+              itemDescription:
+                  'The dog accepts your petting, but it doesn\'t trust you completely.',
+              interactWithItem: 'Pet the dog'),
+          GoBackFromItem(
+              routeManagerLocation: RouteManager.garden,
+              leaveItemText: 'Leave the dog'),
         ],
       ),
     );
@@ -93,23 +78,10 @@ class Dog extends StatelessWidget {
             const SizedBox(
               height: 50,
             ),
-            ElevatedButton(
-              onPressed: () {
-                showDialog(
-                  context: context,
-                  builder: (context) => AlertDialog(
-                    content: const Text(
-                        'The dog accepts your petting, but it doesn\'t trust you completely.'),
-                    actions: [
-                      TextButton(
-                          onPressed: () => Navigator.pop(context),
-                          child: const Text('Okay!'))
-                    ],
-                  ),
-                );
-              },
-              child: const Text('Pet the dog'),
-            ),
+            TryItem(
+                itemDescription:
+                    'The dog accepts your petting, but it doesn\'t trust you completely.',
+                interactWithItem: 'Pet the dog'),
             ElevatedButton(
               onPressed: () {
                 dogSleeping = true;
@@ -135,13 +107,9 @@ class Dog extends StatelessWidget {
               },
               child: const Text('Give the dog the spiked doughnut'),
             ),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.of(context).pushNamedAndRemoveUntil(
-                    RouteManager.garden, (Route<dynamic> route) => false);
-              },
-              child: const Text('Leave the Dog'),
-            ),
+            GoBackFromItem(
+                routeManagerLocation: RouteManager.garden,
+                leaveItemText: 'Leave the dog'),
           ],
         ),
       );
@@ -173,21 +141,6 @@ class Dog extends StatelessWidget {
         ),
       );
     }
-    return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 69, 74, 73),
-      appBar: AppBar(
-        backgroundColor: Colors.black,
-        foregroundColor: Colors.white,
-        title: const Text('Dog'),
-      ),
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            const SizedBox(height: 20),
-            mainContent,
-          ],
-        ),
-      ),
-    );
+    return ScreenBase(mainContent: mainContent, locationName: 'Dog');
   }
 }

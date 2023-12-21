@@ -19,9 +19,9 @@ class GiantSafe extends StatelessWidget {
           imgPath: 'assets/images/terminal.png',
           description: giantSafe(),
           optionText: 'Insert Key and Hand print',
-          optionAction: RouteManager.passwordTerminal,
+          optionRoute: RouteManager.passwordTerminal,
           firstDoorText: 'Go to the Living Room',
-          firstDoorAction: RouteManager.livingRoom);
+          firstDoorRoute: RouteManager.livingRoom);
     } else if (pickedUpItems.any((item) => item.title == itemOneToCheck)) {
       return Scaffold(
         backgroundColor: const Color.fromARGB(255, 69, 74, 73),

@@ -13,11 +13,11 @@ class Kitchen extends StatelessWidget {
         imgPath: 'assets/images/kitchen.png',
         description: kitchenDescription(),
         optionText: 'Examine the room',
-        optionAction: RouteManager.kitchenExamination,
+        optionRoute: RouteManager.kitchenExamination,
         firstDoorText: 'Go to the Storage',
-        firstDoorAction: RouteManager.storage,
+        firstDoorRoute: RouteManager.storage,
         secondDoorText: 'Go to the Entrance',
-        secondDoorAction: RouteManager.entrance);
+        secondDoorRoute: RouteManager.entrance);
     // return TwoDoorsOneOption(
     //   title: 'Kitchen',
     //   imgPath: 'assets/images/kitchen.png',

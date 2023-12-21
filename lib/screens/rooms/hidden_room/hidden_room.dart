@@ -13,8 +13,8 @@ class HiddenRoom extends StatelessWidget {
         imgPath: 'assets/images/hidden_room.png',
         description: hiddenRoomDescription(),
         optionText: 'Examine the room',
-        optionAction: RouteManager.hiddenRoomExamination,
+        optionRoute: RouteManager.hiddenRoomExamination,
         firstDoorText: 'Go to the Basement',
-        firstDoorAction: RouteManager.basement);
+        firstDoorRoute: RouteManager.basement);
   }
 }

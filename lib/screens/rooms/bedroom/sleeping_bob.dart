@@ -1,6 +1,8 @@
+import 'package:final_assignment_on_flutter/buttons/go_back_from_item.dart';
 import 'package:final_assignment_on_flutter/lists/items.dart';
 import 'package:final_assignment_on_flutter/routes/routes.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/bedroom/bob_examination.dart';
+import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/screen_base.dart';
 import 'package:final_assignment_on_flutter/text_files/rooms/room_description.dart';
 import 'package:flutter/material.dart';
 
@@ -42,13 +44,9 @@ class SleepingBob extends StatelessWidget {
             },
             child: const Text('Try to take the book under the pillow'),
           ),
-          ElevatedButton(
-            onPressed: () {
-              Navigator.of(context).pushNamedAndRemoveUntil(
-                  RouteManager.bedroom, (Route<dynamic> route) => false);
-            },
-            child: const Text('Leave Bob alone'),
-          ),
+          GoBackFromItem(
+              routeManagerLocation: RouteManager.bedroom,
+              leaveItemText: 'Leave Bob alone'),
         ],
       ),
     );
@@ -111,32 +109,13 @@ class SleepingBob extends StatelessWidget {
               },
               child: const Text('Try to take the book under the pillow'),
             ),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.of(context).pushNamedAndRemoveUntil(
-                    RouteManager.bedroom, (Route<dynamic> route) => false);
-              },
-              child: const Text('Leave Bob alone'),
-            ),
+            GoBackFromItem(
+                routeManagerLocation: RouteManager.bedroom,
+                leaveItemText: 'Leave Bob alone'),
           ],
         ),
       );
     }
-    return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 69, 74, 73),
-      appBar: AppBar(
-        backgroundColor: Colors.black,
-        foregroundColor: Colors.white,
-        title: const Text('Bob'),
-      ),
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            const SizedBox(height: 20),
-            mainContent,
-          ],
-        ),
-      ),
-    );
+    return ScreenBase(mainContent: mainContent, locationName: 'Bob');
   }
 }

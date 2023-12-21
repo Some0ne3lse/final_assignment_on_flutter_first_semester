@@ -15,11 +15,11 @@ class Garden extends StatelessWidget {
         imgPath: 'assets/images/garden.png',
         description: gardenDescription(),
         optionText: 'Examine the dog',
-        optionAction: RouteManager.dog,
+        optionRoute: RouteManager.dog,
         firstDoorText: 'Go to the Kennel',
-        firstDoorAction: RouteManager.kennel,
+        firstDoorRoute: RouteManager.kennel,
         secondDoorText: 'Go to the Hall',
-        secondDoorAction: RouteManager.hall);
+        secondDoorRoute: RouteManager.hall);
 
     if (dogTamed == false) {
       mainContent = const DogAttack();

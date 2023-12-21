@@ -13,12 +13,12 @@ class Entrance extends StatelessWidget {
         imgPath: 'assets/images/entrance.png',
         description: entranceDescription(),
         optionText: 'Examine the room',
-        optionAction: RouteManager.entranceExamination,
+        optionRoute: RouteManager.entranceExamination,
         firstDoorText: 'Go to the Kitchen',
-        firstDoorAction: RouteManager.kitchen,
+        firstDoorRoute: RouteManager.kitchen,
         secondDoorText: 'Go to the Main Hall',
-        secondDoorAction: RouteManager.mainHall,
+        secondDoorRoute: RouteManager.mainHall,
         thirdDoorText: 'Go to the Library',
-        thirdDoorAction: RouteManager.library);
+        thirdDoorRoute: RouteManager.library);
   }
 }

@@ -1,5 +1,8 @@
+import 'package:final_assignment_on_flutter/buttons/go_back_from_item.dart';
+import 'package:final_assignment_on_flutter/buttons/tryItem.dart';
 import 'package:final_assignment_on_flutter/lists/items.dart';
 import 'package:final_assignment_on_flutter/routes/routes.dart';
+import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/screen_base.dart';
 import 'package:final_assignment_on_flutter/text_files/rooms/room_examination.dart';
 import 'package:flutter/material.dart';
 
@@ -34,31 +37,13 @@ class KitchenExamination extends StatelessWidget {
           const SizedBox(
             height: 50,
           ),
-          ElevatedButton(
-            onPressed: () {
-              showDialog(
-                context: context,
-                builder: (context) => AlertDialog(
-                  content: const Text(
-                      'You eat a doughnut. It tastes nice, but not as nice as your cake.'),
-                  actions: [
-                    TextButton(
-                        onPressed: () => Navigator.pop(context),
-                        child: const Text('Okay!'))
-                  ],
-                ),
-              );
-            },
-            child: const Text('Eat a doughnut'),
-          ),
-          ElevatedButton(
-            onPressed: () {
-              Navigator.of(context).pushNamedAndRemoveUntil(
-                  RouteManager.kitchen, (Route<dynamic> route) => false);
-              //Navigator.of(context).pushReplacementNamed(RouteManager.kitchen);
-            },
-            child: const Text('Leave the Doughnuts'),
-          ),
+          TryItem(
+              itemDescription:
+                  'You eat a doughnut. It tastes nice, but not as nice as your cake.',
+              interactWithItem: 'Eat a doughnut'),
+          GoBackFromItem(
+              routeManagerLocation: RouteManager.kitchen,
+              leaveItemText: 'Leave the doughnuts')
         ],
       ),
     );
@@ -88,23 +73,10 @@ class KitchenExamination extends StatelessWidget {
             const SizedBox(
               height: 50,
             ),
-            ElevatedButton(
-              onPressed: () {
-                showDialog(
-                  context: context,
-                  builder: (context) => AlertDialog(
-                    content: const Text(
-                        'You eat a doughnut. It tastes nice, but not as nice as your cake.'),
-                    actions: [
-                      TextButton(
-                          onPressed: () => Navigator.pop(context),
-                          child: const Text('Okay!'))
-                    ],
-                  ),
-                );
-              },
-              child: const Text('Eat a doughnut'),
-            ),
+            TryItem(
+                itemDescription:
+                    'You eat a doughnut. It tastes nice, but not as nice as your cake.',
+                interactWithItem: 'Eat a doughnut'),
             ElevatedButton(
               onPressed: () {
                 pickedUpItems.add(
@@ -134,33 +106,14 @@ class KitchenExamination extends StatelessWidget {
               },
               child: const Text('Insert pills into doughnut'),
             ),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.of(context).pushNamedAndRemoveUntil(
-                    RouteManager.kitchen, (Route<dynamic> route) => false);
-              },
-              child: const Text('Leave the Doughnuts'),
-            ),
+            GoBackFromItem(
+                routeManagerLocation: RouteManager.kitchen,
+                leaveItemText: 'Leave the doughnuts'),
           ],
         ),
       );
     }
 
-    return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 69, 74, 73),
-      appBar: AppBar(
-        backgroundColor: Colors.black,
-        foregroundColor: Colors.white,
-        title: const Text('Kitchen'),
-      ),
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            const SizedBox(height: 20),
-            mainContent,
-          ],
-        ),
-      ),
-    );
+    return ScreenBase(mainContent: mainContent, locationName: 'Kitchen');
   }
 }
