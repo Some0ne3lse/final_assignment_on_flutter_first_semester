@@ -10,7 +10,7 @@ class Kennel extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Widget mainContent = OneDoorOneOption(
-        title: 'Kennel',
+        locationName: 'Kennel',
         imgPath: 'assets/images/kennel.png',
         description: kennelDescription(),
         optionText: 'Examine the room',

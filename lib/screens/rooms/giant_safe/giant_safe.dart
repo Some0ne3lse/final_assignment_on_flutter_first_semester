@@ -15,7 +15,7 @@ class GiantSafe extends StatelessWidget {
     if ((pickedUpItems.any((item) => item.title == itemOneToCheck)) &&
         (pickedUpItems.any((item) => item.title == itemTwoToCheck))) {
       return OneDoorOneOption(
-          title: 'Giant Safe',
+          locationName: 'Giant Safe',
           imgPath: 'assets/images/terminal.png',
           description: giantSafe(),
           optionText: 'Insert Key and Hand print',

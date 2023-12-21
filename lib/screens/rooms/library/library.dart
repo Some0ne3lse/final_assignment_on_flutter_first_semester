@@ -9,7 +9,7 @@ class Library extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return OneDoorOneOption(
-        title: 'Library',
+        locationName: 'Library',
         imgPath: 'assets/images/library.png',
         description: libraryDescription(),
         optionText: 'Examine the room',

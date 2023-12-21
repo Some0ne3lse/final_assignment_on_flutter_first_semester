@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 class OneDoorOneOption extends StatelessWidget {
   const OneDoorOneOption({
     super.key,
-    required this.title,
+    required this.locationName,
     required this.imgPath,
     required this.description,
     required this.optionText,
@@ -14,7 +14,7 @@ class OneDoorOneOption extends StatelessWidget {
     required this.firstDoorAction,
   });
 
-  final String title;
+  final String locationName;
   final String imgPath;
   final String description;
   final String optionText;
@@ -29,7 +29,7 @@ class OneDoorOneOption extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.black,
         foregroundColor: Colors.white,
-        title: Text(title),
+        title: Text(locationName),
       ),
       body: SingleChildScrollView(
         child: Column(

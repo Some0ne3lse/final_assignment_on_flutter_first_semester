@@ -9,7 +9,7 @@ class HiddenRoom extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return OneDoorOneOption(
-        title: 'Hidden Room',
+        locationName: 'Hidden Room',
         imgPath: 'assets/images/hidden_room.png',
         description: hiddenRoomDescription(),
         optionText: 'Examine the room',

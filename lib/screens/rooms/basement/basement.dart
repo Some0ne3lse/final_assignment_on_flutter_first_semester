@@ -13,7 +13,7 @@ class Basement extends StatelessWidget {
     Widget mainContent;
     if (hiddenDoorFound == false) {
       mainContent = OneDoorOneOption(
-          title: 'Basement',
+          locationName: 'Basement',
           imgPath: 'assets/images/basement.png',
           description: basementDescriptionOne(),
           optionText: "Examine the room",

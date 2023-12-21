@@ -9,7 +9,7 @@ class Storage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return OneDoorOneOption(
-        title: 'Storage',
+        locationName: 'Storage',
         imgPath: 'assets/images/storage.png',
         description: storageDescription(),
         optionText: 'Examine the room',
