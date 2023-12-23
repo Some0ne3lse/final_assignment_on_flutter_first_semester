@@ -1,9 +1,4 @@
 import 'package:final_assignment_on_flutter/buttons/try_again_button.dart';
-import 'package:final_assignment_on_flutter/lists/items.dart';
-import 'package:final_assignment_on_flutter/routes/routes.dart';
-import 'package:final_assignment_on_flutter/screens/rooms/basement/basement_examination.dart';
-import 'package:final_assignment_on_flutter/screens/rooms/bedroom/bob_examination.dart';
-import 'package:final_assignment_on_flutter/screens/rooms/hall/hall.dart';
 import 'package:final_assignment_on_flutter/text_files/endings/bad_endings.dart';
 import 'package:flutter/material.dart';
 

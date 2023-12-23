@@ -17,19 +17,3 @@ class InventoryList extends StatelessWidget {
     );
   }
 }
-
-//     return Scaffold(
-//       backgroundColor: const Color.fromARGB(255, 69, 74, 73),
-//       appBar: AppBar(
-//         backgroundColor: Colors.black,
-//         foregroundColor: Colors.white,
-//         title: const Text('Inventory'),
-//       ),
-//       body: Column(
-//         children: [
-//           SizedBox(width: 300, height: 400, child: mainContent),
-//         ],
-//       ),
-//     );
-//   }
-// }
