@@ -38,11 +38,6 @@ class ExitButton extends StatelessWidget {
                   dogSleeping = false;
                   bobDead = false;
                   bobSleeping = true;
-                  shoesTaken = false;
-                  bookTaken = false;
-                  handTaken = false;
-                  sawTaken = false;
-                  pillsTaken = false;
                 },
                 child: const Text('YES!'),
               ),

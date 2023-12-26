@@ -2,18 +2,17 @@ import 'package:final_assignment_on_flutter/buttons/go_back_from_item.dart';
 import 'package:final_assignment_on_flutter/buttons/tryItem.dart';
 import 'package:final_assignment_on_flutter/lists/items.dart';
 import 'package:final_assignment_on_flutter/routes/routes.dart';
-import 'package:final_assignment_on_flutter/screens/rooms/examine_room_blueprints/nothing_of_interest.dart';
+import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/examine_room_blueprints/nothing_of_interest.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/screen_base.dart';
 import 'package:final_assignment_on_flutter/text_files/rooms/room_examination.dart';
 import 'package:flutter/material.dart';
-
-bool pillsTaken = false;
 
 class BedroomExamination extends StatelessWidget {
   const BedroomExamination({super.key});
 
   @override
   Widget build(BuildContext context) {
+    String itemToCheck = 'Sleeping-Pills';
     Widget mainContent = Center(
       child: Column(
         children: [
@@ -39,7 +38,6 @@ class BedroomExamination extends StatelessWidget {
           ),
           ElevatedButton(
             onPressed: () {
-              pillsTaken = true;
               pickedUpItems.add(
                 Item(
                   title: 'Sleeping-Pills',
@@ -61,7 +59,7 @@ class BedroomExamination extends StatelessWidget {
         ],
       ),
     );
-    if (pillsTaken == true) {
+    if (pickedUpItems.any((item) => item.title == itemToCheck)) {
       mainContent = NothingOfInterest();
     }
 

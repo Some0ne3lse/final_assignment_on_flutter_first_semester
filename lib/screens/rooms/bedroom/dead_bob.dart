@@ -1,19 +1,36 @@
 import 'package:final_assignment_on_flutter/lists/items.dart';
 import 'package:final_assignment_on_flutter/routes/routes.dart';
-import 'package:final_assignment_on_flutter/screens/rooms/examine_room_blueprints/nothing_of_interest.dart';
+import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/examine_room_blueprints/nothing_of_interest.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/screen_base.dart';
-import 'package:final_assignment_on_flutter/screens/rooms/storage/storage_examination.dart';
 import 'package:final_assignment_on_flutter/text_files/rooms/room_examination.dart';
 import 'package:flutter/material.dart';
-
-bool bookTaken = false;
-bool handTaken = false;
 
 class DeadBob extends StatelessWidget {
   const DeadBob({super.key});
 
   @override
   Widget build(BuildContext context) {
+    bool sawTaken;
+    bool handTaken;
+    bool bookTaken;
+    String sawCheck = 'Saw';
+    String bookCheck = 'Book';
+    String handCheck = 'Hand';
+    if (pickedUpItems.any((item) => item.title == sawCheck)) {
+      sawTaken = true;
+    } else {
+      sawTaken = false;
+    }
+    if (pickedUpItems.any((item) => item.title == bookCheck)) {
+      bookTaken = true;
+    } else {
+      bookTaken = false;
+    }
+    if (pickedUpItems.any((item) => item.title == handCheck)) {
+      handTaken = true;
+    } else {
+      handTaken = false;
+    }
     Widget mainContent;
     if (bookTaken == false && handTaken == false && sawTaken == true) {
       mainContent = Center(
@@ -44,7 +61,6 @@ class DeadBob extends StatelessWidget {
             ),
             ElevatedButton(
               onPressed: () {
-                handTaken = true;
                 pickedUpItems.add(
                   Item(
                       title: 'Hand',
@@ -72,7 +88,6 @@ class DeadBob extends StatelessWidget {
             ),
             ElevatedButton(
               onPressed: () {
-                bookTaken = true;
                 pickedUpItems.add(
                   Item(
                     title: 'Book',
@@ -115,7 +130,6 @@ class DeadBob extends StatelessWidget {
             ),
             ElevatedButton(
               onPressed: () {
-                handTaken = true;
                 pickedUpItems.add(
                   Item(
                       title: 'Hand',
@@ -173,7 +187,6 @@ class DeadBob extends StatelessWidget {
             ),
             ElevatedButton(
               onPressed: () {
-                bookTaken = true;
                 pickedUpItems.add(
                   Item(
                     title: 'Book',
@@ -216,7 +229,6 @@ class DeadBob extends StatelessWidget {
             ),
             ElevatedButton(
               onPressed: () {
-                bookTaken = true;
                 pickedUpItems.add(
                   Item(
                     title: 'Book',

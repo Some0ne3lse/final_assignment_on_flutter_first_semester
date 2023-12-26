@@ -1,12 +1,10 @@
 import 'package:final_assignment_on_flutter/buttons/go_back_from_item.dart';
 import 'package:final_assignment_on_flutter/lists/items.dart';
 import 'package:final_assignment_on_flutter/routes/routes.dart';
-import 'package:final_assignment_on_flutter/screens/rooms/examine_room_blueprints/nothing_of_interest.dart';
+import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/examine_room_blueprints/nothing_of_interest.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/screen_base.dart';
 import 'package:final_assignment_on_flutter/text_files/rooms/room_examination.dart';
 import 'package:flutter/material.dart';
-
-bool sawTaken = false;
 
 class StorageExamination extends StatelessWidget {
   const StorageExamination({super.key});
@@ -38,7 +36,6 @@ class StorageExamination extends StatelessWidget {
           ),
           ElevatedButton(
             onPressed: () {
-              sawTaken = true;
               pickedUpItems.add(
                 Item(
                   title: 'Saw',
@@ -141,7 +138,6 @@ class StorageExamination extends StatelessWidget {
             ),
             ElevatedButton(
               onPressed: () {
-                sawTaken = true;
                 pickedUpItems.add(
                   Item(
                     title: 'Saw',

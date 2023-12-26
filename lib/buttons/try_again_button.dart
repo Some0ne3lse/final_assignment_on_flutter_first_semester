@@ -24,11 +24,6 @@ class TryAgainButton extends StatelessWidget {
         dogSleeping = false;
         bobDead = false;
         bobSleeping = true;
-        shoesTaken = false;
-        handTaken = false;
-        bookTaken = false;
-        sawTaken = false;
-        pillsTaken = false;
       },
       child: const Text('Try Again'),
     );
