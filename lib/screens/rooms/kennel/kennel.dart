@@ -1,6 +1,7 @@
 import 'package:final_assignment_on_flutter/buttons/go_back_from_item.dart';
 import 'package:final_assignment_on_flutter/routes/routes.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/garden/dog.dart';
+import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/image_and_text.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/one_door_one_option.dart';
 import 'package:final_assignment_on_flutter/text_files/rooms/room_description.dart';
 import 'package:flutter/material.dart';
@@ -33,26 +34,27 @@ class Kennel extends StatelessWidget {
               Center(
                 child: Column(
                   children: [
-                    const SizedBox(
-                      height: 30,
+                    ImageAndText(
+                      image: 'assets/images/happy_dog.png',
+                      text: 'The dog won\'t let you into the kennel!',
                     ),
-                    Image.asset(
-                      'assets/images/happy_dog.png',
-                      width: 200,
-                    ),
-                    const SizedBox(
-                      height: 20,
-                    ),
-                    const SizedBox(
-                      width: 300,
-                      child: Text(
-                        'The dog won\'t let you into the kennel!',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 15,
-                        ),
-                      ),
-                    ),
+                    // Image.asset(
+                    //   'assets/images/happy_dog.png',
+                    //   width: 200,
+                    // ),
+                    // const SizedBox(
+                    //   height: 20,
+                    // ),
+                    // const SizedBox(
+                    //   width: 300,
+                    //   child: Text(
+                    //     'The dog won\'t let you into the kennel!',
+                    //     style: TextStyle(
+                    //       color: Colors.white,
+                    //       fontSize: 15,
+                    //     ),
+                    //   ),
+                    // ),
                     const SizedBox(
                       height: 50,
                     ),

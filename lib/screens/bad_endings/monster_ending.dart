@@ -1,4 +1,5 @@
 import 'package:final_assignment_on_flutter/buttons/try_again_button.dart';
+import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/image_and_text.dart';
 import 'package:final_assignment_on_flutter/text_files/endings/bad_endings.dart';
 import 'package:flutter/material.dart';
 
@@ -24,23 +25,27 @@ class Monster extends StatelessWidget {
             Center(
               child: Column(
                 children: [
-                  Image.asset(
-                    'assets/images/monster.png',
-                    width: 200,
+                  ImageAndText(
+                    image: 'assets/images/monster.png',
+                    text: monster(),
                   ),
-                  const SizedBox(
-                    height: 20,
-                  ),
-                  SizedBox(
-                    width: 300,
-                    child: Text(
-                      monster(),
-                      style: const TextStyle(
-                        color: Colors.white,
-                        fontSize: 15,
-                      ),
-                    ),
-                  ),
+                  // Image.asset(
+                  //   'assets/images/monster.png',
+                  //   width: 200,
+                  // ),
+                  // const SizedBox(
+                  //   height: 20,
+                  // ),
+                  // SizedBox(
+                  //   width: 300,
+                  //   child: Text(
+                  //     monster(),
+                  //     style: const TextStyle(
+                  //       color: Colors.white,
+                  //       fontSize: 15,
+                  //     ),
+                  //   ),
+                  // ),
                   const TryAgainButton(),
                 ],
               ),

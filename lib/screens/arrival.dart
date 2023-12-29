@@ -1,4 +1,5 @@
 import 'package:final_assignment_on_flutter/routes/routes.dart';
+import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/image_and_text.dart';
 import 'package:final_assignment_on_flutter/text_files/arrival.dart';
 import 'package:flutter/material.dart';
 
@@ -26,23 +27,27 @@ class Arrival extends StatelessWidget {
             Center(
               child: Column(
                 children: [
-                  Image.asset(
-                    'assets/images/arrival.png',
-                    width: 200,
+                  ImageAndText(
+                    image: 'assets/images/arrival.png',
+                    text: arrivalText(),
                   ),
-                  const SizedBox(
-                    height: 20,
-                  ),
-                  SizedBox(
-                    width: 300,
-                    child: Text(
-                      arrivalText(),
-                      style: const TextStyle(
-                        color: Colors.white,
-                        fontSize: 15,
-                      ),
-                    ),
-                  ),
+                  // Image.asset(
+                  //   'assets/images/arrival.png',
+                  //   width: 200,
+                  // ),
+                  // const SizedBox(
+                  //   height: 20,
+                  // ),
+                  // SizedBox(
+                  //   width: 300,
+                  //   child: Text(
+                  //     arrivalText(),
+                  //     style: const TextStyle(
+                  //       color: Colors.white,
+                  //       fontSize: 15,
+                  //     ),
+                  //   ),
+                  // ),
                   const SizedBox(
                     height: 50,
                   ),

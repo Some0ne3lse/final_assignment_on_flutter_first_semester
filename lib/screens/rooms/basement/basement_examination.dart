@@ -3,6 +3,7 @@ import 'package:final_assignment_on_flutter/buttons/try_item.dart';
 import 'package:final_assignment_on_flutter/lists/items.dart';
 import 'package:final_assignment_on_flutter/routes/routes.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/examine_room_blueprints/nothing_of_interest.dart';
+import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/image_and_text.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/screen_base.dart';
 import 'package:final_assignment_on_flutter/text_files/rooms/room_examination.dart';
 import 'package:flutter/material.dart';
@@ -17,26 +18,27 @@ class BasementExamination extends StatelessWidget {
     Widget mainContent = Center(
       child: Column(
         children: [
-          const SizedBox(
-            height: 30,
+          ImageAndText(
+            image: 'assets/images/hidden_mechanism.png',
+            text: basementExamination(),
           ),
-          Image.asset(
-            'assets/images/hidden_mechanism.png',
-            width: 200,
-          ),
-          const SizedBox(
-            height: 20,
-          ),
-          SizedBox(
-            width: 300,
-            child: Text(
-              style: const TextStyle(
-                color: Colors.white,
-                fontSize: 15,
-              ),
-              basementExamination(),
-            ),
-          ),
+          // Image.asset(
+          //   'assets/images/hidden_mechanism.png',
+          //   width: 200,
+          // ),
+          // const SizedBox(
+          //   height: 20,
+          // ),
+          // SizedBox(
+          //   width: 300,
+          //   child: Text(
+          //     style: const TextStyle(
+          //       color: Colors.white,
+          //       fontSize: 15,
+          //     ),
+          //     basementExamination(),
+          //   ),
+          // ),
           const SizedBox(
             height: 50,
           ),
@@ -55,9 +57,6 @@ class BasementExamination extends StatelessWidget {
       mainContent = Center(
         child: Column(
           children: [
-            const SizedBox(
-              height: 30,
-            ),
             Image.asset(
               'assets/images/hidden_mechanism.png',
               width: 200,

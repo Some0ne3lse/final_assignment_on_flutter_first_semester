@@ -14,7 +14,7 @@ class LivingRoom extends StatelessWidget {
         description: livingRoomDescription(),
         firstDoorText: 'Go to the Bedroom',
         firstDoorRoute: RouteManager.bedroom,
-        secondDoorText: 'Go to the giant safe',
+        secondDoorText: 'Go to the Giant Safe',
         secondDoorRoute: RouteManager.giantSafe,
         thirdDoorText: 'Go to the Main Hall',
         thirdDoorRoute: RouteManager.mainHall);

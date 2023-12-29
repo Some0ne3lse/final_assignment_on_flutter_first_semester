@@ -1,6 +1,7 @@
 import 'package:final_assignment_on_flutter/lists/items.dart';
 import 'package:final_assignment_on_flutter/routes/routes.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/bedroom/bob_examination.dart';
+import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/image_and_text.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/screen_base.dart';
 import 'package:final_assignment_on_flutter/text_files/drama_actions_text/attack_text.dart';
 import 'package:flutter/material.dart';
@@ -13,23 +14,24 @@ class BobAttack extends StatelessWidget {
     Widget mainContent = Center(
       child: Column(
         children: [
-          const SizedBox(
-            height: 30,
+          ImageAndText(
+            image: 'assets/images/bob_awake.png',
+            text: bobAttack(),
           ),
-          Image.asset(
-            'assets/images/bob_awake.png',
-            width: 200,
-          ),
-          const SizedBox(
-            height: 20,
-          ),
-          SizedBox(
-            width: 300,
-            child: Text(
-              style: const TextStyle(color: Colors.white, fontSize: 15),
-              bobAttack(),
-            ),
-          ),
+          // Image.asset(
+          //   'assets/images/bob_awake.png',
+          //   width: 200,
+          // ),
+          // const SizedBox(
+          //   height: 20,
+          // ),
+          // SizedBox(
+          //   width: 300,
+          //   child: Text(
+          //     style: const TextStyle(color: Colors.white, fontSize: 15),
+          //     bobAttack(),
+          //   ),
+          // ),
           const SizedBox(
             height: 50,
           ),
@@ -56,23 +58,24 @@ class BobAttack extends StatelessWidget {
       mainContent = Center(
         child: Column(
           children: [
-            const SizedBox(
-              height: 30,
+            ImageAndText(
+              image: 'assets/images/bob_awake.png',
+              text: bobAttack(),
             ),
-            Image.asset(
-              'assets/images/bob_awake.png',
-              width: 200,
-            ),
-            const SizedBox(
-              height: 20,
-            ),
-            SizedBox(
-              width: 300,
-              child: Text(
-                style: const TextStyle(color: Colors.white, fontSize: 15),
-                bobAttack(),
-              ),
-            ),
+            // Image.asset(
+            //   'assets/images/bob_awake.png',
+            //   width: 200,
+            // ),
+            // const SizedBox(
+            //   height: 20,
+            // ),
+            // SizedBox(
+            //   width: 300,
+            //   child: Text(
+            //     style: const TextStyle(color: Colors.white, fontSize: 15),
+            //     bobAttack(),
+            //   ),
+            // ),
             const SizedBox(
               height: 50,
             ),

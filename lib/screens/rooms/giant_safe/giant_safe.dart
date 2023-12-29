@@ -1,6 +1,7 @@
 import 'package:final_assignment_on_flutter/buttons/exit_button.dart';
 import 'package:final_assignment_on_flutter/lists/items.dart';
 import 'package:final_assignment_on_flutter/routes/routes.dart';
+import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/image_and_text.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/one_door_one_option.dart';
 import 'package:final_assignment_on_flutter/text_files/rooms/room_description.dart';
 import 'package:flutter/material.dart';
@@ -39,23 +40,27 @@ class GiantSafe extends StatelessWidget {
               Center(
                 child: Column(
                   children: [
-                    Image.asset(
-                      'assets/images/terminal.png',
-                      width: 200,
+                    ImageAndText(
+                      image: 'assets/images/terminal.png',
+                      text: giantSafe(),
                     ),
-                    const SizedBox(
-                      height: 20,
-                    ),
-                    SizedBox(
-                      width: 300,
-                      child: Text(
-                        giantSafe(),
-                        style: const TextStyle(
-                          color: Colors.white,
-                          fontSize: 15,
-                        ),
-                      ),
-                    ),
+                    // Image.asset(
+                    //   'assets/images/terminal.png',
+                    //   width: 200,
+                    // ),
+                    // const SizedBox(
+                    //   height: 20,
+                    // ),
+                    // SizedBox(
+                    //   width: 300,
+                    //   child: Text(
+                    //     giantSafe(),
+                    //     style: const TextStyle(
+                    //       color: Colors.white,
+                    //       fontSize: 15,
+                    //     ),
+                    //   ),
+                    // ),
                     const SizedBox(
                       height: 50,
                     ),
@@ -136,23 +141,27 @@ class GiantSafe extends StatelessWidget {
               Center(
                 child: Column(
                   children: [
-                    Image.asset(
-                      'assets/images/terminal.png',
-                      width: 200,
+                    ImageAndText(
+                      image: 'assets/images/terminal.png',
+                      text: giantSafe(),
                     ),
-                    const SizedBox(
-                      height: 20,
-                    ),
-                    SizedBox(
-                      width: 300,
-                      child: Text(
-                        giantSafe(),
-                        style: const TextStyle(
-                          color: Colors.white,
-                          fontSize: 15,
-                        ),
-                      ),
-                    ),
+                    // Image.asset(
+                    //   'assets/images/terminal.png',
+                    //   width: 200,
+                    // ),
+                    // const SizedBox(
+                    //   height: 20,
+                    // ),
+                    // SizedBox(
+                    //   width: 300,
+                    //   child: Text(
+                    //     giantSafe(),
+                    //     style: const TextStyle(
+                    //       color: Colors.white,
+                    //       fontSize: 15,
+                    //     ),
+                    //   ),
+                    // ),
                     const SizedBox(
                       height: 50,
                     ),
@@ -233,23 +242,27 @@ class GiantSafe extends StatelessWidget {
               Center(
                 child: Column(
                   children: [
-                    Image.asset(
-                      'assets/images/terminal.png',
-                      width: 200,
+                    ImageAndText(
+                      image: 'assets/images/terminal.png',
+                      text: giantSafe(),
                     ),
-                    const SizedBox(
-                      height: 20,
-                    ),
-                    SizedBox(
-                      width: 300,
-                      child: Text(
-                        giantSafe(),
-                        style: const TextStyle(
-                          color: Colors.white,
-                          fontSize: 15,
-                        ),
-                      ),
-                    ),
+                    // Image.asset(
+                    //   'assets/images/terminal.png',
+                    //   width: 200,
+                    // ),
+                    // const SizedBox(
+                    //   height: 20,
+                    // ),
+                    // SizedBox(
+                    //   width: 300,
+                    //   child: Text(
+                    //     giantSafe(),
+                    //     style: const TextStyle(
+                    //       color: Colors.white,
+                    //       fontSize: 15,
+                    //     ),
+                    //   ),
+                    // ),
                     const SizedBox(
                       height: 50,
                     ),

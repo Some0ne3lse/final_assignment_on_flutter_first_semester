@@ -1,7 +1,10 @@
+import 'package:final_assignment_on_flutter/buttons/go_back_from_item.dart';
 import 'package:final_assignment_on_flutter/buttons/take_hand.dart';
 import 'package:final_assignment_on_flutter/buttons/take_item.dart';
 import 'package:final_assignment_on_flutter/lists/items.dart';
+import 'package:final_assignment_on_flutter/routes/routes.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/examine_room_blueprints/nothing_of_interest.dart';
+import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/image_and_text.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/screen_base.dart';
 import 'package:final_assignment_on_flutter/text_files/rooms/room_examination.dart';
 import 'package:flutter/material.dart';
@@ -37,26 +40,27 @@ class DeadBob extends StatelessWidget {
       mainContent = Center(
         child: Column(
           children: [
-            const SizedBox(
-              height: 30,
+            ImageAndText(
+              image: 'assets/images/bob_censored.png',
+              text: bobKilled(),
             ),
-            Image.asset(
-              'assets/images/bob_censored.png',
-              width: 200,
-            ),
-            const SizedBox(
-              height: 20,
-            ),
-            SizedBox(
-              width: 300,
-              child: Text(
-                style: const TextStyle(
-                  color: Colors.white,
-                  fontSize: 15,
-                ),
-                bobKilled(),
-              ),
-            ),
+            // Image.asset(
+            //   'assets/images/bob_censored.png',
+            //   width: 200,
+            // ),
+            // const SizedBox(
+            //   height: 20,
+            // ),
+            // SizedBox(
+            //   width: 300,
+            //   child: Text(
+            //     style: const TextStyle(
+            //       color: Colors.white,
+            //       fontSize: 15,
+            //     ),
+            //     bobKilled(),
+            //   ),
+            // ),
             const SizedBox(
               height: 50,
             ),
@@ -66,6 +70,9 @@ class DeadBob extends StatelessWidget {
               itemDescription: 'It\'s a book filled with recipes for cakes.',
               takeAction: 'Take the book',
             ),
+            GoBackFromItem(
+                routeManagerLocation: RouteManager.bedroom,
+                leaveItemText: 'Leave the book and poor man alone'),
           ],
         ),
       );
@@ -73,30 +80,17 @@ class DeadBob extends StatelessWidget {
       mainContent = Center(
         child: Column(
           children: [
-            const SizedBox(
-              height: 30,
-            ),
-            Image.asset(
-              'assets/images/bob_censored.png',
-              width: 200,
-            ),
-            const SizedBox(
-              height: 20,
-            ),
-            SizedBox(
-              width: 300,
-              child: Text(
-                style: const TextStyle(
-                  color: Colors.white,
-                  fontSize: 15,
-                ),
-                bobKilled(),
-              ),
+            ImageAndText(
+              image: 'assets/images/bob_censored.png',
+              text: bobKilled(),
             ),
             const SizedBox(
               height: 50,
             ),
             TakeHand(),
+            GoBackFromItem(
+                routeManagerLocation: RouteManager.bedroom,
+                leaveItemText: 'Leave the poor man alone'),
           ],
         ),
       );
@@ -104,25 +98,9 @@ class DeadBob extends StatelessWidget {
       mainContent = Center(
         child: Column(
           children: [
-            const SizedBox(
-              height: 30,
-            ),
-            Image.asset(
-              'assets/images/bob_censored.png',
-              width: 200,
-            ),
-            const SizedBox(
-              height: 20,
-            ),
-            SizedBox(
-              width: 300,
-              child: Text(
-                style: const TextStyle(
-                  color: Colors.white,
-                  fontSize: 15,
-                ),
-                bobKilled(),
-              ),
+            ImageAndText(
+              image: 'assets/images/bob_censored.png',
+              text: bobKilled(),
             ),
             const SizedBox(
               height: 50,
@@ -132,6 +110,9 @@ class DeadBob extends StatelessWidget {
               itemDescription: 'It\'s a book filled with recipes for cakes.',
               takeAction: 'Take the book',
             ),
+            GoBackFromItem(
+                routeManagerLocation: RouteManager.bedroom,
+                leaveItemText: 'Leave the book'),
           ],
         ),
       );
@@ -139,25 +120,9 @@ class DeadBob extends StatelessWidget {
       mainContent = Center(
         child: Column(
           children: [
-            const SizedBox(
-              height: 30,
-            ),
-            Image.asset(
-              'assets/images/bob_censored.png',
-              width: 200,
-            ),
-            const SizedBox(
-              height: 20,
-            ),
-            SizedBox(
-              width: 300,
-              child: Text(
-                style: const TextStyle(
-                  color: Colors.white,
-                  fontSize: 15,
-                ),
-                bobKilled(),
-              ),
+            ImageAndText(
+              image: 'assets/images/bob_censored.png',
+              text: bobKilled(),
             ),
             const SizedBox(
               height: 50,
@@ -167,6 +132,9 @@ class DeadBob extends StatelessWidget {
               itemDescription: 'It\'s a book filled with recipes for cakes.',
               takeAction: 'Take the book',
             ),
+            GoBackFromItem(
+                routeManagerLocation: RouteManager.bedroom,
+                leaveItemText: 'Leave the book'),
           ],
         ),
       );

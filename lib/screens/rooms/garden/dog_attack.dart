@@ -1,6 +1,7 @@
 import 'package:final_assignment_on_flutter/lists/items.dart';
 import 'package:final_assignment_on_flutter/routes/routes.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/hall/hall.dart';
+import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/image_and_text.dart';
 import 'package:final_assignment_on_flutter/text_files/drama_actions_text/attack_text.dart';
 import 'package:flutter/material.dart';
 
@@ -12,23 +13,24 @@ class DogAttack extends StatelessWidget {
     Widget mainContent = Center(
       child: Column(
         children: [
-          const SizedBox(
-            height: 30,
+          ImageAndText(
+            image: 'assets/images/dog_attack.png',
+            text: dogAttack(),
           ),
-          Image.asset(
-            'assets/images/dog_attack.png',
-            width: 200,
-          ),
-          const SizedBox(
-            height: 20,
-          ),
-          SizedBox(
-            width: 300,
-            child: Text(
-              style: const TextStyle(color: Colors.white, fontSize: 15),
-              dogAttack(),
-            ),
-          ),
+          // Image.asset(
+          //   'assets/images/dog_attack.png',
+          //   width: 200,
+          // ),
+          // const SizedBox(
+          //   height: 20,
+          // ),
+          // SizedBox(
+          //   width: 300,
+          //   child: Text(
+          //     style: const TextStyle(color: Colors.white, fontSize: 15),
+          //     dogAttack(),
+          //   ),
+          // ),
           const SizedBox(
             height: 50,
           ),
@@ -64,23 +66,24 @@ class DogAttack extends StatelessWidget {
       mainContent = Center(
         child: Column(
           children: [
-            const SizedBox(
-              height: 30,
+            ImageAndText(
+              image: 'assets/images/dog_attack.png',
+              text: dogAttack(),
             ),
-            Image.asset(
-              'assets/images/dog_attack.png',
-              width: 200,
-            ),
-            const SizedBox(
-              height: 20,
-            ),
-            SizedBox(
-              width: 300,
-              child: Text(
-                style: const TextStyle(color: Colors.white, fontSize: 15),
-                dogAttack(),
-              ),
-            ),
+            // Image.asset(
+            //   'assets/images/dog_attack.png',
+            //   width: 200,
+            // ),
+            // const SizedBox(
+            //   height: 20,
+            // ),
+            // SizedBox(
+            //   width: 300,
+            //   child: Text(
+            //     style: const TextStyle(color: Colors.white, fontSize: 15),
+            //     dogAttack(),
+            //   ),
+            // ),
             const SizedBox(
               height: 50,
             ),
@@ -144,23 +147,24 @@ class DogAttack extends StatelessWidget {
       mainContent = Center(
         child: Column(
           children: [
-            const SizedBox(
-              height: 30,
+            ImageAndText(
+              image: 'assets/images/dog_attack.png',
+              text: dogAttack(),
             ),
-            Image.asset(
-              'assets/images/dog_attack.png',
-              width: 200,
-            ),
-            const SizedBox(
-              height: 20,
-            ),
-            SizedBox(
-              width: 300,
-              child: Text(
-                style: const TextStyle(color: Colors.white, fontSize: 15),
-                dogAttack(),
-              ),
-            ),
+            // Image.asset(
+            //   'assets/images/dog_attack.png',
+            //   width: 200,
+            // ),
+            // const SizedBox(
+            //   height: 20,
+            // ),
+            // SizedBox(
+            //   width: 300,
+            //   child: Text(
+            //     style: const TextStyle(color: Colors.white, fontSize: 15),
+            //     dogAttack(),
+            //   ),
+            // ),
             const SizedBox(
               height: 50,
             ),
@@ -218,23 +222,24 @@ class DogAttack extends StatelessWidget {
       mainContent = Center(
         child: Column(
           children: [
-            const SizedBox(
-              height: 30,
+            ImageAndText(
+              image: 'assets/images/dog_attack.png',
+              text: dogAttack(),
             ),
-            Image.asset(
-              'assets/images/dog_attack.png',
-              width: 200,
-            ),
-            const SizedBox(
-              height: 20,
-            ),
-            SizedBox(
-              width: 300,
-              child: Text(
-                style: const TextStyle(color: Colors.white, fontSize: 15),
-                dogAttack(),
-              ),
-            ),
+            // Image.asset(
+            //   'assets/images/dog_attack.png',
+            //   width: 200,
+            // ),
+            // const SizedBox(
+            //   height: 20,
+            // ),
+            // SizedBox(
+            //   width: 300,
+            //   child: Text(
+            //     style: const TextStyle(color: Colors.white, fontSize: 15),
+            //     dogAttack(),
+            //   ),
+            // ),
             const SizedBox(
               height: 50,
             ),

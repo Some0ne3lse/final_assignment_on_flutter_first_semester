@@ -1,6 +1,7 @@
 import 'package:final_assignment_on_flutter/buttons/bottom_bar.dart';
 import 'package:final_assignment_on_flutter/buttons/exit_button.dart';
 import 'package:final_assignment_on_flutter/routes/routes.dart';
+import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/image_and_text.dart';
 import 'package:flutter/material.dart';
 
 class TwoDoorsOneOption extends StatelessWidget {
@@ -45,23 +46,24 @@ class TwoDoorsOneOption extends StatelessWidget {
             Center(
               child: Column(
                 children: [
-                  Image.asset(
-                    imgPath,
-                    width: 200,
-                  ),
-                  const SizedBox(
-                    height: 20,
-                  ),
-                  SizedBox(
-                    width: 300,
-                    child: Text(
-                      description,
-                      style: const TextStyle(
-                        color: Colors.white,
-                        fontSize: 15,
-                      ),
-                    ),
-                  ),
+                  ImageAndText(image: imgPath, text: description),
+                  // Image.asset(
+                  //   imgPath,
+                  //   width: 200,
+                  // ),
+                  // const SizedBox(
+                  //   height: 20,
+                  // ),
+                  // SizedBox(
+                  //   width: 300,
+                  //   child: Text(
+                  //     description,
+                  //     style: const TextStyle(
+                  //       color: Colors.white,
+                  //       fontSize: 15,
+                  //     ),
+                  //   ),
+                  // ),
                   const SizedBox(
                     height: 50,
                   ),

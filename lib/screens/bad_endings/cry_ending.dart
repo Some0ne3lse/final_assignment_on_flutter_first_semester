@@ -1,4 +1,5 @@
 import 'package:final_assignment_on_flutter/buttons/try_again_button.dart';
+import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/image_and_text.dart';
 import 'package:final_assignment_on_flutter/text_files/endings/bad_endings.dart';
 import 'package:flutter/material.dart';
 
@@ -23,22 +24,9 @@ class CryEnding extends StatelessWidget {
             Center(
               child: Column(
                 children: [
-                  Image.asset(
-                    'assets/images/sitAndCry.png',
-                    width: 200,
-                  ),
-                  const SizedBox(
-                    height: 20,
-                  ),
-                  SizedBox(
-                    width: 300,
-                    child: Text(
-                      cryBaby(),
-                      style: const TextStyle(
-                        color: Colors.white,
-                        fontSize: 15,
-                      ),
-                    ),
+                  ImageAndText(
+                    image: 'assets/images/sitAndCry.png',
+                    text: cryBaby(),
                   ),
                   const TryAgainButton(),
                 ],

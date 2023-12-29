@@ -4,6 +4,7 @@ import 'package:final_assignment_on_flutter/buttons/try_item.dart';
 import 'package:final_assignment_on_flutter/lists/items.dart';
 import 'package:final_assignment_on_flutter/routes/routes.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/examine_room_blueprints/one_item_examination.dart';
+import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/image_and_text.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/screen_base.dart';
 import 'package:final_assignment_on_flutter/text_files/rooms/room_examination.dart';
 import 'package:flutter/material.dart';
@@ -27,23 +28,24 @@ class KitchenExamination extends StatelessWidget {
       mainContent = Center(
         child: Column(
           children: [
-            const SizedBox(
-              height: 30,
+            ImageAndText(
+              image: 'assets/images/doughnuts.png',
+              text: kitchenExamination(),
             ),
-            Image.asset('assets/images/doughnuts.png', width: 200),
-            const SizedBox(
-              height: 20,
-            ),
-            SizedBox(
-              width: 300,
-              child: Text(
-                style: const TextStyle(
-                  color: Colors.white,
-                  fontSize: 15,
-                ),
-                kitchenExamination(),
-              ),
-            ),
+            // Image.asset('assets/images/doughnuts.png', width: 200),
+            // const SizedBox(
+            //   height: 20,
+            // ),
+            // SizedBox(
+            //   width: 300,
+            //   child: Text(
+            //     style: const TextStyle(
+            //       color: Colors.white,
+            //       fontSize: 15,
+            //     ),
+            //     kitchenExamination(),
+            //   ),
+            // ),
             const SizedBox(
               height: 50,
             ),

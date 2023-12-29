@@ -1,6 +1,7 @@
 import 'package:final_assignment_on_flutter/buttons/go_back_from_item.dart';
 import 'package:final_assignment_on_flutter/buttons/take_item.dart';
 import 'package:final_assignment_on_flutter/buttons/try_item.dart';
+import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/image_and_text.dart';
 import 'package:flutter/material.dart';
 
 class OneItemToPickUp extends StatelessWidget {
@@ -30,23 +31,24 @@ class OneItemToPickUp extends StatelessWidget {
     return Center(
       child: Column(
         children: [
-          const SizedBox(
-            height: 30,
+          ImageAndText(
+            image: image,
+            text: examinationText,
           ),
-          Image.asset(
-            image,
-            width: 200,
-          ),
-          const SizedBox(
-            height: 20,
-          ),
-          SizedBox(
-            width: 300,
-            child: Text(
-              style: const TextStyle(color: Colors.white, fontSize: 15),
-              examinationText,
-            ),
-          ),
+          // Image.asset(
+          //   image,
+          //   width: 200,
+          // ),
+          // const SizedBox(
+          //   height: 20,
+          // ),
+          // SizedBox(
+          //   width: 300,
+          //   child: Text(
+          //     style: const TextStyle(color: Colors.white, fontSize: 15),
+          //     examinationText,
+          //   ),
+          // ),
           const SizedBox(
             height: 50,
           ),
