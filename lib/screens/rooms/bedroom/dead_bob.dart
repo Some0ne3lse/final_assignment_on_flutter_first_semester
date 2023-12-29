@@ -1,5 +1,6 @@
+import 'package:final_assignment_on_flutter/buttons/take_hand.dart';
+import 'package:final_assignment_on_flutter/buttons/take_item.dart';
 import 'package:final_assignment_on_flutter/lists/items.dart';
-import 'package:final_assignment_on_flutter/routes/routes.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/examine_room_blueprints/nothing_of_interest.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/screen_base.dart';
 import 'package:final_assignment_on_flutter/text_files/rooms/room_examination.dart';
@@ -59,44 +60,11 @@ class DeadBob extends StatelessWidget {
             const SizedBox(
               height: 50,
             ),
-            ElevatedButton(
-              onPressed: () {
-                pickedUpItems.add(
-                  Item(
-                      title: 'Hand',
-                      description:
-                          'It is Bob\'s right hand. You hope all of this is worth it...'),
-                );
-                showDialog(
-                  context: context,
-                  builder: (context) => AlertDialog(
-                    content: const Text(
-                        'You take the saw and start cutting off Bob\'s hand. After a few minutes you\'re done.'),
-                    actions: [
-                      TextButton(
-                          onPressed: () {
-                            Navigator.of(context).pushNamedAndRemoveUntil(
-                                RouteManager.bedroom,
-                                (Route<dynamic> route) => false);
-                          },
-                          child: const Text('Okay!'))
-                    ],
-                  ),
-                );
-              },
-              child: const Text('Cut of Bob\'s hand'),
-            ),
-            ElevatedButton(
-              onPressed: () {
-                pickedUpItems.add(
-                  Item(
-                    title: 'Book',
-                    description: 'It\'s a book filled with recipes for cakes.',
-                  ),
-                );
-                Navigator.pop(context);
-              },
-              child: const Text('Take the book'),
+            TakeHand(),
+            TakeItem(
+              item: 'Book',
+              itemDescription: 'It\'s a book filled with recipes for cakes.',
+              takeAction: 'Take the book',
             ),
           ],
         ),
@@ -128,33 +96,7 @@ class DeadBob extends StatelessWidget {
             const SizedBox(
               height: 50,
             ),
-            ElevatedButton(
-              onPressed: () {
-                pickedUpItems.add(
-                  Item(
-                      title: 'Hand',
-                      description:
-                          'It is Bob\'s right hand. You hope all of this is worth it...'),
-                );
-                showDialog(
-                  context: context,
-                  builder: (context) => AlertDialog(
-                    content: const Text(
-                        'You take the saw and start cutting off Bob\'s hand. After a few minutes you\'re done.'),
-                    actions: [
-                      TextButton(
-                          onPressed: () {
-                            Navigator.of(context).pushNamedAndRemoveUntil(
-                                RouteManager.bedroom,
-                                (Route<dynamic> route) => false);
-                          },
-                          child: const Text('Okay!'))
-                    ],
-                  ),
-                );
-              },
-              child: const Text('Cut of Bob\'s hand'),
-            ),
+            TakeHand(),
           ],
         ),
       );
@@ -185,17 +127,10 @@ class DeadBob extends StatelessWidget {
             const SizedBox(
               height: 50,
             ),
-            ElevatedButton(
-              onPressed: () {
-                pickedUpItems.add(
-                  Item(
-                    title: 'Book',
-                    description: 'It\'s a book filled with recipes for cakes.',
-                  ),
-                );
-                Navigator.pop(context);
-              },
-              child: const Text('Take the book'),
+            TakeItem(
+              item: 'Book',
+              itemDescription: 'It\'s a book filled with recipes for cakes.',
+              takeAction: 'Take the book',
             ),
           ],
         ),
@@ -227,17 +162,10 @@ class DeadBob extends StatelessWidget {
             const SizedBox(
               height: 50,
             ),
-            ElevatedButton(
-              onPressed: () {
-                pickedUpItems.add(
-                  Item(
-                    title: 'Book',
-                    description: 'It\'s a book filled with recipes for cakes.',
-                  ),
-                );
-                Navigator.pop(context);
-              },
-              child: const Text('Take the book'),
+            TakeItem(
+              item: 'Book',
+              itemDescription: 'It\'s a book filled with recipes for cakes.',
+              takeAction: 'Take the book',
             ),
           ],
         ),

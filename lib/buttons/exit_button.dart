@@ -33,6 +33,7 @@ class ExitButton extends StatelessWidget {
                       RouteManager.startScreen,
                       (Route<dynamic> route) => false);
                   pickedUpItems.clear();
+                  pillsTaken = false;
                   hiddenDoorFound = false;
                   dogTamed = false;
                   dogSleeping = false;

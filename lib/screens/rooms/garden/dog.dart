@@ -1,5 +1,5 @@
 import 'package:final_assignment_on_flutter/buttons/go_back_from_item.dart';
-import 'package:final_assignment_on_flutter/buttons/tryItem.dart';
+import 'package:final_assignment_on_flutter/buttons/try_item.dart';
 import 'package:final_assignment_on_flutter/lists/items.dart';
 import 'package:final_assignment_on_flutter/routes/routes.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/screen_base.dart';

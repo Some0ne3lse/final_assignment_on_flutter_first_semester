@@ -1,6 +1,5 @@
 import 'package:final_assignment_on_flutter/buttons/go_back_from_item.dart';
-import 'package:final_assignment_on_flutter/buttons/take_item.dart';
-import 'package:final_assignment_on_flutter/buttons/tryItem.dart';
+import 'package:final_assignment_on_flutter/buttons/try_item.dart';
 import 'package:flutter/material.dart';
 
 class OneItemExamination extends StatelessWidget {
@@ -8,22 +7,18 @@ class OneItemExamination extends StatelessWidget {
     super.key,
     required this.image,
     required this.examinationText,
-    required this.item,
     required this.itemDescription,
-    required this.takeAction,
     required this.interactWithItem,
-    required this.leaveItemText,
     required this.routeManagerLocation,
+    required this.leaveItemText,
   });
 
   final String image;
   final String examinationText;
-  final String item;
   final String itemDescription;
-  final String takeAction;
   final String interactWithItem;
-  final String leaveItemText;
   final String routeManagerLocation;
+  final String leaveItemText;
 
   @override
   Widget build(BuildContext context) {
@@ -43,23 +38,19 @@ class OneItemExamination extends StatelessWidget {
           SizedBox(
             width: 300,
             child: Text(
-              style: const TextStyle(color: Colors.white, fontSize: 15),
               examinationText,
+              style: const TextStyle(color: Colors.white, fontSize: 15),
             ),
           ),
           const SizedBox(
             height: 50,
           ),
-          TakeItem(
-              item: item,
-              itemDescription: itemDescription,
-              takeAction: takeAction),
           TryItem(
               itemDescription: itemDescription,
               interactWithItem: interactWithItem),
           GoBackFromItem(
               routeManagerLocation: routeManagerLocation,
-              leaveItemText: leaveItemText),
+              leaveItemText: leaveItemText)
         ],
       ),
     );

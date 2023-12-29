@@ -19,6 +19,7 @@ class TryAgainButton extends StatelessWidget {
         Navigator.of(context).pushNamedAndRemoveUntil(
             RouteManager.startScreen, (Route<dynamic> route) => false);
         pickedUpItems.clear();
+        pillsTaken = false;
         hiddenDoorFound = false;
         dogTamed = false;
         dogSleeping = false;

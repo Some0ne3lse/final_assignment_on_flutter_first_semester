@@ -1,7 +1,7 @@
 import 'package:final_assignment_on_flutter/buttons/go_back_from_item.dart';
-import 'package:final_assignment_on_flutter/buttons/tryItem.dart';
+import 'package:final_assignment_on_flutter/buttons/try_item.dart';
 import 'package:final_assignment_on_flutter/routes/routes.dart';
-import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/examine_room_blueprints/one_note_examination.dart';
+import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/examine_room_blueprints/one_item_examination.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/screen_base.dart';
 import 'package:final_assignment_on_flutter/text_files/notes/notes.dart';
 import 'package:final_assignment_on_flutter/text_files/rooms/room_examination.dart';
@@ -13,7 +13,7 @@ class LibraryExamination extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenBase(
-      mainContent: OneNoteExamination(
+      mainContent: OneItemExamination(
         image: 'assets/images/library_note.png',
         examinationText: libraryExamination(),
         itemDescription: basementNote(),

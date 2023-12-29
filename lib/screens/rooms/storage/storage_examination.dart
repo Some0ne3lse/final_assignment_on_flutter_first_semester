@@ -1,4 +1,5 @@
 import 'package:final_assignment_on_flutter/buttons/go_back_from_item.dart';
+import 'package:final_assignment_on_flutter/buttons/take_item.dart';
 import 'package:final_assignment_on_flutter/lists/items.dart';
 import 'package:final_assignment_on_flutter/routes/routes.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/examine_room_blueprints/nothing_of_interest.dart';
@@ -34,31 +35,15 @@ class StorageExamination extends StatelessWidget {
           const SizedBox(
             height: 50,
           ),
-          ElevatedButton(
-            onPressed: () {
-              pickedUpItems.add(
-                Item(
-                  title: 'Saw',
-                  description:
-                      'The saw is sharp. You almost cut yourself on it.',
-                ),
-              );
-              Navigator.pop(context);
-            },
-            child: const Text('Take the saw'),
-          ),
-          ElevatedButton(
-            onPressed: () {
-              pickedUpItems.add(
-                Item(
-                  title: 'Axe',
-                  description: 'The axe is in fine condition.',
-                ),
-              );
-              Navigator.pop(context);
-            },
-            child: const Text('Take the axe'),
-          ),
+          TakeItem(
+              item: 'Saw',
+              itemDescription:
+                  'The saw is sharp. You almost cut yourself on it.',
+              takeAction: 'Take the saw'),
+          TakeItem(
+              item: 'Axe',
+              itemDescription: 'The axe is in fine condition.',
+              takeAction: 'Take the axe'),
           GoBackFromItem(
               routeManagerLocation: RouteManager.storage,
               leaveItemText: 'Leave the axe and saw'),
@@ -94,18 +79,10 @@ class StorageExamination extends StatelessWidget {
             const SizedBox(
               height: 50,
             ),
-            ElevatedButton(
-              onPressed: () {
-                pickedUpItems.add(
-                  Item(
-                    title: 'Axe',
-                    description: 'The axe is in fine condition.',
-                  ),
-                );
-                Navigator.pop(context);
-              },
-              child: const Text('Take the axe'),
-            ),
+            TakeItem(
+                item: 'Axe',
+                itemDescription: 'The axe is in fine condition.',
+                takeAction: 'Take the axe'),
             GoBackFromItem(
                 routeManagerLocation: RouteManager.storage,
                 leaveItemText: 'Leave the axe'),
@@ -136,19 +113,11 @@ class StorageExamination extends StatelessWidget {
             const SizedBox(
               height: 50,
             ),
-            ElevatedButton(
-              onPressed: () {
-                pickedUpItems.add(
-                  Item(
-                    title: 'Saw',
-                    description:
-                        'The saw is sharp. You almost cut yourself on it.',
-                  ),
-                );
-                Navigator.pop(context);
-              },
-              child: const Text('Take the saw'),
-            ),
+            TakeItem(
+                item: 'Saw',
+                itemDescription:
+                    'The saw is sharp. You almost cut yourself on it.',
+                takeAction: 'Take the saw'),
             GoBackFromItem(
                 routeManagerLocation: RouteManager.storage,
                 leaveItemText: 'Leave the saw'),
