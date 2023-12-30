@@ -25,10 +25,7 @@ class OneDoorOneOption extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 69, 74, 73),
       appBar: AppBar(
-        backgroundColor: Colors.black,
-        foregroundColor: Colors.white,
         title: Text(locationName),
       ),
       body: SingleChildScrollView(

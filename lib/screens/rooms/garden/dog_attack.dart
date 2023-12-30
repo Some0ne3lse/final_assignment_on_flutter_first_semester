@@ -2,6 +2,7 @@ import 'package:final_assignment_on_flutter/lists/items.dart';
 import 'package:final_assignment_on_flutter/routes/routes.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/hall/hall.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/image_and_text.dart';
+import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/screen_base.dart';
 import 'package:final_assignment_on_flutter/text_files/drama_actions_text/attack_text.dart';
 import 'package:flutter/material.dart';
 
@@ -275,21 +276,6 @@ class DogAttack extends StatelessWidget {
         ),
       );
     }
-    return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 69, 74, 73),
-      appBar: AppBar(
-        backgroundColor: Colors.black,
-        foregroundColor: Colors.white,
-        title: const Text('Dog attack!'),
-      ),
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            const SizedBox(height: 20),
-            mainContent,
-          ],
-        ),
-      ),
-    );
+    return ScreenBase(mainContent: mainContent, locationName: 'Dog attack');
   }
 }

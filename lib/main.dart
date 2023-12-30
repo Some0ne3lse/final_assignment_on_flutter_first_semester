@@ -10,7 +10,22 @@ class MyGame extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: Colors.black,
+          background: Color.fromARGB(255, 69, 74, 73),
+          primary: Color.fromARGB(255, 29, 33, 33),
+        ),
+        appBarTheme: AppBarTheme(
+          color: Colors.black,
+          foregroundColor: Colors.white,
+        ),
+        bottomAppBarTheme: BottomAppBarTheme(
+          color: Colors.black,
+        ),
+        dialogBackgroundColor: Colors.white,
+      ),
       initialRoute: RouteManager.startScreen,
       onGenerateRoute: RouteManager.generateRoute,
     );

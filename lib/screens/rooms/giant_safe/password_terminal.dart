@@ -43,9 +43,7 @@ class _PasswordTerminalState extends State<PasswordTerminal> {
                 cursorColor: const Color.fromARGB(255, 0, 0, 255),
                 style: const TextStyle(color: Colors.purple),
                 decoration: const InputDecoration(
-                  border: OutlineInputBorder(
-                    borderSide: BorderSide(color: Colors.purple),
-                  ),
+                  border: OutlineInputBorder(),
                 ),
               ),
               const SizedBox(
@@ -72,7 +70,10 @@ class _PasswordTerminalState extends State<PasswordTerminal> {
                 onPressed: () {
                   Navigator.pop(context);
                 },
-                child: const Text('Go Back'),
+                child: const Text(
+                  'Go Back',
+                  style: TextStyle(color: Colors.purple),
+                ),
               ),
             ],
           ),

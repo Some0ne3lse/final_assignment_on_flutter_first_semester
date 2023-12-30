@@ -1,4 +1,4 @@
-import 'package:final_assignment_on_flutter/buttons/exit_button.dart';
+import 'package:final_assignment_on_flutter/buttons/bottom_bar.dart';
 import 'package:final_assignment_on_flutter/lists/items.dart';
 import 'package:final_assignment_on_flutter/routes/routes.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/image_and_text.dart';
@@ -25,10 +25,7 @@ class GiantSafe extends StatelessWidget {
           firstDoorRoute: RouteManager.livingRoom);
     } else if (pickedUpItems.any((item) => item.title == itemOneToCheck)) {
       return Scaffold(
-        backgroundColor: const Color.fromARGB(255, 69, 74, 73),
         appBar: AppBar(
-          backgroundColor: Colors.black,
-          foregroundColor: Colors.white,
           title: const Text('Giant Safe'),
         ),
         body: SingleChildScrollView(
@@ -44,23 +41,6 @@ class GiantSafe extends StatelessWidget {
                       image: 'assets/images/terminal.png',
                       text: giantSafe(),
                     ),
-                    // Image.asset(
-                    //   'assets/images/terminal.png',
-                    //   width: 200,
-                    // ),
-                    // const SizedBox(
-                    //   height: 20,
-                    // ),
-                    // SizedBox(
-                    //   width: 300,
-                    //   child: Text(
-                    //     giantSafe(),
-                    //     style: const TextStyle(
-                    //       color: Colors.white,
-                    //       fontSize: 15,
-                    //     ),
-                    //   ),
-                    // ),
                     const SizedBox(
                       height: 50,
                     ),
@@ -98,38 +78,11 @@ class GiantSafe extends StatelessWidget {
             ],
           ),
         ),
-        bottomNavigationBar: BottomAppBar(
-          height: kBottomNavigationBarHeight,
-          color: Colors.black,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
-              TextButton(
-                style: TextButton.styleFrom(foregroundColor: Colors.white),
-                onPressed: () {
-                  Navigator.of(context).pushNamed(RouteManager.inventory);
-                },
-                child: const Row(
-                  children: [
-                    Text('Inventory'),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Icon(Icons.build),
-                  ],
-                ),
-              ),
-              const ExitButton(),
-            ],
-          ),
-        ),
+        bottomNavigationBar: BottomBar(),
       );
     } else if (pickedUpItems.any((item) => item.title == itemTwoToCheck)) {
       return Scaffold(
-        backgroundColor: const Color.fromARGB(255, 69, 74, 73),
         appBar: AppBar(
-          backgroundColor: Colors.black,
-          foregroundColor: Colors.white,
           title: const Text('Giant Safe'),
         ),
         body: SingleChildScrollView(
@@ -145,23 +98,6 @@ class GiantSafe extends StatelessWidget {
                       image: 'assets/images/terminal.png',
                       text: giantSafe(),
                     ),
-                    // Image.asset(
-                    //   'assets/images/terminal.png',
-                    //   width: 200,
-                    // ),
-                    // const SizedBox(
-                    //   height: 20,
-                    // ),
-                    // SizedBox(
-                    //   width: 300,
-                    //   child: Text(
-                    //     giantSafe(),
-                    //     style: const TextStyle(
-                    //       color: Colors.white,
-                    //       fontSize: 15,
-                    //     ),
-                    //   ),
-                    // ),
                     const SizedBox(
                       height: 50,
                     ),
@@ -199,38 +135,11 @@ class GiantSafe extends StatelessWidget {
             ],
           ),
         ),
-        bottomNavigationBar: BottomAppBar(
-          height: kBottomNavigationBarHeight,
-          color: Colors.black,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
-              TextButton(
-                style: TextButton.styleFrom(foregroundColor: Colors.white),
-                onPressed: () {
-                  Navigator.of(context).pushNamed(RouteManager.inventory);
-                },
-                child: const Row(
-                  children: [
-                    Text('Inventory'),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Icon(Icons.build),
-                  ],
-                ),
-              ),
-              const ExitButton(),
-            ],
-          ),
-        ),
+        bottomNavigationBar: BottomBar(),
       );
     } else {
       return Scaffold(
-        backgroundColor: const Color.fromARGB(255, 69, 74, 73),
         appBar: AppBar(
-          backgroundColor: Colors.black,
-          foregroundColor: Colors.white,
           title: const Text('Giant Safe'),
         ),
         body: SingleChildScrollView(
@@ -246,23 +155,6 @@ class GiantSafe extends StatelessWidget {
                       image: 'assets/images/terminal.png',
                       text: giantSafe(),
                     ),
-                    // Image.asset(
-                    //   'assets/images/terminal.png',
-                    //   width: 200,
-                    // ),
-                    // const SizedBox(
-                    //   height: 20,
-                    // ),
-                    // SizedBox(
-                    //   width: 300,
-                    //   child: Text(
-                    //     giantSafe(),
-                    //     style: const TextStyle(
-                    //       color: Colors.white,
-                    //       fontSize: 15,
-                    //     ),
-                    //   ),
-                    // ),
                     const SizedBox(
                       height: 50,
                     ),
@@ -283,31 +175,7 @@ class GiantSafe extends StatelessWidget {
             ],
           ),
         ),
-        bottomNavigationBar: BottomAppBar(
-          height: kBottomNavigationBarHeight,
-          color: Colors.black,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
-              TextButton(
-                style: TextButton.styleFrom(foregroundColor: Colors.white),
-                onPressed: () {
-                  Navigator.of(context).pushNamed(RouteManager.inventory);
-                },
-                child: const Row(
-                  children: [
-                    Text('Inventory'),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Icon(Icons.build),
-                  ],
-                ),
-              ),
-              const ExitButton(),
-            ],
-          ),
-        ),
+        bottomNavigationBar: BottomBar(),
       );
     }
   }

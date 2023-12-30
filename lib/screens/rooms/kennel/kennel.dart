@@ -21,10 +21,7 @@ class Kennel extends StatelessWidget {
         firstDoorRoute: RouteManager.garden);
     if (dogSleeping == false) {
       mainContent = Scaffold(
-        backgroundColor: const Color.fromARGB(255, 69, 74, 73),
         appBar: AppBar(
-          backgroundColor: Colors.black,
-          foregroundColor: Colors.white,
           title: const Text('Dog'),
         ),
         body: SingleChildScrollView(
