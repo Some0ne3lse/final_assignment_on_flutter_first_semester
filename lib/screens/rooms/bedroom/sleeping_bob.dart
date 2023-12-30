@@ -15,23 +15,27 @@ class SleepingBob extends StatelessWidget {
     Widget mainContent = Center(
       child: Column(
         children: [
-          Image.asset(
-            'assets/images/bob.png',
-            width: 200,
+          ImageAndText(
+            image: 'assets/images/bob.png',
+            text: bobDescription(),
           ),
-          const SizedBox(
-            height: 20,
-          ),
-          SizedBox(
-            width: 300,
-            child: Text(
-              style: const TextStyle(
-                color: Colors.white,
-                fontSize: 15,
-              ),
-              bobDescription(),
-            ),
-          ),
+          // Image.asset(
+          //   'assets/images/bob.png',
+          //   width: 200,
+          // ),
+          // const SizedBox(
+          //   height: 20,
+          // ),
+          // SizedBox(
+          //   width: 300,
+          //   child: Text(
+          //     style: const TextStyle(
+          //       color: Colors.white,
+          //       fontSize: 15,
+          //     ),
+          //     bobDescription(),
+          //   ),
+          // ),
           const SizedBox(
             height: 50,
           ),
@@ -49,8 +53,7 @@ class SleepingBob extends StatelessWidget {
       ),
     );
     String itemToCheck = 'Axe';
-    if ((pickedUpItems.any((item) => item.title == itemToCheck)) &&
-        bobDead == false) {
+    if (pickedUpItems.any((item) => item.title == itemToCheck)) {
       mainContent = Center(
         child: Column(
           children: [

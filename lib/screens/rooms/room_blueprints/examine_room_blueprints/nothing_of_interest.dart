@@ -11,7 +11,7 @@ class NothingOfInterest extends StatelessWidget {
       child: SizedBox(
         width: 300,
         child: Text(
-          'You find nothing else of value',
+          'You find nothing else of value...',
           style: TextStyle(
             color: Colors.white,
             fontSize: 15,
