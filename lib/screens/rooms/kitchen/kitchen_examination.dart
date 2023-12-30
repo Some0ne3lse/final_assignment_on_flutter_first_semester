@@ -32,20 +32,6 @@ class KitchenExamination extends StatelessWidget {
               image: 'assets/images/doughnuts.png',
               text: kitchenExamination(),
             ),
-            // Image.asset('assets/images/doughnuts.png', width: 200),
-            // const SizedBox(
-            //   height: 20,
-            // ),
-            // SizedBox(
-            //   width: 300,
-            //   child: Text(
-            //     style: const TextStyle(
-            //       color: Colors.white,
-            //       fontSize: 15,
-            //     ),
-            //     kitchenExamination(),
-            //   ),
-            // ),
             const SizedBox(
               height: 50,
             ),

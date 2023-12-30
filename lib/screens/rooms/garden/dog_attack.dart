@@ -18,20 +18,6 @@ class DogAttack extends StatelessWidget {
             image: 'assets/images/dog_attack.png',
             text: dogAttack(),
           ),
-          // Image.asset(
-          //   'assets/images/dog_attack.png',
-          //   width: 200,
-          // ),
-          // const SizedBox(
-          //   height: 20,
-          // ),
-          // SizedBox(
-          //   width: 300,
-          //   child: Text(
-          //     style: const TextStyle(color: Colors.white, fontSize: 15),
-          //     dogAttack(),
-          //   ),
-          // ),
           const SizedBox(
             height: 50,
           ),
@@ -71,20 +57,6 @@ class DogAttack extends StatelessWidget {
               image: 'assets/images/dog_attack.png',
               text: dogAttack(),
             ),
-            // Image.asset(
-            //   'assets/images/dog_attack.png',
-            //   width: 200,
-            // ),
-            // const SizedBox(
-            //   height: 20,
-            // ),
-            // SizedBox(
-            //   width: 300,
-            //   child: Text(
-            //     style: const TextStyle(color: Colors.white, fontSize: 15),
-            //     dogAttack(),
-            //   ),
-            // ),
             const SizedBox(
               height: 50,
             ),
@@ -152,20 +124,6 @@ class DogAttack extends StatelessWidget {
               image: 'assets/images/dog_attack.png',
               text: dogAttack(),
             ),
-            // Image.asset(
-            //   'assets/images/dog_attack.png',
-            //   width: 200,
-            // ),
-            // const SizedBox(
-            //   height: 20,
-            // ),
-            // SizedBox(
-            //   width: 300,
-            //   child: Text(
-            //     style: const TextStyle(color: Colors.white, fontSize: 15),
-            //     dogAttack(),
-            //   ),
-            // ),
             const SizedBox(
               height: 50,
             ),
@@ -227,20 +185,6 @@ class DogAttack extends StatelessWidget {
               image: 'assets/images/dog_attack.png',
               text: dogAttack(),
             ),
-            // Image.asset(
-            //   'assets/images/dog_attack.png',
-            //   width: 200,
-            // ),
-            // const SizedBox(
-            //   height: 20,
-            // ),
-            // SizedBox(
-            //   width: 300,
-            //   child: Text(
-            //     style: const TextStyle(color: Colors.white, fontSize: 15),
-            //     dogAttack(),
-            //   ),
-            // ),
             const SizedBox(
               height: 50,
             ),

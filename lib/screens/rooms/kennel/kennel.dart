@@ -35,23 +35,6 @@ class Kennel extends StatelessWidget {
                       image: 'assets/images/happy_dog.png',
                       text: 'The dog won\'t let you into the kennel!',
                     ),
-                    // Image.asset(
-                    //   'assets/images/happy_dog.png',
-                    //   width: 200,
-                    // ),
-                    // const SizedBox(
-                    //   height: 20,
-                    // ),
-                    // const SizedBox(
-                    //   width: 300,
-                    //   child: Text(
-                    //     'The dog won\'t let you into the kennel!',
-                    //     style: TextStyle(
-                    //       color: Colors.white,
-                    //       fontSize: 15,
-                    //     ),
-                    //   ),
-                    // ),
                     const SizedBox(
                       height: 50,
                     ),

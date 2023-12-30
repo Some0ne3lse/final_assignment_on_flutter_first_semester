@@ -25,23 +25,6 @@ class GiveUpOnLifeBob extends StatelessWidget {
                     image: 'assets/images/everything_for_nothing.png',
                     text: giveUpOnLifeBob(),
                   ),
-                  // Image.asset(
-                  //   'assets/images/everything_for_nothing.png',
-                  //   width: 200,
-                  // ),
-                  // const SizedBox(
-                  //   height: 20,
-                  // ),
-                  // SizedBox(
-                  //   width: 300,
-                  //   child: Text(
-                  //     giveUpOnLifeBob(),
-                  //     style: const TextStyle(
-                  //       color: Colors.white,
-                  //       fontSize: 15,
-                  //     ),
-                  //   ),
-                  // ),
                   const TryAgainButton(),
                 ],
               ),

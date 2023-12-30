@@ -61,20 +61,6 @@ class StorageExamination extends StatelessWidget {
               image: 'assets/images/axe.png',
               text: storageExaminationAxe(),
             ),
-            // Image.asset(
-            //   'assets/images/axe.png',
-            //   width: 200,
-            // ),
-            // const SizedBox(
-            //   height: 20,
-            // ),
-            // SizedBox(
-            //   width: 300,
-            //   child: Text(
-            //     style: const TextStyle(color: Colors.white, fontSize: 15),
-            //     storageExaminationAxe(),
-            //   ),
-            // ),
             const SizedBox(
               height: 50,
             ),

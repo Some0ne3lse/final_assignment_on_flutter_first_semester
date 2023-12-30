@@ -25,23 +25,6 @@ class Monster extends StatelessWidget {
                     image: 'assets/images/monster.png',
                     text: monster(),
                   ),
-                  // Image.asset(
-                  //   'assets/images/monster.png',
-                  //   width: 200,
-                  // ),
-                  // const SizedBox(
-                  //   height: 20,
-                  // ),
-                  // SizedBox(
-                  //   width: 300,
-                  //   child: Text(
-                  //     monster(),
-                  //     style: const TextStyle(
-                  //       color: Colors.white,
-                  //       fontSize: 15,
-                  //     ),
-                  //   ),
-                  // ),
                   const TryAgainButton(),
                 ],
               ),

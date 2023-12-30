@@ -19,23 +19,6 @@ class SleepingBob extends StatelessWidget {
             image: 'assets/images/bob.png',
             text: bobDescription(),
           ),
-          // Image.asset(
-          //   'assets/images/bob.png',
-          //   width: 200,
-          // ),
-          // const SizedBox(
-          //   height: 20,
-          // ),
-          // SizedBox(
-          //   width: 300,
-          //   child: Text(
-          //     style: const TextStyle(
-          //       color: Colors.white,
-          //       fontSize: 15,
-          //     ),
-          //     bobDescription(),
-          //   ),
-          // ),
           const SizedBox(
             height: 50,
           ),
@@ -61,23 +44,6 @@ class SleepingBob extends StatelessWidget {
               image: 'assets/images/bob.png',
               text: bobDescription(),
             ),
-            // Image.asset(
-            //   'assets/images/bob.png',
-            //   width: 200,
-            // ),
-            // const SizedBox(
-            //   height: 20,
-            // ),
-            // SizedBox(
-            //   width: 300,
-            //   child: Text(
-            //     style: const TextStyle(
-            //       color: Colors.white,
-            //       fontSize: 15,
-            //     ),
-            //     bobDescription(),
-            //   ),
-            // ),
             const SizedBox(
               height: 50,
             ),

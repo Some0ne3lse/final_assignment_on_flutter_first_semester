@@ -25,23 +25,6 @@ class GiveUpOnLifeNoAxe extends StatelessWidget {
                     image: 'assets/images/pet_dog_ending.png',
                     text: giveUpOnLifeNoAxe(),
                   ),
-                  // Image.asset(
-                  //   'assets/images/pet_dog_ending.png',
-                  //   width: 200,
-                  // ),
-                  // const SizedBox(
-                  //   height: 20,
-                  // ),
-                  // SizedBox(
-                  //   width: 300,
-                  //   child: Text(
-                  //     giveUpOnLifeNoAxe(),
-                  //     style: const TextStyle(
-                  //       color: Colors.white,
-                  //       fontSize: 15,
-                  //     ),
-                  //   ),
-                  // ),
                   const TryAgainButton(),
                 ],
               ),

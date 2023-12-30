@@ -25,23 +25,6 @@ class GiveUpOnLife extends StatelessWidget {
                     image: 'assets/images/heaven.png',
                     text: giveUpOnLife(),
                   ),
-                  // Image.asset(
-                  //   'assets/images/heaven.png',
-                  //   width: 200,
-                  // ),
-                  // const SizedBox(
-                  //   height: 20,
-                  // ),
-                  // SizedBox(
-                  //   width: 300,
-                  //   child: Text(
-                  //     giveUpOnLife(),
-                  //     style: const TextStyle(
-                  //       color: Colors.white,
-                  //       fontSize: 15,
-                  //     ),
-                  //   ),
-                  // ),
                   const TryAgainButton(),
                 ],
               ),

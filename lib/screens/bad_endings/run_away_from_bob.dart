@@ -25,23 +25,6 @@ class RunAwayFromBob extends StatelessWidget {
                     image: 'assets/images/door.png',
                     text: doorInTheWay(),
                   ),
-                  // Image.asset(
-                  //   'assets/images/door.png',
-                  //   width: 200,
-                  // ),
-                  // const SizedBox(
-                  //   height: 20,
-                  // ),
-                  // SizedBox(
-                  //   width: 300,
-                  //   child: Text(
-                  //     doorInTheWay(),
-                  //     style: const TextStyle(
-                  //       color: Colors.white,
-                  //       fontSize: 15,
-                  //     ),
-                  //   ),
-                  // ),
                   const TryAgainButton(),
                 ],
               ),

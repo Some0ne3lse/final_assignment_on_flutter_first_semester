@@ -25,23 +25,6 @@ class GotTheCake extends StatelessWidget {
                     image: 'assets/images/the_cake.png',
                     text: gettingTheCake(),
                   ),
-                  // Image.asset(
-                  //   'assets/images/the_cake.png',
-                  //   width: 200,
-                  // ),
-                  // const SizedBox(
-                  //   height: 20,
-                  // ),
-                  // SizedBox(
-                  //   width: 300,
-                  //   child: Text(
-                  //     gettingTheCake(),
-                  //     style: const TextStyle(
-                  //       color: Colors.white,
-                  //       fontSize: 15,
-                  //     ),
-                  //   ),
-                  // ),
                   const TryAgainButton(),
                 ],
               ),

@@ -21,23 +21,6 @@ class Dog extends StatelessWidget {
             image: 'assets/images/happy_dog.png',
             text: dogDescription(),
           ),
-          // Image.asset(
-          //   'assets/images/happy_dog.png',
-          //   width: 200,
-          // ),
-          // const SizedBox(
-          //   height: 20,
-          // ),
-          // SizedBox(
-          //   width: 300,
-          //   child: Text(
-          //     style: const TextStyle(
-          //       color: Colors.white,
-          //       fontSize: 15,
-          //     ),
-          //     dogDescription(),
-          //   ),
-          // ),
           const SizedBox(
             height: 50,
           ),
@@ -61,23 +44,6 @@ class Dog extends StatelessWidget {
               image: 'assets/images/happy_dog.png',
               text: dogDescription(),
             ),
-            // Image.asset(
-            //   'assets/images/happy_dog.png',
-            //   width: 200,
-            // ),
-            // const SizedBox(
-            //   height: 20,
-            // ),
-            // SizedBox(
-            //   width: 300,
-            //   child: Text(
-            //     style: const TextStyle(
-            //       color: Colors.white,
-            //       fontSize: 15,
-            //     ),
-            //     dogDescription(),
-            //   ),
-            // ),
             const SizedBox(
               height: 50,
             ),
@@ -124,23 +90,6 @@ class Dog extends StatelessWidget {
               image: 'assets/images/sleeping_dog.png',
               text: 'The dog is sleeping',
             ),
-            // Image.asset(
-            //   'assets/images/sleeping_dog.png',
-            //   width: 200,
-            // ),
-            // const SizedBox(
-            //   height: 20,
-            // ),
-            // const SizedBox(
-            //   width: 300,
-            //   child: Text(
-            //     'The dog is sleeping',
-            //     style: TextStyle(
-            //       color: Colors.white,
-            //       fontSize: 15,
-            //     ),
-            //   ),
-            // ),
           ],
         ),
       );

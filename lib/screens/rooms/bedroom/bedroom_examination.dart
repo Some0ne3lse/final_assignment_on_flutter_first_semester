@@ -26,20 +26,6 @@ class BedroomExamination extends StatelessWidget {
             image: 'assets/images/sleeping_pills.png',
             text: bedroomExamination(),
           ),
-          // Image.asset(
-          //   'assets/images/sleeping_pills.png',
-          //   width: 200,
-          // ),
-          // const SizedBox(
-          //   height: 20,
-          // ),
-          // SizedBox(
-          //   width: 300,
-          //   child: Text(
-          //     style: const TextStyle(color: Colors.white, fontSize: 15),
-          //     bedroomExamination(),
-          //   ),
-          // ),
           const SizedBox(
             height: 50,
           ),

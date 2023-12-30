@@ -45,23 +45,6 @@ class OneDoorTwoOptions extends StatelessWidget {
                     image: imgPath,
                     text: description,
                   ),
-                  // Image.asset(
-                  //   imgPath,
-                  //   width: 200,
-                  // ),
-                  // const SizedBox(
-                  //   height: 20,
-                  // ),
-                  // SizedBox(
-                  //   width: 300,
-                  //   child: Text(
-                  //     description,
-                  //     style: const TextStyle(
-                  //       color: Colors.white,
-                  //       fontSize: 15,
-                  //     ),
-                  //   ),
-                  // ),
                   const SizedBox(
                     height: 50,
                   ),

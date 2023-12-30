@@ -27,23 +27,6 @@ class Arrival extends StatelessWidget {
                     image: 'assets/images/arrival.png',
                     text: arrivalText(),
                   ),
-                  // Image.asset(
-                  //   'assets/images/arrival.png',
-                  //   width: 200,
-                  // ),
-                  // const SizedBox(
-                  //   height: 20,
-                  // ),
-                  // SizedBox(
-                  //   width: 300,
-                  //   child: Text(
-                  //     arrivalText(),
-                  //     style: const TextStyle(
-                  //       color: Colors.white,
-                  //       fontSize: 15,
-                  //     ),
-                  //   ),
-                  // ),
                   const SizedBox(
                     height: 50,
                   ),

@@ -18,20 +18,6 @@ class BobAttack extends StatelessWidget {
             image: 'assets/images/bob_awake.png',
             text: bobAttack(),
           ),
-          // Image.asset(
-          //   'assets/images/bob_awake.png',
-          //   width: 200,
-          // ),
-          // const SizedBox(
-          //   height: 20,
-          // ),
-          // SizedBox(
-          //   width: 300,
-          //   child: Text(
-          //     style: const TextStyle(color: Colors.white, fontSize: 15),
-          //     bobAttack(),
-          //   ),
-          // ),
           const SizedBox(
             height: 50,
           ),
@@ -62,20 +48,6 @@ class BobAttack extends StatelessWidget {
               image: 'assets/images/bob_awake.png',
               text: bobAttack(),
             ),
-            // Image.asset(
-            //   'assets/images/bob_awake.png',
-            //   width: 200,
-            // ),
-            // const SizedBox(
-            //   height: 20,
-            // ),
-            // SizedBox(
-            //   width: 300,
-            //   child: Text(
-            //     style: const TextStyle(color: Colors.white, fontSize: 15),
-            //     bobAttack(),
-            //   ),
-            // ),
             const SizedBox(
               height: 50,
             ),

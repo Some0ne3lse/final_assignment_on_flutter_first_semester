@@ -22,23 +22,6 @@ class BasementExamination extends StatelessWidget {
             image: 'assets/images/hidden_mechanism.png',
             text: basementExamination(),
           ),
-          // Image.asset(
-          //   'assets/images/hidden_mechanism.png',
-          //   width: 200,
-          // ),
-          // const SizedBox(
-          //   height: 20,
-          // ),
-          // SizedBox(
-          //   width: 300,
-          //   child: Text(
-          //     style: const TextStyle(
-          //       color: Colors.white,
-          //       fontSize: 15,
-          //     ),
-          //     basementExamination(),
-          //   ),
-          // ),
           const SizedBox(
             height: 50,
           ),
