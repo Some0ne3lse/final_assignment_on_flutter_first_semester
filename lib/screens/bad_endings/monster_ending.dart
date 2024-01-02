@@ -26,6 +26,9 @@ class Monster extends StatelessWidget {
                     text: monster(),
                   ),
                   const TryAgainButton(),
+                  SizedBox(
+                    height: 30,
+                  ),
                 ],
               ),
             )

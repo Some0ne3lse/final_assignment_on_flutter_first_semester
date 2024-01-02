@@ -1,4 +1,4 @@
-import 'package:final_assignment_on_flutter/buttons_for_many_places/go_to_room_button.dart';
+import 'package:final_assignment_on_flutter/buttons_for_many_places/go_to_screen_button.dart';
 import 'package:final_assignment_on_flutter/lists/items.dart';
 import 'package:final_assignment_on_flutter/routes/routes.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/bedroom/bedroom_buttons/stand_your_ground.dart';
@@ -22,13 +22,13 @@ class BobAttack extends StatelessWidget {
           const SizedBox(
             height: 50,
           ),
-          GoToRoomButton(
+          GoToScreenButton(
               doorRoute: RouteManager.runAwayFromBob,
               doorText: 'Run away from Bob'),
           SizedBox(
             height: 10,
           ),
-          GoToRoomButton(
+          GoToScreenButton(
               doorRoute: RouteManager.giveUpOnLifeBob,
               doorText: 'Give up on life'),
         ],
@@ -50,13 +50,13 @@ class BobAttack extends StatelessWidget {
             SizedBox(
               height: 10,
             ),
-            GoToRoomButton(
+            GoToScreenButton(
                 doorRoute: RouteManager.runAwayFromBob,
                 doorText: 'Run away from Bob'),
             SizedBox(
               height: 10,
             ),
-            GoToRoomButton(
+            GoToScreenButton(
                 doorRoute: RouteManager.giveUpOnLifeBob,
                 doorText: 'Give up on life'),
           ],

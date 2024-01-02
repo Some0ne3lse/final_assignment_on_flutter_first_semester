@@ -38,7 +38,10 @@ class OneItemExamination extends StatelessWidget {
           ),
           GoBackFromItem(
               routeManagerLocation: routeManagerLocation,
-              leaveItemText: leaveItemText)
+              leaveItemText: leaveItemText),
+          SizedBox(
+            height: 30,
+          ),
         ],
       ),
     );

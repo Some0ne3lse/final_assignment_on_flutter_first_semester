@@ -1,5 +1,5 @@
 import 'package:final_assignment_on_flutter/routes/routes.dart';
-import 'package:final_assignment_on_flutter/buttons_for_many_places/go_to_room_button.dart';
+import 'package:final_assignment_on_flutter/buttons_for_many_places/go_to_screen_button.dart';
 import 'package:flutter/material.dart';
 
 class StartScreen extends StatelessWidget {
@@ -25,9 +25,12 @@ class StartScreen extends StatelessWidget {
               const SizedBox(
                 height: 20,
               ),
-              GoToRoomButton(
+              GoToScreenButton(
                   doorRoute: RouteManager.introduction,
                   doorText: 'Start The Hunt'),
+              SizedBox(
+                height: 30,
+              ),
               // ElevatedButton(
               //   onPressed: () {
               //     Navigator.of(context)

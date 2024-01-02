@@ -54,6 +54,9 @@ class GiantSafe extends StatelessWidget {
                       routeManagerLocation: RouteManager.livingRoom,
                       leaveItemText: 'Go to the Living Room',
                     ),
+                    SizedBox(
+                      height: 30,
+                    ),
                   ],
                 ),
               ),

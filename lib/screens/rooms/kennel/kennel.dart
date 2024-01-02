@@ -41,6 +41,9 @@ class Kennel extends StatelessWidget {
                     GoBackFromItem(
                         routeManagerLocation: RouteManager.garden,
                         leaveItemText: 'Go back to the garden'),
+                    SizedBox(
+                      height: 30,
+                    ),
                   ],
                 ),
               ),

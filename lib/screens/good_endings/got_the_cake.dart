@@ -26,6 +26,9 @@ class GotTheCake extends StatelessWidget {
                     text: gettingTheCake(),
                   ),
                   const TryAgainButton(),
+                  SizedBox(
+                    height: 30,
+                  ),
                 ],
               ),
             )

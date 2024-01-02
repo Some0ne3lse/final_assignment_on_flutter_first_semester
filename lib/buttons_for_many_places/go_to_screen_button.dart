@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class GoToRoomButton extends StatelessWidget {
-  const GoToRoomButton({
+class GoToScreenButton extends StatelessWidget {
+  const GoToScreenButton({
     super.key,
     required this.doorRoute,
     required this.doorText,

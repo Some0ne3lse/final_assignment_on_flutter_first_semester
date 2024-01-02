@@ -1,4 +1,4 @@
-import 'package:final_assignment_on_flutter/buttons_for_many_places/go_to_room_button.dart';
+import 'package:final_assignment_on_flutter/buttons_for_many_places/go_to_screen_button.dart';
 import 'package:final_assignment_on_flutter/lists/items.dart';
 import 'package:final_assignment_on_flutter/routes/routes.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/garden/garden_buttons/give_dog_shoes.dart';
@@ -22,18 +22,18 @@ class DogAttack extends StatelessWidget {
           const SizedBox(
             height: 50,
           ),
-          GoToRoomButton(
+          GoToScreenButton(
               doorRoute: RouteManager.hall, doorText: 'Run back inside'),
           SizedBox(
             height: 10,
           ),
-          GoToRoomButton(
+          GoToScreenButton(
               doorRoute: RouteManager.petDogEnding,
               doorText: 'Try to pet the dog'),
           SizedBox(
             height: 10,
           ),
-          GoToRoomButton(
+          GoToScreenButton(
               doorRoute: RouteManager.giveUpOnLifeDogNoAxe,
               doorText: 'Give up on life'),
         ],
@@ -53,18 +53,18 @@ class DogAttack extends StatelessWidget {
             const SizedBox(
               height: 50,
             ),
-            GoToRoomButton(
+            GoToScreenButton(
                 doorRoute: RouteManager.hall, doorText: 'Run back inside'),
             SizedBox(
               height: 10,
             ),
-            GoToRoomButton(
+            GoToScreenButton(
                 doorRoute: RouteManager.petDogEnding,
                 doorText: 'Try to pet the dog'),
             SizedBox(
               height: 10,
             ),
-            GoToRoomButton(
+            GoToScreenButton(
                 doorRoute: RouteManager.monster,
                 doorText: 'Try to kill the dog with axe'),
             SizedBox(
@@ -74,7 +74,7 @@ class DogAttack extends StatelessWidget {
             SizedBox(
               height: 10,
             ),
-            GoToRoomButton(
+            GoToScreenButton(
                 doorRoute: RouteManager.giveUpOnLifeDog,
                 doorText: 'Give up on life'),
             SizedBox(
@@ -94,12 +94,12 @@ class DogAttack extends StatelessWidget {
             const SizedBox(
               height: 50,
             ),
-            GoToRoomButton(
+            GoToScreenButton(
                 doorRoute: RouteManager.hall, doorText: 'Run back inside'),
             SizedBox(
               height: 10,
             ),
-            GoToRoomButton(
+            GoToScreenButton(
                 doorRoute: RouteManager.petDogEnding,
                 doorText: 'Try to pet the dog'),
             SizedBox(
@@ -109,7 +109,7 @@ class DogAttack extends StatelessWidget {
             SizedBox(
               height: 10,
             ),
-            GoToRoomButton(
+            GoToScreenButton(
                 doorRoute: RouteManager.giveUpOnLifeDogNoAxe,
                 doorText: 'Give up on life'),
           ],
@@ -126,24 +126,24 @@ class DogAttack extends StatelessWidget {
             const SizedBox(
               height: 50,
             ),
-            GoToRoomButton(
+            GoToScreenButton(
                 doorRoute: RouteManager.hall, doorText: 'Run back inside'),
             SizedBox(
               height: 10,
             ),
-            GoToRoomButton(
+            GoToScreenButton(
                 doorRoute: RouteManager.petDogEnding,
                 doorText: 'Try to pet the dog'),
             SizedBox(
               height: 10,
             ),
-            GoToRoomButton(
+            GoToScreenButton(
                 doorRoute: RouteManager.monster,
                 doorText: 'Try to kill the dog with axe'),
             SizedBox(
               height: 10,
             ),
-            GoToRoomButton(
+            GoToScreenButton(
                 doorRoute: RouteManager.giveUpOnLifeDog,
                 doorText: 'Give up on life'),
           ],

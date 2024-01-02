@@ -1,5 +1,5 @@
 import 'package:final_assignment_on_flutter/buttons_for_many_places/go_back_from_item.dart';
-import 'package:final_assignment_on_flutter/buttons_for_many_places/go_to_room_button.dart';
+import 'package:final_assignment_on_flutter/buttons_for_many_places/go_to_screen_button.dart';
 import 'package:final_assignment_on_flutter/lists/items.dart';
 import 'package:final_assignment_on_flutter/routes/routes.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/bedroom/bedroom_buttons/kill_bob_in_sleep.dart';
@@ -23,7 +23,7 @@ class SleepingBob extends StatelessWidget {
           const SizedBox(
             height: 50,
           ),
-          GoToRoomButton(
+          GoToScreenButton(
               doorRoute: RouteManager.bobAttack,
               doorText: 'Try to take the book under the pillow'),
           SizedBox(
@@ -51,7 +51,7 @@ class SleepingBob extends StatelessWidget {
             SizedBox(
               height: 10,
             ),
-            GoToRoomButton(
+            GoToScreenButton(
                 doorRoute: RouteManager.bobAttack,
                 doorText: 'Try to take the book under the pillow'),
             SizedBox(

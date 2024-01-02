@@ -1,5 +1,5 @@
 import 'package:final_assignment_on_flutter/routes/routes.dart';
-import 'package:final_assignment_on_flutter/buttons_for_many_places/go_to_room_button.dart';
+import 'package:final_assignment_on_flutter/buttons_for_many_places/go_to_screen_button.dart';
 import 'package:final_assignment_on_flutter/text_files/introduction.dart';
 import 'package:flutter/material.dart';
 
@@ -34,7 +34,7 @@ class Introduction extends StatelessWidget {
                   const SizedBox(
                     height: 50,
                   ),
-                  GoToRoomButton(
+                  GoToScreenButton(
                       doorRoute: RouteManager.cryEnding,
                       doorText: 'Sit down and cry with your wife'),
                   SizedBox(
@@ -47,9 +47,12 @@ class Introduction extends StatelessWidget {
                   //   },
                   //   child: const Text('Sit down and cry with your wife'),
                   // ),
-                  GoToRoomButton(
+                  GoToScreenButton(
                       doorRoute: RouteManager.arrival,
                       doorText: 'Go to Bob the Burly mans home'),
+                  SizedBox(
+                    height: 30,
+                  ),
                   // ElevatedButton(
                   //   onPressed: () {
                   //     Navigator.of(context)

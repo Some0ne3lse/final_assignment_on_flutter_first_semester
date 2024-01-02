@@ -21,6 +21,9 @@ class ScreenBase extends StatelessWidget {
           children: [
             const SizedBox(height: 20),
             mainContent,
+            SizedBox(
+              height: 30,
+            ),
           ],
         ),
       ),

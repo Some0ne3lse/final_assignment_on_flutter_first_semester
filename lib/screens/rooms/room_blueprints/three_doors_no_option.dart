@@ -1,5 +1,5 @@
 import 'package:final_assignment_on_flutter/buttons_for_many_places/bottom_bar.dart';
-import 'package:final_assignment_on_flutter/buttons_for_many_places/go_to_room_button.dart';
+import 'package:final_assignment_on_flutter/buttons_for_many_places/go_to_screen_button.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/image_and_text.dart';
 import 'package:flutter/material.dart';
 
@@ -49,7 +49,7 @@ class ThreeDoorsNoOption extends StatelessWidget {
                   const SizedBox(
                     height: 50,
                   ),
-                  GoToRoomButton(
+                  GoToScreenButton(
                       doorRoute: firstDoorRoute, doorText: firstDoorText),
                   SizedBox(
                     height: 10,
@@ -61,7 +61,7 @@ class ThreeDoorsNoOption extends StatelessWidget {
                   //   },
                   //   child: Text(firstDoorText),
                   // ),
-                  GoToRoomButton(
+                  GoToScreenButton(
                       doorRoute: secondDoorRoute, doorText: secondDoorText),
                   SizedBox(
                     height: 10,
@@ -73,8 +73,11 @@ class ThreeDoorsNoOption extends StatelessWidget {
                   //   },
                   //   child: Text(secondDoorText),
                   // ),
-                  GoToRoomButton(
+                  GoToScreenButton(
                       doorRoute: thirdDoorRoute, doorText: thirdDoorText),
+                  SizedBox(
+                    height: 30,
+                  ),
                   // ElevatedButton(
                   //   onPressed: () {
                   //     Navigator.of(context).pushNamedAndRemoveUntil(

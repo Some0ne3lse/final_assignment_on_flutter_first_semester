@@ -26,6 +26,9 @@ class CryEnding extends StatelessWidget {
                     text: cryBaby(),
                   ),
                   const TryAgainButton(),
+                  SizedBox(
+                    height: 30,
+                  ),
                 ],
               ),
             )

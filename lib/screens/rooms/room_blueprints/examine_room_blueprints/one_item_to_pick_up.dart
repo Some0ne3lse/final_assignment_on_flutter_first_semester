@@ -54,6 +54,9 @@ class OneItemToPickUp extends StatelessWidget {
           GoBackFromItem(
               routeManagerLocation: routeManagerLocation,
               leaveItemText: leaveItemText),
+          SizedBox(
+            height: 30,
+          ),
         ],
       ),
     );
