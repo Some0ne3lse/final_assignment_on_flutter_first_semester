@@ -1,6 +1,6 @@
-import 'package:final_assignment_on_flutter/buttons/combine_items.dart';
-import 'package:final_assignment_on_flutter/buttons/go_back_from_item.dart';
-import 'package:final_assignment_on_flutter/buttons/try_item.dart';
+import 'package:final_assignment_on_flutter/screens/rooms/kitchen/kitchen_buttons/combine_items.dart';
+import 'package:final_assignment_on_flutter/buttons_for_many_places/go_back_from_item.dart';
+import 'package:final_assignment_on_flutter/buttons_for_many_places/try_item.dart';
 import 'package:final_assignment_on_flutter/lists/items.dart';
 import 'package:final_assignment_on_flutter/routes/routes.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/examine_room_blueprints/one_item_examination.dart';
@@ -39,6 +39,9 @@ class KitchenExamination extends StatelessWidget {
                 itemDescription:
                     'You eat a doughnut. It tastes nice, but not as nice as your cake.',
                 interactWithItem: 'Eat a doughnut'),
+            SizedBox(
+              height: 10,
+            ),
             CombineItems(
                 itemToTake: 'Spiked Doughnut',
                 itemToTakeDescription:
@@ -48,6 +51,9 @@ class KitchenExamination extends StatelessWidget {
                     'You insert a few pills into one of the doughnuts, and add it to your inventory.',
                 combineSelectAction: 'Insert pills into doughnut',
                 routeManagerLocation: RouteManager.kitchen),
+            SizedBox(
+              height: 10,
+            ),
             GoBackFromItem(
                 routeManagerLocation: RouteManager.kitchen,
                 leaveItemText: 'Leave the doughnuts'),

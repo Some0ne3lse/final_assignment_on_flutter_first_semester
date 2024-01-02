@@ -1,7 +1,8 @@
-import 'package:final_assignment_on_flutter/buttons/go_back_from_item.dart';
+import 'package:final_assignment_on_flutter/buttons_for_many_places/go_back_from_item.dart';
+import 'package:final_assignment_on_flutter/buttons_for_many_places/go_to_room_button.dart';
 import 'package:final_assignment_on_flutter/lists/items.dart';
 import 'package:final_assignment_on_flutter/routes/routes.dart';
-import 'package:final_assignment_on_flutter/screens/rooms/bedroom/bob_examination.dart';
+import 'package:final_assignment_on_flutter/screens/rooms/bedroom/bedroom_buttons/kill_bob_in_sleep.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/image_and_text.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/screen_base.dart';
 import 'package:final_assignment_on_flutter/text_files/rooms/room_description.dart';
@@ -22,12 +23,11 @@ class SleepingBob extends StatelessWidget {
           const SizedBox(
             height: 50,
           ),
-          ElevatedButton(
-            onPressed: () {
-              Navigator.of(context).pushNamedAndRemoveUntil(
-                  RouteManager.bobAttack, (Route<dynamic> route) => false);
-            },
-            child: const Text('Try to take the book under the pillow'),
+          GoToRoomButton(
+              doorRoute: RouteManager.bobAttack,
+              doorText: 'Try to take the book under the pillow'),
+          SizedBox(
+            height: 10,
           ),
           GoBackFromItem(
               routeManagerLocation: RouteManager.bedroom,
@@ -47,35 +47,15 @@ class SleepingBob extends StatelessWidget {
             const SizedBox(
               height: 50,
             ),
-            ElevatedButton(
-              onPressed: () {
-                showDialog(
-                  context: context,
-                  builder: (context) => AlertDialog(
-                    content: const Text(
-                        'You lift your axe and swing it down on Bob. You kill him with one strike.'),
-                    actions: [
-                      TextButton(
-                        onPressed: () {
-                          bobDead = true;
-                          Navigator.of(context).pushNamedAndRemoveUntil(
-                              RouteManager.bedroom,
-                              (Route<dynamic> route) => false);
-                        },
-                        child: const Text('Okay!'),
-                      ),
-                    ],
-                  ),
-                );
-              },
-              child: const Text('Kill Bob in his sleep'),
+            KillBobInSleep(),
+            SizedBox(
+              height: 10,
             ),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.of(context).pushNamedAndRemoveUntil(
-                    RouteManager.bobAttack, (Route<dynamic> route) => false);
-              },
-              child: const Text('Try to take the book under the pillow'),
+            GoToRoomButton(
+                doorRoute: RouteManager.bobAttack,
+                doorText: 'Try to take the book under the pillow'),
+            SizedBox(
+              height: 10,
             ),
             GoBackFromItem(
                 routeManagerLocation: RouteManager.bedroom,

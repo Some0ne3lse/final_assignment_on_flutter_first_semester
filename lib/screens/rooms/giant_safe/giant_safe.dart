@@ -1,6 +1,8 @@
-import 'package:final_assignment_on_flutter/buttons/bottom_bar.dart';
+import 'package:final_assignment_on_flutter/buttons_for_many_places/bottom_bar.dart';
+import 'package:final_assignment_on_flutter/buttons_for_many_places/go_back_from_item.dart';
 import 'package:final_assignment_on_flutter/lists/items.dart';
 import 'package:final_assignment_on_flutter/routes/routes.dart';
+import 'package:final_assignment_on_flutter/screens/rooms/giant_safe/giant_safe_buttons/insert_hand_and_key.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/image_and_text.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/one_door_one_option.dart';
 import 'package:final_assignment_on_flutter/text_files/rooms/room_description.dart';
@@ -44,33 +46,13 @@ class GiantSafe extends StatelessWidget {
                     const SizedBox(
                       height: 50,
                     ),
-                    ElevatedButton(
-                      onPressed: () {
-                        showDialog(
-                          context: context,
-                          builder: (context) => AlertDialog(
-                            content: const Text(
-                                'You insert the hand, but nothing happens.'),
-                            actions: [
-                              TextButton(
-                                  onPressed: () => Navigator.pop(context),
-                                  child: const Text('Okay!'))
-                            ],
-                          ),
-                        );
-                      },
-                      child: const Text('Insert hand'),
+                    InsertHand(),
+                    SizedBox(
+                      height: 10,
                     ),
-                    ElevatedButton(
-                      onPressed: () {
-                        Navigator.of(context).pushNamedAndRemoveUntil(
-                            RouteManager.livingRoom,
-                            (Route<dynamic> route) => false);
-                      },
-                      child: const Text('Go to the Living Room'),
-                    ),
-                    const SizedBox(
-                      height: 30,
+                    GoBackFromItem(
+                      routeManagerLocation: RouteManager.livingRoom,
+                      leaveItemText: 'Go to the Living Room',
                     ),
                   ],
                 ),
@@ -101,30 +83,13 @@ class GiantSafe extends StatelessWidget {
                     const SizedBox(
                       height: 50,
                     ),
-                    ElevatedButton(
-                      onPressed: () {
-                        showDialog(
-                          context: context,
-                          builder: (context) => AlertDialog(
-                            content: const Text(
-                                'You insert the key, but nothing happens.'),
-                            actions: [
-                              TextButton(
-                                  onPressed: () => Navigator.pop(context),
-                                  child: const Text('Okay!'))
-                            ],
-                          ),
-                        );
-                      },
-                      child: const Text('Insert key'),
+                    InsertKey(),
+                    SizedBox(
+                      height: 10,
                     ),
-                    ElevatedButton(
-                      onPressed: () {
-                        Navigator.of(context).pushNamedAndRemoveUntil(
-                            RouteManager.livingRoom,
-                            (Route<dynamic> route) => false);
-                      },
-                      child: const Text('Go to the Living Room'),
+                    GoBackFromItem(
+                      routeManagerLocation: RouteManager.livingRoom,
+                      leaveItemText: 'Go to the Living Room',
                     ),
                     const SizedBox(
                       height: 30,
@@ -158,13 +123,9 @@ class GiantSafe extends StatelessWidget {
                     const SizedBox(
                       height: 50,
                     ),
-                    ElevatedButton(
-                      onPressed: () {
-                        Navigator.of(context).pushNamedAndRemoveUntil(
-                            RouteManager.livingRoom,
-                            (Route<dynamic> route) => false);
-                      },
-                      child: const Text('Go to the Living Room'),
+                    GoBackFromItem(
+                      routeManagerLocation: RouteManager.livingRoom,
+                      leaveItemText: 'Go to the Living Room',
                     ),
                     const SizedBox(
                       height: 30,

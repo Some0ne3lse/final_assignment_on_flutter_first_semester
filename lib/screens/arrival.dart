@@ -1,4 +1,5 @@
 import 'package:final_assignment_on_flutter/routes/routes.dart';
+import 'package:final_assignment_on_flutter/buttons_for_many_places/go_to_room_button.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/image_and_text.dart';
 import 'package:final_assignment_on_flutter/text_files/arrival.dart';
 import 'package:flutter/material.dart';
@@ -30,16 +31,18 @@ class Arrival extends StatelessWidget {
                   const SizedBox(
                     height: 50,
                   ),
-                  ElevatedButton(
-                    onPressed: () {
-                      Navigator.of(context)
-                          .pushReplacementNamed(RouteManager.entrance);
-                    },
-                    child: const Text('Go inside'),
-                  ),
-                  const SizedBox(
-                    height: 30,
-                  ),
+                  GoToRoomButton(
+                      doorRoute: RouteManager.entrance, doorText: 'Go inside'),
+                  // ElevatedButton(
+                  //   onPressed: () {
+                  //     Navigator.of(context)
+                  //         .pushReplacementNamed(RouteManager.entrance);
+                  //   },
+                  //   child: const Text('Go inside'),
+                  // ),
+                  // const SizedBox(
+                  //   height: 30,
+                  // ),
                 ],
               ),
             )

@@ -1,6 +1,6 @@
-import 'package:final_assignment_on_flutter/buttons/go_back_from_item.dart';
-import 'package:final_assignment_on_flutter/buttons/take_item.dart';
-import 'package:final_assignment_on_flutter/buttons/try_item.dart';
+import 'package:final_assignment_on_flutter/buttons_for_many_places/go_back_from_item.dart';
+import 'package:final_assignment_on_flutter/buttons_for_many_places/take_item.dart';
+import 'package:final_assignment_on_flutter/buttons_for_many_places/try_item.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/image_and_text.dart';
 import 'package:flutter/material.dart';
 
@@ -35,20 +35,6 @@ class OneItemToPickUp extends StatelessWidget {
             image: image,
             text: examinationText,
           ),
-          // Image.asset(
-          //   image,
-          //   width: 200,
-          // ),
-          // const SizedBox(
-          //   height: 20,
-          // ),
-          // SizedBox(
-          //   width: 300,
-          //   child: Text(
-          //     style: const TextStyle(color: Colors.white, fontSize: 15),
-          //     examinationText,
-          //   ),
-          // ),
           const SizedBox(
             height: 50,
           ),
@@ -56,9 +42,15 @@ class OneItemToPickUp extends StatelessWidget {
               item: item,
               itemDescription: itemDescription,
               takeAction: takeAction),
+          SizedBox(
+            height: 10,
+          ),
           TryItem(
               itemDescription: itemDescription,
               interactWithItem: interactWithItem),
+          SizedBox(
+            height: 10,
+          ),
           GoBackFromItem(
               routeManagerLocation: routeManagerLocation,
               leaveItemText: leaveItemText),

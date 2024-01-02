@@ -1,5 +1,5 @@
-import 'package:final_assignment_on_flutter/buttons/go_back_from_item.dart';
-import 'package:final_assignment_on_flutter/buttons/try_item.dart';
+import 'package:final_assignment_on_flutter/buttons_for_many_places/go_back_from_item.dart';
+import 'package:final_assignment_on_flutter/buttons_for_many_places/try_item.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/image_and_text.dart';
 import 'package:flutter/material.dart';
 
@@ -27,26 +27,15 @@ class OneItemExamination extends StatelessWidget {
       child: Column(
         children: [
           ImageAndText(image: image, text: examinationText),
-          // Image.asset(
-          //   image,
-          //   width: 200,
-          // ),
-          // const SizedBox(
-          //   height: 20,
-          // ),
-          // SizedBox(
-          //   width: 300,
-          //   child: Text(
-          //     examinationText,
-          //     style: const TextStyle(color: Colors.white, fontSize: 15),
-          //   ),
-          // ),
           const SizedBox(
             height: 50,
           ),
           TryItem(
               itemDescription: itemDescription,
               interactWithItem: interactWithItem),
+          SizedBox(
+            height: 10,
+          ),
           GoBackFromItem(
               routeManagerLocation: routeManagerLocation,
               leaveItemText: leaveItemText)

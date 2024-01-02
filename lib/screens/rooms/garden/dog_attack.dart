@@ -1,6 +1,7 @@
+import 'package:final_assignment_on_flutter/buttons_for_many_places/go_to_room_button.dart';
 import 'package:final_assignment_on_flutter/lists/items.dart';
 import 'package:final_assignment_on_flutter/routes/routes.dart';
-import 'package:final_assignment_on_flutter/screens/rooms/hall/hall.dart';
+import 'package:final_assignment_on_flutter/screens/rooms/garden/garden_buttons/give_dog_shoes.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/image_and_text.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/screen_base.dart';
 import 'package:final_assignment_on_flutter/text_files/drama_actions_text/attack_text.dart';
@@ -21,28 +22,20 @@ class DogAttack extends StatelessWidget {
           const SizedBox(
             height: 50,
           ),
-          ElevatedButton(
-            onPressed: () {
-              Navigator.of(context).pushNamedAndRemoveUntil(
-                  RouteManager.hall, (Route<dynamic> route) => false);
-            },
-            child: const Text('Run back inside'),
+          GoToRoomButton(
+              doorRoute: RouteManager.hall, doorText: 'Run back inside'),
+          SizedBox(
+            height: 10,
           ),
-          ElevatedButton(
-            onPressed: () {
-              Navigator.of(context).pushNamedAndRemoveUntil(
-                  RouteManager.petDogEnding, (Route<dynamic> route) => false);
-            },
-            child: const Text('Try to pet the dog'),
+          GoToRoomButton(
+              doorRoute: RouteManager.petDogEnding,
+              doorText: 'Try to pet the dog'),
+          SizedBox(
+            height: 10,
           ),
-          ElevatedButton(
-            onPressed: () {
-              Navigator.of(context).pushNamedAndRemoveUntil(
-                  RouteManager.giveUpOnLifeNoAxe,
-                  (Route<dynamic> route) => false);
-            },
-            child: const Text('Give up on life'),
-          ),
+          GoToRoomButton(
+              doorRoute: RouteManager.giveUpOnLifeDogNoAxe,
+              doorText: 'Give up on life'),
         ],
       ),
     );
@@ -60,58 +53,32 @@ class DogAttack extends StatelessWidget {
             const SizedBox(
               height: 50,
             ),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.of(context).pushNamedAndRemoveUntil(
-                    RouteManager.hall, (Route<dynamic> route) => false);
-              },
-              child: const Text('Run back inside'),
+            GoToRoomButton(
+                doorRoute: RouteManager.hall, doorText: 'Run back inside'),
+            SizedBox(
+              height: 10,
             ),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.of(context).pushNamedAndRemoveUntil(
-                    RouteManager.petDogEnding, (Route<dynamic> route) => false);
-              },
-              child: const Text('Try to pet the dog'),
+            GoToRoomButton(
+                doorRoute: RouteManager.petDogEnding,
+                doorText: 'Try to pet the dog'),
+            SizedBox(
+              height: 10,
             ),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.of(context).pushNamedAndRemoveUntil(
-                    RouteManager.monster, (Route<dynamic> route) => false);
-              },
-              child: const Text('Try to kill the dog with axe'),
+            GoToRoomButton(
+                doorRoute: RouteManager.monster,
+                doorText: 'Try to kill the dog with axe'),
+            SizedBox(
+              height: 10,
             ),
-            ElevatedButton(
-              onPressed: () {
-                pickedUpItems.removeWhere(
-                    (pickedUpItems) => pickedUpItems.title == 'Shoes');
-                dogTamed = true;
-                showDialog(
-                  context: context,
-                  builder: (context) => AlertDialog(
-                    content: const Text(
-                        'The dog catches the shoes in the air. In a heartbeat, it seems to like you. It wags it\'s tail happily.'),
-                    actions: [
-                      TextButton(
-                        onPressed: () {
-                          Navigator.of(context).pushNamedAndRemoveUntil(
-                              RouteManager.garden,
-                              (Route<dynamic> route) => false);
-                        },
-                        child: const Text('Okay!'),
-                      ),
-                    ],
-                  ),
-                );
-              },
-              child: const Text('Throw the shoes towards the dog'),
+            GiveDogShoes(),
+            SizedBox(
+              height: 10,
             ),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.of(context).pushNamedAndRemoveUntil(
-                    RouteManager.giveUpOnLife, (Route<dynamic> route) => false);
-              },
-              child: const Text('Give up on life'),
+            GoToRoomButton(
+                doorRoute: RouteManager.giveUpOnLifeDog,
+                doorText: 'Give up on life'),
+            SizedBox(
+              height: 10,
             ),
           ],
         ),
@@ -127,53 +94,24 @@ class DogAttack extends StatelessWidget {
             const SizedBox(
               height: 50,
             ),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.of(context).pushNamedAndRemoveUntil(
-                    RouteManager.hall, (Route<dynamic> route) => false);
-              },
-              child: const Text('Run back inside'),
+            GoToRoomButton(
+                doorRoute: RouteManager.hall, doorText: 'Run back inside'),
+            SizedBox(
+              height: 10,
             ),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.of(context).pushNamedAndRemoveUntil(
-                    RouteManager.petDogEnding, (Route<dynamic> route) => false);
-              },
-              child: const Text('Try to pet the dog'),
+            GoToRoomButton(
+                doorRoute: RouteManager.petDogEnding,
+                doorText: 'Try to pet the dog'),
+            SizedBox(
+              height: 10,
             ),
-            ElevatedButton(
-              onPressed: () {
-                dogTamed = true;
-                pickedUpItems.removeWhere(
-                    (pickedUpItems) => pickedUpItems.title == 'Shoes');
-                showDialog(
-                  context: context,
-                  builder: (context) => AlertDialog(
-                    content: const Text(
-                        'The dog catches the shoes in the air. In a heartbeat, it seems to like you. It wags it\'s tail happily.'),
-                    actions: [
-                      TextButton(
-                        onPressed: () {
-                          Navigator.of(context).pushNamedAndRemoveUntil(
-                              RouteManager.garden,
-                              (Route<dynamic> route) => false);
-                        },
-                        child: const Text('Okay!'),
-                      ),
-                    ],
-                  ),
-                );
-              },
-              child: const Text('Throw the shoes towards the dog'),
+            GiveDogShoes(),
+            SizedBox(
+              height: 10,
             ),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.of(context).pushNamedAndRemoveUntil(
-                    RouteManager.giveUpOnLifeNoAxe,
-                    (Route<dynamic> route) => false);
-              },
-              child: const Text('Give up on life'),
-            ),
+            GoToRoomButton(
+                doorRoute: RouteManager.giveUpOnLifeDogNoAxe,
+                doorText: 'Give up on life'),
           ],
         ),
       );
@@ -188,34 +126,26 @@ class DogAttack extends StatelessWidget {
             const SizedBox(
               height: 50,
             ),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.of(context).pushNamedAndRemoveUntil(
-                    RouteManager.hall, (Route<dynamic> route) => false);
-              },
-              child: const Text('Run back inside'),
+            GoToRoomButton(
+                doorRoute: RouteManager.hall, doorText: 'Run back inside'),
+            SizedBox(
+              height: 10,
             ),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.of(context).pushNamedAndRemoveUntil(
-                    RouteManager.petDogEnding, (Route<dynamic> route) => false);
-              },
-              child: const Text('Try to pet the dog'),
+            GoToRoomButton(
+                doorRoute: RouteManager.petDogEnding,
+                doorText: 'Try to pet the dog'),
+            SizedBox(
+              height: 10,
             ),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.of(context).pushNamedAndRemoveUntil(
-                    RouteManager.monster, (Route<dynamic> route) => false);
-              },
-              child: const Text('Try to kill the dog with axe'),
+            GoToRoomButton(
+                doorRoute: RouteManager.monster,
+                doorText: 'Try to kill the dog with axe'),
+            SizedBox(
+              height: 10,
             ),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.of(context).pushNamedAndRemoveUntil(
-                    RouteManager.giveUpOnLife, (Route<dynamic> route) => false);
-              },
-              child: const Text('Give up on life'),
-            ),
+            GoToRoomButton(
+                doorRoute: RouteManager.giveUpOnLifeDog,
+                doorText: 'Give up on life'),
           ],
         ),
       );

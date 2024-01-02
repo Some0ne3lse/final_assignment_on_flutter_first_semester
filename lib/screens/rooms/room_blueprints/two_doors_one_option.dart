@@ -1,4 +1,6 @@
-import 'package:final_assignment_on_flutter/buttons/bottom_bar.dart';
+import 'package:final_assignment_on_flutter/buttons_for_many_places/bottom_bar.dart';
+import 'package:final_assignment_on_flutter/buttons_for_many_places/examine_room_button.dart';
+import 'package:final_assignment_on_flutter/buttons_for_many_places/go_to_room_button.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/image_and_text.dart';
 import 'package:flutter/material.dart';
 
@@ -45,28 +47,32 @@ class TwoDoorsOneOption extends StatelessWidget {
                   const SizedBox(
                     height: 50,
                   ),
-                  ElevatedButton(
-                    onPressed: () =>
-                        Navigator.of(context).pushNamed(optionRoute),
-                    child: Text(optionText),
+                  ExamineRoomButton(
+                      optionRoute: optionRoute, optionText: optionText),
+                  SizedBox(
+                    height: 10,
                   ),
-                  ElevatedButton(
-                    onPressed: () {
-                      Navigator.of(context).pushNamedAndRemoveUntil(
-                          firstDoorRoute, (Route<dynamic> route) => false);
-                    },
-                    child: Text(firstDoorText),
+                  GoToRoomButton(
+                      doorRoute: firstDoorRoute, doorText: firstDoorText),
+                  SizedBox(
+                    height: 10,
                   ),
-                  ElevatedButton(
-                    onPressed: () {
-                      Navigator.of(context).pushNamedAndRemoveUntil(
-                          secondDoorRoute, (Route<dynamic> route) => false);
-                    },
-                    child: Text(secondDoorText),
-                  ),
-                  const SizedBox(
-                    height: 30,
-                  ),
+                  // ElevatedButton(
+                  //   onPressed: () {
+                  //     Navigator.of(context).pushNamedAndRemoveUntil(
+                  //         firstDoorRoute, (Route<dynamic> route) => false);
+                  //   },
+                  //   child: Text(firstDoorText),
+                  // ),
+                  GoToRoomButton(
+                      doorRoute: secondDoorRoute, doorText: secondDoorText),
+                  // ElevatedButton(
+                  //   onPressed: () {
+                  //     Navigator.of(context).pushNamedAndRemoveUntil(
+                  //         secondDoorRoute, (Route<dynamic> route) => false);
+                  //   },
+                  //   child: Text(secondDoorText),
+                  // ),
                 ],
               ),
             ),

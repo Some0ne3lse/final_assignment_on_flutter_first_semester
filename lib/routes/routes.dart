@@ -44,8 +44,8 @@ class RouteManager {
   static const String arrival = '/arrival';
   static const String cryEnding = '/cryEnding';
   static const String petDogEnding = '/petDogEnding';
-  static const String giveUpOnLifeNoAxe = '/giveUpOnLifeNoAxe';
-  static const String giveUpOnLife = '/giveUpOnLife';
+  static const String giveUpOnLifeDogNoAxe = '/giveUpOnLifeDogNoAxe';
+  static const String giveUpOnLifeDog = '/giveUpOnLifeDog';
   static const String monster = '/monster';
   static const String runAwayFromBob = '/runAwayFromBob';
   static const String giveUpOnLifeBob = '/giveUpOnLifeBob';
@@ -104,11 +104,11 @@ class RouteManager {
         return MaterialPageRoute(
           builder: (context) => const PetDogEnding(),
         );
-      case giveUpOnLifeNoAxe:
+      case giveUpOnLifeDogNoAxe:
         return MaterialPageRoute(
-          builder: (context) => const GiveUpOnLifeNoAxe(),
+          builder: (context) => const GiveUpOnLifeDogNoAxe(),
         );
-      case giveUpOnLife:
+      case giveUpOnLifeDog:
         return MaterialPageRoute(
           builder: (context) => const GiveUpOnLife(),
         );

@@ -2,6 +2,8 @@ import 'package:final_assignment_on_flutter/lists/items.dart';
 import 'package:final_assignment_on_flutter/routes/routes.dart';
 import 'package:flutter/material.dart';
 
+// This button is in a separate file, since there's a lot of code
+
 class TakeHand extends StatelessWidget {
   const TakeHand({super.key});
 

@@ -1,5 +1,5 @@
-import 'package:final_assignment_on_flutter/buttons/go_back_from_item.dart';
-import 'package:final_assignment_on_flutter/buttons/take_item.dart';
+import 'package:final_assignment_on_flutter/buttons_for_many_places/go_back_from_item.dart';
+import 'package:final_assignment_on_flutter/buttons_for_many_places/take_item.dart';
 import 'package:final_assignment_on_flutter/lists/items.dart';
 import 'package:final_assignment_on_flutter/routes/routes.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/examine_room_blueprints/nothing_of_interest.dart';
@@ -16,20 +16,24 @@ class StorageExamination extends StatelessWidget {
     Widget mainContent = Center(
       child: Column(
         children: [
-          Image.asset(
-            'assets/images/sawAndAxe.png',
-            width: 200,
+          ImageAndText(
+            image: 'assets/images/sawAndAxe.png',
+            text: storageExaminationAll(),
           ),
-          const SizedBox(
-            height: 20,
-          ),
-          SizedBox(
-            width: 300,
-            child: Text(
-              style: const TextStyle(color: Colors.white, fontSize: 15),
-              storageExaminationAll(),
-            ),
-          ),
+          // Image.asset(
+          //   'assets/images/sawAndAxe.png',
+          //   width: 200,
+          // ),
+          // const SizedBox(
+          //   height: 20,
+          // ),
+          // SizedBox(
+          //   width: 300,
+          //   child: Text(
+          //     style: const TextStyle(color: Colors.white, fontSize: 15),
+          //     storageExaminationAll(),
+          //   ),
+          // ),
           const SizedBox(
             height: 50,
           ),
@@ -38,10 +42,16 @@ class StorageExamination extends StatelessWidget {
               itemDescription:
                   'The saw is sharp. You almost cut yourself on it.',
               takeAction: 'Take the saw'),
+          SizedBox(
+            height: 10,
+          ),
           TakeItem(
               item: 'Axe',
               itemDescription: 'The axe is in fine condition.',
               takeAction: 'Take the axe'),
+          SizedBox(
+            height: 10,
+          ),
           GoBackFromItem(
               routeManagerLocation: RouteManager.storage,
               leaveItemText: 'Leave the axe and saw'),
@@ -68,6 +78,9 @@ class StorageExamination extends StatelessWidget {
                 item: 'Axe',
                 itemDescription: 'The axe is in fine condition.',
                 takeAction: 'Take the axe'),
+            SizedBox(
+              height: 10,
+            ),
             GoBackFromItem(
                 routeManagerLocation: RouteManager.storage,
                 leaveItemText: 'Leave the axe'),
@@ -81,20 +94,24 @@ class StorageExamination extends StatelessWidget {
             const SizedBox(
               height: 30,
             ),
-            Image.asset(
-              'assets/images/saw.png',
-              width: 200,
+            ImageAndText(
+              image: 'assets/images/saw.png',
+              text: storageExaminationSaw(),
             ),
-            const SizedBox(
-              height: 20,
-            ),
-            SizedBox(
-              width: 300,
-              child: Text(
-                style: const TextStyle(color: Colors.white, fontSize: 15),
-                storageExaminationSaw(),
-              ),
-            ),
+            // Image.asset(
+            //   'assets/images/saw.png',
+            //   width: 200,
+            // ),
+            // const SizedBox(
+            //   height: 20,
+            // ),
+            // SizedBox(
+            //   width: 300,
+            //   child: Text(
+            //     style: const TextStyle(color: Colors.white, fontSize: 15),
+            //     storageExaminationSaw(),
+            //   ),
+            // ),
             const SizedBox(
               height: 50,
             ),
@@ -103,6 +120,9 @@ class StorageExamination extends StatelessWidget {
                 itemDescription:
                     'The saw is sharp. You almost cut yourself on it.',
                 takeAction: 'Take the saw'),
+            SizedBox(
+              height: 10,
+            ),
             GoBackFromItem(
                 routeManagerLocation: RouteManager.storage,
                 leaveItemText: 'Leave the saw'),

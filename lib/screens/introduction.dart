@@ -1,4 +1,5 @@
 import 'package:final_assignment_on_flutter/routes/routes.dart';
+import 'package:final_assignment_on_flutter/buttons_for_many_places/go_to_room_button.dart';
 import 'package:final_assignment_on_flutter/text_files/introduction.dart';
 import 'package:flutter/material.dart';
 
@@ -11,45 +12,56 @@ class Introduction extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Getting the cake back'),
       ),
-      body: Column(
-        children: [
-          const SizedBox(
-            height: 20,
-          ),
-          Center(
-            child: Column(
-              children: [
-                SizedBox(
-                  width: 300,
-                  child: Text(
-                    introductionText(),
-                    style: const TextStyle(
-                      color: Colors.white,
-                      fontSize: 15,
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            const SizedBox(
+              height: 20,
+            ),
+            Center(
+              child: Column(
+                children: [
+                  SizedBox(
+                    width: 300,
+                    child: Text(
+                      introductionText(),
+                      style: const TextStyle(
+                        color: Colors.white,
+                        fontSize: 15,
+                      ),
                     ),
                   ),
-                ),
-                const SizedBox(
-                  height: 50,
-                ),
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.of(context)
-                        .pushReplacementNamed(RouteManager.cryEnding);
-                  },
-                  child: const Text('Sit down and cry with your wife'),
-                ),
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.of(context)
-                        .pushReplacementNamed(RouteManager.arrival);
-                  },
-                  child: const Text('Go to Bob the Burly mans home'),
-                ),
-              ],
-            ),
-          )
-        ],
+                  const SizedBox(
+                    height: 50,
+                  ),
+                  GoToRoomButton(
+                      doorRoute: RouteManager.cryEnding,
+                      doorText: 'Sit down and cry with your wife'),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  // ElevatedButton(
+                  //   onPressed: () {
+                  //     Navigator.of(context)
+                  //         .pushReplacementNamed(RouteManager.cryEnding);
+                  //   },
+                  //   child: const Text('Sit down and cry with your wife'),
+                  // ),
+                  GoToRoomButton(
+                      doorRoute: RouteManager.arrival,
+                      doorText: 'Go to Bob the Burly mans home'),
+                  // ElevatedButton(
+                  //   onPressed: () {
+                  //     Navigator.of(context)
+                  //         .pushReplacementNamed(RouteManager.arrival);
+                  //   },
+                  //   child: const Text('Go to Bob the Burly mans home'),
+                  // ),
+                ],
+              ),
+            )
+          ],
+        ),
       ),
     );
   }

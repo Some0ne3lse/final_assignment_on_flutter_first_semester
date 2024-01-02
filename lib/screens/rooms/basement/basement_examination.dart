@@ -1,7 +1,8 @@
-import 'package:final_assignment_on_flutter/buttons/go_back_from_item.dart';
-import 'package:final_assignment_on_flutter/buttons/try_item.dart';
+import 'package:final_assignment_on_flutter/buttons_for_many_places/go_back_from_item.dart';
+import 'package:final_assignment_on_flutter/buttons_for_many_places/try_item.dart';
 import 'package:final_assignment_on_flutter/lists/items.dart';
 import 'package:final_assignment_on_flutter/routes/routes.dart';
+import 'package:final_assignment_on_flutter/screens/rooms/basement/basement_buttons/insert_book.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/examine_room_blueprints/nothing_of_interest.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/image_and_text.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/screen_base.dart';
@@ -29,6 +30,9 @@ class BasementExamination extends StatelessWidget {
               itemDescription:
                   'It looks like you need to insert something. But what?',
               interactWithItem: 'Look at the mechanism'),
+          SizedBox(
+            height: 10,
+          ),
           GoBackFromItem(
               routeManagerLocation: RouteManager.basement,
               leaveItemText: 'Leave the mechanism'),
@@ -40,54 +44,24 @@ class BasementExamination extends StatelessWidget {
       mainContent = Center(
         child: Column(
           children: [
-            Image.asset(
-              'assets/images/hidden_mechanism.png',
-              width: 200,
-            ),
-            const SizedBox(
-              height: 20,
-            ),
-            SizedBox(
-              width: 300,
-              child: Text(
-                style: const TextStyle(
-                  color: Colors.white,
-                  fontSize: 15,
-                ),
-                basementExamination(),
-              ),
+            ImageAndText(
+              image: 'assets/images/hidden_mechanism.png',
+              text: basementExamination(),
             ),
             const SizedBox(
               height: 50,
             ),
-            ElevatedButton(
-              onPressed: () {
-                hiddenDoorFound = true;
-                pickedUpItems.removeWhere(
-                    (pickedUpItems) => pickedUpItems.title == 'Book');
-                showDialog(
-                  context: context,
-                  builder: (context) => AlertDialog(
-                    content: const Text('With a click a hidden door opens'),
-                    actions: [
-                      TextButton(
-                        onPressed: () {
-                          Navigator.of(context).pushNamedAndRemoveUntil(
-                              RouteManager.basement,
-                              (Route<dynamic> route) => false);
-                        },
-                        child: const Text('Okay!'),
-                      ),
-                    ],
-                  ),
-                );
-              },
-              child: const Text('Insert the recipe book into the mechanism'),
+            InsertBook(),
+            SizedBox(
+              height: 10,
             ),
             TryItem(
                 itemDescription:
                     'It looks like you need to insert something. But what?',
                 interactWithItem: 'Look at the mechanism'),
+            SizedBox(
+              height: 10,
+            ),
             GoBackFromItem(
                 routeManagerLocation: RouteManager.basement,
                 leaveItemText: 'Leave the mechanism'),

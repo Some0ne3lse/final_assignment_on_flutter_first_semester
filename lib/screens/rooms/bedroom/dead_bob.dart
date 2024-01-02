@@ -1,6 +1,6 @@
-import 'package:final_assignment_on_flutter/buttons/go_back_from_item.dart';
-import 'package:final_assignment_on_flutter/buttons/take_hand.dart';
-import 'package:final_assignment_on_flutter/buttons/take_item.dart';
+import 'package:final_assignment_on_flutter/buttons_for_many_places/go_back_from_item.dart';
+import 'package:final_assignment_on_flutter/screens/rooms/bedroom/bedroom_buttons/take_hand.dart';
+import 'package:final_assignment_on_flutter/buttons_for_many_places/take_item.dart';
 import 'package:final_assignment_on_flutter/lists/items.dart';
 import 'package:final_assignment_on_flutter/routes/routes.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/examine_room_blueprints/nothing_of_interest.dart';
@@ -14,6 +14,9 @@ class DeadBob extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Here I had issues with just using
+    // pickedUpItems.any((item) => item.title == item)
+    // so I made it into booleans, so I could also check if an item is not there
     bool sawTaken;
     bool handTaken;
     bool bookTaken;
@@ -48,10 +51,16 @@ class DeadBob extends StatelessWidget {
               height: 50,
             ),
             TakeHand(),
+            SizedBox(
+              height: 10,
+            ),
             TakeItem(
               item: 'Book',
               itemDescription: 'It\'s a book filled with recipes for cakes.',
               takeAction: 'Take the book',
+            ),
+            SizedBox(
+              height: 10,
             ),
             GoBackFromItem(
                 routeManagerLocation: RouteManager.bedroom,
@@ -71,6 +80,9 @@ class DeadBob extends StatelessWidget {
               height: 50,
             ),
             TakeHand(),
+            SizedBox(
+              height: 10,
+            ),
             GoBackFromItem(
                 routeManagerLocation: RouteManager.bedroom,
                 leaveItemText: 'Leave the poor man alone'),
@@ -93,6 +105,9 @@ class DeadBob extends StatelessWidget {
               itemDescription: 'It\'s a book filled with recipes for cakes.',
               takeAction: 'Take the book',
             ),
+            SizedBox(
+              height: 10,
+            ),
             GoBackFromItem(
                 routeManagerLocation: RouteManager.bedroom,
                 leaveItemText: 'Leave the book'),
@@ -114,6 +129,9 @@ class DeadBob extends StatelessWidget {
               item: 'Book',
               itemDescription: 'It\'s a book filled with recipes for cakes.',
               takeAction: 'Take the book',
+            ),
+            SizedBox(
+              height: 10,
             ),
             GoBackFromItem(
                 routeManagerLocation: RouteManager.bedroom,

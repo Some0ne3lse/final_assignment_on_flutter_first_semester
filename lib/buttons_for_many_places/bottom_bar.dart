@@ -1,4 +1,4 @@
-import 'package:final_assignment_on_flutter/buttons/exit_button.dart';
+import 'package:final_assignment_on_flutter/buttons_for_many_places/exit_button.dart';
 import 'package:final_assignment_on_flutter/routes/routes.dart';
 import 'package:flutter/material.dart';
 
