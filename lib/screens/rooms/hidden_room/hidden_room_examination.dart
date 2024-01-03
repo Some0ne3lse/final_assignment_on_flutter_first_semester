@@ -23,7 +23,7 @@ class HiddenRoomExamination extends StatelessWidget {
     );
     String itemToCheck = 'Golden Key';
     if (pickedUpItems.any((item) => item.title == itemToCheck)) {
-      mainContent = NothingOfInterest();
+      mainContent = const NothingOfInterest();
     }
 
     return ScreenBase(mainContent: mainContent, locationName: 'Hidden Room');

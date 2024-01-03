@@ -24,10 +24,10 @@ class Kennel extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Dog'),
         ),
-        body: SingleChildScrollView(
+        body: const SingleChildScrollView(
           child: Column(
             children: [
-              const SizedBox(height: 20),
+              SizedBox(height: 20),
               Center(
                 child: Column(
                   children: [
@@ -35,7 +35,7 @@ class Kennel extends StatelessWidget {
                       image: 'assets/images/happy_dog.png',
                       text: 'The dog won\'t let you into the kennel!',
                     ),
-                    const SizedBox(
+                    SizedBox(
                       height: 50,
                     ),
                     GoBackFromItem(

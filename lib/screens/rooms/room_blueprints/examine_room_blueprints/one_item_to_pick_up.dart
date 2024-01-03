@@ -42,19 +42,19 @@ class OneItemToPickUp extends StatelessWidget {
               item: item,
               itemDescription: itemDescription,
               takeAction: takeAction),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           TryItem(
               itemDescription: itemDescription,
               interactWithItem: interactWithItem),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           GoBackFromItem(
               routeManagerLocation: routeManagerLocation,
               leaveItemText: leaveItemText),
-          SizedBox(
+          const SizedBox(
             height: 30,
           ),
         ],

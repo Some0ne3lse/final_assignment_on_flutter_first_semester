@@ -26,14 +26,14 @@ class BasementExamination extends StatelessWidget {
           const SizedBox(
             height: 50,
           ),
-          TryItem(
+          const TryItem(
               itemDescription:
                   'It looks like you need to insert something. But what?',
               interactWithItem: 'Look at the mechanism'),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
-          GoBackFromItem(
+          const GoBackFromItem(
               routeManagerLocation: RouteManager.basement,
               leaveItemText: 'Leave the mechanism'),
         ],
@@ -51,25 +51,25 @@ class BasementExamination extends StatelessWidget {
             const SizedBox(
               height: 50,
             ),
-            InsertBook(),
-            SizedBox(
+            const InsertBook(),
+            const SizedBox(
               height: 10,
             ),
-            TryItem(
+            const TryItem(
                 itemDescription:
                     'It looks like you need to insert something. But what?',
                 interactWithItem: 'Look at the mechanism'),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
-            GoBackFromItem(
+            const GoBackFromItem(
                 routeManagerLocation: RouteManager.basement,
                 leaveItemText: 'Leave the mechanism'),
           ],
         ),
       );
     } else if (hiddenDoorFound == true) {
-      mainContent = NothingOfInterest();
+      mainContent = const NothingOfInterest();
     }
     return ScreenBase(mainContent: mainContent, locationName: 'Basement');
   }

@@ -26,7 +26,7 @@ class GiveUpOnLifeDogNoAxe extends StatelessWidget {
                     text: giveUpOnLifeNoAxe(),
                   ),
                   const TryAgainButton(),
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
                 ],

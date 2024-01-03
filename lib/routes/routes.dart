@@ -182,7 +182,7 @@ class RouteManager {
         );
       case dog:
         return MaterialPageRoute(
-          builder: (context) => Dog(),
+          builder: (context) => const Dog(),
         );
       case basement:
         return MaterialPageRoute(
@@ -230,7 +230,7 @@ class RouteManager {
         );
       case passwordTerminal:
         return MaterialPageRoute(
-          builder: (context) => PasswordTerminal(),
+          builder: (context) => const PasswordTerminal(),
         );
 
       default:

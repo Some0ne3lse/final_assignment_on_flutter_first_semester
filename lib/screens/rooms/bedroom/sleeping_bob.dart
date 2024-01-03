@@ -23,13 +23,13 @@ class SleepingBob extends StatelessWidget {
           const SizedBox(
             height: 50,
           ),
-          GoToScreenButton(
+          const GoToScreenButton(
               doorRoute: RouteManager.bobAttack,
               doorText: 'Try to take the book under the pillow'),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
-          GoBackFromItem(
+          const GoBackFromItem(
               routeManagerLocation: RouteManager.bedroom,
               leaveItemText: 'Leave Bob alone'),
         ],
@@ -47,17 +47,17 @@ class SleepingBob extends StatelessWidget {
             const SizedBox(
               height: 50,
             ),
-            KillBobInSleep(),
-            SizedBox(
+            const KillBobInSleep(),
+            const SizedBox(
               height: 10,
             ),
-            GoToScreenButton(
+            const GoToScreenButton(
                 doorRoute: RouteManager.bobAttack,
                 doorText: 'Try to take the book under the pillow'),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
-            GoBackFromItem(
+            const GoBackFromItem(
                 routeManagerLocation: RouteManager.bedroom,
                 leaveItemText: 'Leave Bob alone'),
           ],

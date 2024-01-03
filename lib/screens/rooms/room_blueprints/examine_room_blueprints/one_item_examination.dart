@@ -33,13 +33,13 @@ class OneItemExamination extends StatelessWidget {
           TryItem(
               itemDescription: itemDescription,
               interactWithItem: interactWithItem),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           GoBackFromItem(
               routeManagerLocation: routeManagerLocation,
               leaveItemText: leaveItemText),
-          SizedBox(
+          const SizedBox(
             height: 30,
           ),
         ],

@@ -31,9 +31,9 @@ class Arrival extends StatelessWidget {
                   const SizedBox(
                     height: 50,
                   ),
-                  GoToScreenButton(
+                  const GoToScreenButton(
                       doorRoute: RouteManager.entrance, doorText: 'Go inside'),
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
                   // ElevatedButton(

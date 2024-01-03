@@ -35,14 +35,14 @@ class KitchenExamination extends StatelessWidget {
             const SizedBox(
               height: 50,
             ),
-            TryItem(
+            const TryItem(
                 itemDescription:
                     'You eat a doughnut. It tastes nice, but not as nice as your cake.',
                 interactWithItem: 'Eat a doughnut'),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
-            CombineItems(
+            const CombineItems(
                 itemToTake: 'Spiked Doughnut',
                 itemToTakeDescription:
                     'You have spiked this doughnut with sleeping pills. I know it\'s difficult, but you should not eat this',
@@ -51,10 +51,10 @@ class KitchenExamination extends StatelessWidget {
                     'You insert a few pills into one of the doughnuts, and add it to your inventory.',
                 combineSelectAction: 'Insert pills into doughnut',
                 routeManagerLocation: RouteManager.kitchen),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
-            GoBackFromItem(
+            const GoBackFromItem(
                 routeManagerLocation: RouteManager.kitchen,
                 leaveItemText: 'Leave the doughnuts'),
           ],

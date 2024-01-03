@@ -26,7 +26,7 @@ class RunAwayFromBob extends StatelessWidget {
                     text: doorInTheWay(),
                   ),
                   const TryAgainButton(),
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
                 ],

@@ -25,7 +25,7 @@ class ImageAndText extends StatelessWidget {
           width: 300,
           child: Text(
             text,
-            style: TextStyle(
+            style: const TextStyle(
               color: Colors.white,
               fontSize: 15,
             ),

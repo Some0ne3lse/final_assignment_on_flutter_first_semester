@@ -14,14 +14,14 @@ class MyGame extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
           seedColor: Colors.black,
-          background: Color.fromARGB(255, 69, 74, 73),
-          primary: Color.fromARGB(255, 29, 33, 33),
+          background: const Color.fromARGB(255, 69, 74, 73),
+          primary: const Color.fromARGB(255, 29, 33, 33),
         ),
-        appBarTheme: AppBarTheme(
+        appBarTheme: const AppBarTheme(
           color: Colors.black,
           foregroundColor: Colors.white,
         ),
-        bottomAppBarTheme: BottomAppBarTheme(
+        bottomAppBarTheme: const BottomAppBarTheme(
           color: Colors.black,
         ),
         dialogBackgroundColor: Colors.white,

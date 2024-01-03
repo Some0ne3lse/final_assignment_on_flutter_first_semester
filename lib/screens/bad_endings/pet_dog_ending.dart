@@ -26,7 +26,7 @@ class PetDogEnding extends StatelessWidget {
                     text: petDog(),
                   ),
                   const TryAgainButton(),
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
                 ],

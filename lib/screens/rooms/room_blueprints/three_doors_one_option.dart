@@ -58,7 +58,7 @@ class ThreeDoorsOneOption extends StatelessWidget {
                     optionRoute: optionRoute,
                     optionText: optionText,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   // ElevatedButton(
@@ -69,7 +69,7 @@ class ThreeDoorsOneOption extends StatelessWidget {
                   // ),
                   GoToScreenButton(
                       doorRoute: firstDoorRoute, doorText: firstDoorText),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   // ElevatedButton(
@@ -81,7 +81,7 @@ class ThreeDoorsOneOption extends StatelessWidget {
                   // ),
                   GoToScreenButton(
                       doorRoute: secondDoorRoute, doorText: secondDoorText),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   // ElevatedButton(
@@ -93,7 +93,7 @@ class ThreeDoorsOneOption extends StatelessWidget {
                   // ),
                   GoToScreenButton(
                       doorRoute: thirdDoorRoute, doorText: thirdDoorText),
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
                   // ElevatedButton(
@@ -109,7 +109,7 @@ class ThreeDoorsOneOption extends StatelessWidget {
           ],
         ),
       ),
-      bottomNavigationBar: BottomBar(),
+      bottomNavigationBar: const BottomBar(),
     );
   }
 }

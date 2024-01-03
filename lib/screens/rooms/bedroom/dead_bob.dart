@@ -50,19 +50,19 @@ class DeadBob extends StatelessWidget {
             const SizedBox(
               height: 50,
             ),
-            TakeHand(),
-            SizedBox(
+            const TakeHand(),
+            const SizedBox(
               height: 10,
             ),
-            TakeItem(
+            const TakeItem(
               item: 'Book',
               itemDescription: 'It\'s a book filled with recipes for cakes.',
               takeAction: 'Take the book',
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
-            GoBackFromItem(
+            const GoBackFromItem(
                 routeManagerLocation: RouteManager.bedroom,
                 leaveItemText: 'Leave the book and poor man alone'),
           ],
@@ -79,11 +79,11 @@ class DeadBob extends StatelessWidget {
             const SizedBox(
               height: 50,
             ),
-            TakeHand(),
-            SizedBox(
+            const TakeHand(),
+            const SizedBox(
               height: 10,
             ),
-            GoBackFromItem(
+            const GoBackFromItem(
                 routeManagerLocation: RouteManager.bedroom,
                 leaveItemText: 'Leave the poor man alone'),
           ],
@@ -100,15 +100,15 @@ class DeadBob extends StatelessWidget {
             const SizedBox(
               height: 50,
             ),
-            TakeItem(
+            const TakeItem(
               item: 'Book',
               itemDescription: 'It\'s a book filled with recipes for cakes.',
               takeAction: 'Take the book',
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
-            GoBackFromItem(
+            const GoBackFromItem(
                 routeManagerLocation: RouteManager.bedroom,
                 leaveItemText: 'Leave the book'),
           ],
@@ -125,23 +125,23 @@ class DeadBob extends StatelessWidget {
             const SizedBox(
               height: 50,
             ),
-            TakeItem(
+            const TakeItem(
               item: 'Book',
               itemDescription: 'It\'s a book filled with recipes for cakes.',
               takeAction: 'Take the book',
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
-            GoBackFromItem(
+            const GoBackFromItem(
                 routeManagerLocation: RouteManager.bedroom,
                 leaveItemText: 'Leave the book'),
           ],
         ),
       );
     } else if (bookTaken == true && handTaken == false && sawTaken == false) {
-      mainContent = Center(
-        child: const SizedBox(
+      mainContent = const Center(
+        child: SizedBox(
           width: 300,
           child: Text(
             'You find nothing else of value... For now',
@@ -153,7 +153,7 @@ class DeadBob extends StatelessWidget {
         ),
       );
     } else if (bookTaken == true && handTaken == true && sawTaken == true) {
-      mainContent = NothingOfInterest();
+      mainContent = const NothingOfInterest();
     } else {
       mainContent = const Text('error');
     }

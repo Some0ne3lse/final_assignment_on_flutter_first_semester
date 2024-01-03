@@ -46,15 +46,15 @@ class GiantSafe extends StatelessWidget {
                     const SizedBox(
                       height: 50,
                     ),
-                    InsertHand(),
-                    SizedBox(
+                    const InsertHand(),
+                    const SizedBox(
                       height: 10,
                     ),
-                    GoBackFromItem(
+                    const GoBackFromItem(
                       routeManagerLocation: RouteManager.livingRoom,
                       leaveItemText: 'Go to the Living Room',
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 30,
                     ),
                   ],
@@ -63,7 +63,7 @@ class GiantSafe extends StatelessWidget {
             ],
           ),
         ),
-        bottomNavigationBar: BottomBar(),
+        bottomNavigationBar: const BottomBar(),
       );
     } else if (pickedUpItems.any((item) => item.title == itemTwoToCheck)) {
       return Scaffold(
@@ -86,11 +86,11 @@ class GiantSafe extends StatelessWidget {
                     const SizedBox(
                       height: 50,
                     ),
-                    InsertKey(),
-                    SizedBox(
+                    const InsertKey(),
+                    const SizedBox(
                       height: 10,
                     ),
-                    GoBackFromItem(
+                    const GoBackFromItem(
                       routeManagerLocation: RouteManager.livingRoom,
                       leaveItemText: 'Go to the Living Room',
                     ),
@@ -103,7 +103,7 @@ class GiantSafe extends StatelessWidget {
             ],
           ),
         ),
-        bottomNavigationBar: BottomBar(),
+        bottomNavigationBar: const BottomBar(),
       );
     } else {
       return Scaffold(
@@ -126,7 +126,7 @@ class GiantSafe extends StatelessWidget {
                     const SizedBox(
                       height: 50,
                     ),
-                    GoBackFromItem(
+                    const GoBackFromItem(
                       routeManagerLocation: RouteManager.livingRoom,
                       leaveItemText: 'Go to the Living Room',
                     ),
@@ -139,7 +139,7 @@ class GiantSafe extends StatelessWidget {
             ],
           ),
         ),
-        bottomNavigationBar: BottomBar(),
+        bottomNavigationBar: const BottomBar(),
       );
     }
   }

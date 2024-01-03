@@ -52,12 +52,12 @@ class OneDoorTwoOptions extends StatelessWidget {
                   ),
                   ExamineRoomButton(
                       optionRoute: optionOneRoute, optionText: optionOneText),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   ExamineRoomButton(
                       optionRoute: optionTwoRoute, optionText: optionTwoText),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   // ElevatedButton(
@@ -74,7 +74,7 @@ class OneDoorTwoOptions extends StatelessWidget {
                   // ),
                   GoToScreenButton(
                       doorRoute: firstDoorRoute, doorText: firstDoorText),
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
 
@@ -91,7 +91,7 @@ class OneDoorTwoOptions extends StatelessWidget {
           ],
         ),
       ),
-      bottomNavigationBar: BottomBar(),
+      bottomNavigationBar: const BottomBar(),
     );
   }
 }

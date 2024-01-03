@@ -25,14 +25,14 @@ class Dog extends StatelessWidget {
           const SizedBox(
             height: 50,
           ),
-          TryItem(
+          const TryItem(
               itemDescription:
                   'The dog accepts your petting, but it doesn\'t trust you completely.',
               interactWithItem: 'Pet the dog'),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
-          GoBackFromItem(
+          const GoBackFromItem(
               routeManagerLocation: RouteManager.garden,
               leaveItemText: 'Leave the dog'),
         ],
@@ -51,25 +51,25 @@ class Dog extends StatelessWidget {
             const SizedBox(
               height: 50,
             ),
-            TryItem(
+            const TryItem(
                 itemDescription:
                     'The dog accepts your petting, but it doesn\'t trust you completely.',
                 interactWithItem: 'Pet the dog'),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
-            DrugTheDog(),
-            SizedBox(
+            const DrugTheDog(),
+            const SizedBox(
               height: 10,
             ),
-            GoBackFromItem(
+            const GoBackFromItem(
                 routeManagerLocation: RouteManager.garden,
                 leaveItemText: 'Leave the dog'),
           ],
         ),
       );
     } else if (dogSleeping == true) {
-      mainContent = Center(
+      mainContent = const Center(
         child: Column(
           children: [
             ImageAndText(

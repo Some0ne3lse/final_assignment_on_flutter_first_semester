@@ -48,12 +48,12 @@ class OneDoorOneOption extends StatelessWidget {
                   ),
                   ExamineRoomButton(
                       optionRoute: optionRoute, optionText: optionText),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   GoToScreenButton(
                       doorRoute: firstDoorRoute, doorText: firstDoorText),
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
                   // ElevatedButton(
@@ -69,7 +69,7 @@ class OneDoorOneOption extends StatelessWidget {
           ],
         ),
       ),
-      bottomNavigationBar: BottomBar(),
+      bottomNavigationBar: const BottomBar(),
     );
   }
 }

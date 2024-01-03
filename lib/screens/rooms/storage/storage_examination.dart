@@ -37,22 +37,22 @@ class StorageExamination extends StatelessWidget {
           const SizedBox(
             height: 50,
           ),
-          TakeItem(
+          const TakeItem(
               item: 'Saw',
               itemDescription:
                   'The saw is sharp. You almost cut yourself on it.',
               takeAction: 'Take the saw'),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
-          TakeItem(
+          const TakeItem(
               item: 'Axe',
               itemDescription: 'The axe is in fine condition.',
               takeAction: 'Take the axe'),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
-          GoBackFromItem(
+          const GoBackFromItem(
               routeManagerLocation: RouteManager.storage,
               leaveItemText: 'Leave the axe and saw'),
         ],
@@ -62,7 +62,7 @@ class StorageExamination extends StatelessWidget {
     String itemTwoToCheck = 'Axe';
     if ((pickedUpItems.any((item) => item.title == itemOneToCheck)) &&
         ((pickedUpItems.any((item) => item.title == itemTwoToCheck)))) {
-      mainContent = NothingOfInterest();
+      mainContent = const NothingOfInterest();
     } else if (pickedUpItems.any((item) => item.title == itemOneToCheck)) {
       mainContent = Center(
         child: Column(
@@ -74,14 +74,14 @@ class StorageExamination extends StatelessWidget {
             const SizedBox(
               height: 50,
             ),
-            TakeItem(
+            const TakeItem(
                 item: 'Axe',
                 itemDescription: 'The axe is in fine condition.',
                 takeAction: 'Take the axe'),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
-            GoBackFromItem(
+            const GoBackFromItem(
                 routeManagerLocation: RouteManager.storage,
                 leaveItemText: 'Leave the axe'),
           ],
@@ -115,15 +115,15 @@ class StorageExamination extends StatelessWidget {
             const SizedBox(
               height: 50,
             ),
-            TakeItem(
+            const TakeItem(
                 item: 'Saw',
                 itemDescription:
                     'The saw is sharp. You almost cut yourself on it.',
                 takeAction: 'Take the saw'),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
-            GoBackFromItem(
+            const GoBackFromItem(
                 routeManagerLocation: RouteManager.storage,
                 leaveItemText: 'Leave the saw'),
           ],

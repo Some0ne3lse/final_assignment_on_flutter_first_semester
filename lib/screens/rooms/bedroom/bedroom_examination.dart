@@ -1,6 +1,5 @@
 import 'package:final_assignment_on_flutter/buttons_for_many_places/go_back_from_item.dart';
 import 'package:final_assignment_on_flutter/buttons_for_many_places/try_item.dart';
-import 'package:final_assignment_on_flutter/lists/items.dart';
 import 'package:final_assignment_on_flutter/routes/routes.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/bedroom/bedroom_buttons/take_pills.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/examine_room_blueprints/nothing_of_interest.dart';
@@ -30,25 +29,25 @@ class BedroomExamination extends StatelessWidget {
           const SizedBox(
             height: 50,
           ),
-          TakePills(),
-          SizedBox(
+          const TakePills(),
+          const SizedBox(
             height: 10,
           ),
-          TryItem(
+          const TryItem(
               itemDescription:
                   'The pill description reads as follows: Very strong sleeping pills. Works on both animals and humans.',
               interactWithItem: 'Read the pill description'),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
-          GoBackFromItem(
+          const GoBackFromItem(
               routeManagerLocation: RouteManager.bedroom,
               leaveItemText: 'Leave the pills'),
         ],
       ),
     );
     if (pillsTaken == true) {
-      mainContent = NothingOfInterest();
+      mainContent = const NothingOfInterest();
     }
 
     return ScreenBase(mainContent: mainContent, locationName: 'Bedroom');

@@ -26,7 +26,7 @@ class GiveUpOnLifeBob extends StatelessWidget {
                     text: giveUpOnLifeBob(),
                   ),
                   const TryAgainButton(),
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
                 ],

@@ -18,7 +18,7 @@ class ExitButton extends StatelessWidget {
           context: context,
           builder: (context) => AlertDialog(
             content: const Text(
-                'Are you sure you want to Exit? All data will be cleared.'),
+                'Are you sure you want to Restart? All data will be cleared.'),
             actions: [
               TextButton(
                 onPressed: () => Navigator.pop(context),
@@ -45,7 +45,7 @@ class ExitButton extends StatelessWidget {
       },
       child: const Row(
         children: [
-          Text('Exit'),
+          Text('Restart'),
           SizedBox(
             width: 10,
           ),
