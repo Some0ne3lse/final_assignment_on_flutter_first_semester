@@ -5,6 +5,9 @@ import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/two_do
 import 'package:final_assignment_on_flutter/text_files/rooms/room_description.dart';
 import 'package:flutter/material.dart';
 
+// This is the basement. It has two different rooms, depending on whether you
+// you have found the hidden room or not
+
 class Basement extends StatelessWidget {
   const Basement({super.key});
 

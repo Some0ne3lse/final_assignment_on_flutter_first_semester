@@ -5,6 +5,8 @@ import 'package:final_assignment_on_flutter/text_files/notes/notes.dart';
 import 'package:final_assignment_on_flutter/text_files/rooms/room_examination.dart';
 import 'package:flutter/material.dart';
 
+// No booleans here so OneItemExamination used
+
 class MainHallExamination extends StatelessWidget {
   const MainHallExamination({super.key});
 

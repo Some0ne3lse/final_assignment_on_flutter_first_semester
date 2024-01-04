@@ -38,6 +38,9 @@ import 'package:final_assignment_on_flutter/screens/rooms/storage/storage_examin
 import 'package:final_assignment_on_flutter/screens/start_screen.dart';
 import 'package:flutter/material.dart';
 
+// This is the route manager. It controls all the different screens in the app.
+// When adding a new screen you need to first add the name of the route which
+// you see below here. Next step is further down.
 class RouteManager {
   static const String startScreen = '/';
   static const String introduction = '/introduction';
@@ -77,6 +80,11 @@ class RouteManager {
   static const String giantSafe = '/giantSafe';
   static const String passwordTerminal = '/passwordTerminal';
   static const String bobAttack = '/bobAttack';
+
+  // After giving the route a name, you add it down here in the switch command.
+  // For example, to make the route for inventory I make the case inventory
+  // using the name from above, and then I return MaterialPageRoute and enter
+  // the name of the class I want to go to.
 
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {

@@ -4,6 +4,9 @@ import 'package:final_assignment_on_flutter/buttons_for_many_places/go_to_screen
 import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/image_and_text.dart';
 import 'package:flutter/material.dart';
 
+// Blueprint for two doors and one option
+// Read GoToScreen and ExamineRoom comments for more info
+
 class TwoDoorsOneOption extends StatelessWidget {
   const TwoDoorsOneOption({
     super.key,
@@ -54,30 +57,16 @@ class TwoDoorsOneOption extends StatelessWidget {
                   ),
                   GoToScreenButton(
                       routeManagerLocation: firstDoorRoute,
-                      doorText: firstDoorText),
+                      text: firstDoorText),
                   const SizedBox(
                     height: 10,
                   ),
-                  // ElevatedButton(
-                  //   onPressed: () {
-                  //     Navigator.of(context).pushNamedAndRemoveUntil(
-                  //         firstDoorRoute, (Route<dynamic> route) => false);
-                  //   },
-                  //   child: Text(firstDoorText),
-                  // ),
                   GoToScreenButton(
                       routeManagerLocation: secondDoorRoute,
-                      doorText: secondDoorText),
+                      text: secondDoorText),
                   const SizedBox(
                     height: 30,
                   ),
-                  // ElevatedButton(
-                  //   onPressed: () {
-                  //     Navigator.of(context).pushNamedAndRemoveUntil(
-                  //         secondDoorRoute, (Route<dynamic> route) => false);
-                  //   },
-                  //   child: Text(secondDoorText),
-                  // ),
                 ],
               ),
             ),

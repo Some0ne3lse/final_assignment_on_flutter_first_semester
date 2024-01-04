@@ -1,5 +1,5 @@
+import 'package:final_assignment_on_flutter/buttons_for_many_places/go_to_screen_button.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/kitchen/kitchen_buttons/combine_items.dart';
-import 'package:final_assignment_on_flutter/buttons_for_many_places/go_back_from_item.dart';
 import 'package:final_assignment_on_flutter/buttons_for_many_places/try_item.dart';
 import 'package:final_assignment_on_flutter/lists/items.dart';
 import 'package:final_assignment_on_flutter/routes/routes.dart';
@@ -8,6 +8,10 @@ import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/image_
 import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/screen_base.dart';
 import 'package:final_assignment_on_flutter/text_files/rooms/room_examination.dart';
 import 'package:flutter/material.dart';
+
+// Here we have 2 different versions of the screen, depending on whether or not
+// you have the sleeping pills. Not a separate class when you have the sleeping
+// pills, since I only use it once.
 
 class KitchenExamination extends StatelessWidget {
   const KitchenExamination({super.key});
@@ -54,9 +58,9 @@ class KitchenExamination extends StatelessWidget {
             const SizedBox(
               height: 10,
             ),
-            const GoBackFromItem(
+            const GoToScreenButton(
                 routeManagerLocation: RouteManager.kitchen,
-                leaveItemText: 'Leave the doughnuts'),
+                text: 'Leave the doughnuts'),
           ],
         ),
       );

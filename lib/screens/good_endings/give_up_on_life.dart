@@ -3,6 +3,8 @@ import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/image_
 import 'package:final_assignment_on_flutter/text_files/endings/good_endings.dart';
 import 'package:flutter/material.dart';
 
+// This and all files in this folder are the good endings for the story
+
 class GiveUpOnLife extends StatelessWidget {
   const GiveUpOnLife({super.key});
 

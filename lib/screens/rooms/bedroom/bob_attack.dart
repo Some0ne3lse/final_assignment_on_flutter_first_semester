@@ -7,6 +7,9 @@ import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/screen
 import 'package:final_assignment_on_flutter/text_files/drama_actions_text/attack_text.dart';
 import 'package:flutter/material.dart';
 
+// When you wake up Bob, this happens. Depending on whether you've picked up the
+// axe, you have different choices to make.
+
 class BobAttack extends StatelessWidget {
   const BobAttack({super.key});
 
@@ -24,13 +27,13 @@ class BobAttack extends StatelessWidget {
           ),
           const GoToScreenButton(
               routeManagerLocation: RouteManager.runAwayFromBob,
-              doorText: 'Run away from Bob'),
+              text: 'Run away from Bob'),
           const SizedBox(
             height: 10,
           ),
           const GoToScreenButton(
               routeManagerLocation: RouteManager.giveUpOnLifeBob,
-              doorText: 'Give up on life'),
+              text: 'Give up on life'),
         ],
       ),
     );
@@ -52,13 +55,13 @@ class BobAttack extends StatelessWidget {
             ),
             const GoToScreenButton(
                 routeManagerLocation: RouteManager.runAwayFromBob,
-                doorText: 'Run away from Bob'),
+                text: 'Run away from Bob'),
             const SizedBox(
               height: 10,
             ),
             const GoToScreenButton(
                 routeManagerLocation: RouteManager.giveUpOnLifeBob,
-                doorText: 'Give up on life'),
+                text: 'Give up on life'),
           ],
         ),
       );

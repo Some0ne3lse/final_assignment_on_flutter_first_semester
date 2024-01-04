@@ -3,6 +3,8 @@ import 'package:final_assignment_on_flutter/routes/routes.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/garden/dog.dart';
 import 'package:flutter/material.dart';
 
+// This is a separate file, due to a lot of code
+
 class DrugTheDog extends StatelessWidget {
   const DrugTheDog({
     super.key,

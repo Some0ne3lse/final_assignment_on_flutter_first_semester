@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+// This button is just for examining items. I also use it to read notes.
+
 class TryItem extends StatelessWidget {
   const TryItem({
     super.key,

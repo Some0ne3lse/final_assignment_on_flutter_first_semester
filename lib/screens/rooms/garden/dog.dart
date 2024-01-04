@@ -1,4 +1,4 @@
-import 'package:final_assignment_on_flutter/buttons_for_many_places/go_back_from_item.dart';
+import 'package:final_assignment_on_flutter/buttons_for_many_places/go_to_screen_button.dart';
 import 'package:final_assignment_on_flutter/buttons_for_many_places/try_item.dart';
 import 'package:final_assignment_on_flutter/lists/items.dart';
 import 'package:final_assignment_on_flutter/routes/routes.dart';
@@ -7,6 +7,9 @@ import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/image_
 import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/screen_base.dart';
 import 'package:final_assignment_on_flutter/text_files/rooms/room_description.dart';
 import 'package:flutter/material.dart';
+
+// Here we have 3 different screens, depending on if the dog is awake, or if you
+// have the spiked doughnut
 
 bool dogSleeping = false;
 
@@ -32,9 +35,8 @@ class Dog extends StatelessWidget {
           const SizedBox(
             height: 10,
           ),
-          const GoBackFromItem(
-              routeManagerLocation: RouteManager.garden,
-              leaveItemText: 'Leave the dog'),
+          const GoToScreenButton(
+              routeManagerLocation: RouteManager.garden, text: 'Leave the dog'),
         ],
       ),
     );
@@ -62,9 +64,9 @@ class Dog extends StatelessWidget {
             const SizedBox(
               height: 10,
             ),
-            const GoBackFromItem(
+            const GoToScreenButton(
                 routeManagerLocation: RouteManager.garden,
-                leaveItemText: 'Leave the dog'),
+                text: 'Leave the dog'),
           ],
         ),
       );

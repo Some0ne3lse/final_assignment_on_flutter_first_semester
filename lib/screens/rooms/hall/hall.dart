@@ -3,6 +3,9 @@ import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/three_
 import 'package:final_assignment_on_flutter/text_files/rooms/room_description.dart';
 import 'package:flutter/material.dart';
 
+// The hall has different descriptions and images depending on what state the
+// dog is in.
+
 bool dogTamed = false;
 bool dogSleeping = false;
 

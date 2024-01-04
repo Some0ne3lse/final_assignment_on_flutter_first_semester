@@ -1,4 +1,4 @@
-import 'package:final_assignment_on_flutter/buttons_for_many_places/go_back_from_item.dart';
+import 'package:final_assignment_on_flutter/buttons_for_many_places/go_to_screen_button.dart';
 import 'package:final_assignment_on_flutter/buttons_for_many_places/take_item.dart';
 import 'package:final_assignment_on_flutter/lists/items.dart';
 import 'package:final_assignment_on_flutter/routes/routes.dart';
@@ -7,6 +7,9 @@ import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/image_
 import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/screen_base.dart';
 import 'package:final_assignment_on_flutter/text_files/rooms/room_examination.dart';
 import 'package:flutter/material.dart';
+
+// The storage has two items, and therefore three different versions depending
+// on what you pick up first.
 
 class StorageExamination extends StatelessWidget {
   const StorageExamination({super.key});
@@ -20,20 +23,6 @@ class StorageExamination extends StatelessWidget {
             image: 'assets/images/sawAndAxe.png',
             text: storageExaminationAll(),
           ),
-          // Image.asset(
-          //   'assets/images/sawAndAxe.png',
-          //   width: 200,
-          // ),
-          // const SizedBox(
-          //   height: 20,
-          // ),
-          // SizedBox(
-          //   width: 300,
-          //   child: Text(
-          //     style: const TextStyle(color: Colors.white, fontSize: 15),
-          //     storageExaminationAll(),
-          //   ),
-          // ),
           const SizedBox(
             height: 50,
           ),
@@ -52,9 +41,9 @@ class StorageExamination extends StatelessWidget {
           const SizedBox(
             height: 10,
           ),
-          const GoBackFromItem(
+          const GoToScreenButton(
               routeManagerLocation: RouteManager.storage,
-              leaveItemText: 'Leave the axe and saw'),
+              text: 'Leave the axe and saw'),
         ],
       ),
     );
@@ -81,9 +70,9 @@ class StorageExamination extends StatelessWidget {
             const SizedBox(
               height: 10,
             ),
-            const GoBackFromItem(
+            const GoToScreenButton(
                 routeManagerLocation: RouteManager.storage,
-                leaveItemText: 'Leave the axe'),
+                text: 'Leave the axe'),
           ],
         ),
       );
@@ -98,20 +87,6 @@ class StorageExamination extends StatelessWidget {
               image: 'assets/images/saw.png',
               text: storageExaminationSaw(),
             ),
-            // Image.asset(
-            //   'assets/images/saw.png',
-            //   width: 200,
-            // ),
-            // const SizedBox(
-            //   height: 20,
-            // ),
-            // SizedBox(
-            //   width: 300,
-            //   child: Text(
-            //     style: const TextStyle(color: Colors.white, fontSize: 15),
-            //     storageExaminationSaw(),
-            //   ),
-            // ),
             const SizedBox(
               height: 50,
             ),
@@ -123,9 +98,9 @@ class StorageExamination extends StatelessWidget {
             const SizedBox(
               height: 10,
             ),
-            const GoBackFromItem(
+            const GoToScreenButton(
                 routeManagerLocation: RouteManager.storage,
-                leaveItemText: 'Leave the saw'),
+                text: 'Leave the saw'),
           ],
         ),
       );

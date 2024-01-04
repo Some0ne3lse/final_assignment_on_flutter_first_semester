@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+// Since I am using the same format everywhere, I made the image and text into a
+// separate class, so I would have less code most screens.
+
 class ImageAndText extends StatelessWidget {
   const ImageAndText({
     super.key,

@@ -1,6 +1,9 @@
 import 'package:final_assignment_on_flutter/routes/routes.dart';
 import 'package:flutter/material.dart';
 
+// This is the password screen. Only the password cakeisawesomeyouknow will send
+// you to the ending
+
 class PasswordTerminal extends StatefulWidget {
   const PasswordTerminal({super.key});
 
@@ -57,6 +60,7 @@ class _PasswordTerminalState extends State<PasswordTerminal> {
                         RouteManager.gotTheCake,
                         (Route<dynamic> route) => false);
                   } else {
+                    // If the password is incorrect, this snackbar will show up
                     ScaffoldMessenger.of(context).showSnackBar(
                       const SnackBar(
                         content: Text('Please enter correct password'),

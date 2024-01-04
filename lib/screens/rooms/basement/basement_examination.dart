@@ -1,4 +1,4 @@
-import 'package:final_assignment_on_flutter/buttons_for_many_places/go_back_from_item.dart';
+import 'package:final_assignment_on_flutter/buttons_for_many_places/go_to_screen_button.dart';
 import 'package:final_assignment_on_flutter/buttons_for_many_places/try_item.dart';
 import 'package:final_assignment_on_flutter/lists/items.dart';
 import 'package:final_assignment_on_flutter/routes/routes.dart';
@@ -8,6 +8,10 @@ import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/image_
 import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/screen_base.dart';
 import 'package:final_assignment_on_flutter/text_files/rooms/room_examination.dart';
 import 'package:flutter/material.dart';
+
+// This is the code for examining the basement. Since it has a bool, and because
+// I couldn't figure out how to have a bool in a separate file, the code is a
+// little raw.
 
 bool hiddenDoorFound = false;
 
@@ -33,9 +37,9 @@ class BasementExamination extends StatelessWidget {
           const SizedBox(
             height: 10,
           ),
-          const GoBackFromItem(
+          const GoToScreenButton(
               routeManagerLocation: RouteManager.basement,
-              leaveItemText: 'Leave the mechanism'),
+              text: 'Leave the mechanism'),
         ],
       ),
     );
@@ -62,9 +66,9 @@ class BasementExamination extends StatelessWidget {
             const SizedBox(
               height: 10,
             ),
-            const GoBackFromItem(
+            const GoToScreenButton(
                 routeManagerLocation: RouteManager.basement,
-                leaveItemText: 'Leave the mechanism'),
+                text: 'Leave the mechanism'),
           ],
         ),
       );

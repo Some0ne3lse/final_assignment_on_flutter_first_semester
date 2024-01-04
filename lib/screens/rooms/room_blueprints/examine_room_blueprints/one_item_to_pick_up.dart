@@ -1,8 +1,10 @@
-import 'package:final_assignment_on_flutter/buttons_for_many_places/go_back_from_item.dart';
+import 'package:final_assignment_on_flutter/buttons_for_many_places/go_to_screen_button.dart';
 import 'package:final_assignment_on_flutter/buttons_for_many_places/take_item.dart';
 import 'package:final_assignment_on_flutter/buttons_for_many_places/try_item.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/image_and_text.dart';
 import 'package:flutter/material.dart';
+
+// This is the blueprint for only one item to pick up
 
 class OneItemToPickUp extends StatelessWidget {
   const OneItemToPickUp({
@@ -51,9 +53,8 @@ class OneItemToPickUp extends StatelessWidget {
           const SizedBox(
             height: 10,
           ),
-          GoBackFromItem(
-              routeManagerLocation: routeManagerLocation,
-              leaveItemText: leaveItemText),
+          GoToScreenButton(
+              routeManagerLocation: routeManagerLocation, text: leaveItemText),
           const SizedBox(
             height: 30,
           ),

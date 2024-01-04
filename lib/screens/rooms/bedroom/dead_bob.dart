@@ -1,4 +1,4 @@
-import 'package:final_assignment_on_flutter/buttons_for_many_places/go_back_from_item.dart';
+import 'package:final_assignment_on_flutter/buttons_for_many_places/go_to_screen_button.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/bedroom/bedroom_buttons/take_hand.dart';
 import 'package:final_assignment_on_flutter/buttons_for_many_places/take_item.dart';
 import 'package:final_assignment_on_flutter/lists/items.dart';
@@ -8,6 +8,9 @@ import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/image_
 import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/screen_base.dart';
 import 'package:final_assignment_on_flutter/text_files/rooms/room_examination.dart';
 import 'package:flutter/material.dart';
+
+// I wanted different options for what you can do, depending on what items
+// you've picked up. Therefore there 6 different versions of this examination.
 
 class DeadBob extends StatelessWidget {
   const DeadBob({super.key});
@@ -62,9 +65,9 @@ class DeadBob extends StatelessWidget {
             const SizedBox(
               height: 10,
             ),
-            const GoBackFromItem(
+            const GoToScreenButton(
                 routeManagerLocation: RouteManager.bedroom,
-                leaveItemText: 'Leave the book and poor man alone'),
+                text: 'Leave the book and poor man alone'),
           ],
         ),
       );
@@ -83,9 +86,9 @@ class DeadBob extends StatelessWidget {
             const SizedBox(
               height: 10,
             ),
-            const GoBackFromItem(
+            const GoToScreenButton(
                 routeManagerLocation: RouteManager.bedroom,
-                leaveItemText: 'Leave the poor man alone'),
+                text: 'Leave the poor man alone'),
           ],
         ),
       );
@@ -108,9 +111,9 @@ class DeadBob extends StatelessWidget {
             const SizedBox(
               height: 10,
             ),
-            const GoBackFromItem(
+            const GoToScreenButton(
                 routeManagerLocation: RouteManager.bedroom,
-                leaveItemText: 'Leave the book'),
+                text: 'Leave the book'),
           ],
         ),
       );
@@ -133,9 +136,9 @@ class DeadBob extends StatelessWidget {
             const SizedBox(
               height: 10,
             ),
-            const GoBackFromItem(
+            const GoToScreenButton(
                 routeManagerLocation: RouteManager.bedroom,
-                leaveItemText: 'Leave the book'),
+                text: 'Leave the book'),
           ],
         ),
       );

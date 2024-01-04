@@ -4,6 +4,9 @@ import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/one_do
 import 'package:final_assignment_on_flutter/text_files/rooms/room_description.dart';
 import 'package:flutter/material.dart';
 
+// The bedroom image and text is different, depending on whether or not you
+// killed Bob.
+
 class Bedroom extends StatelessWidget {
   const Bedroom({super.key});
 

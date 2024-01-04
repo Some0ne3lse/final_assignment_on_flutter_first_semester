@@ -1,4 +1,4 @@
-import 'package:final_assignment_on_flutter/buttons_for_many_places/go_back_from_item.dart';
+import 'package:final_assignment_on_flutter/buttons_for_many_places/go_to_screen_button.dart';
 import 'package:final_assignment_on_flutter/buttons_for_many_places/try_item.dart';
 import 'package:final_assignment_on_flutter/routes/routes.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/bedroom/bedroom_buttons/take_pills.dart';
@@ -40,9 +40,9 @@ class BedroomExamination extends StatelessWidget {
           const SizedBox(
             height: 10,
           ),
-          const GoBackFromItem(
+          const GoToScreenButton(
               routeManagerLocation: RouteManager.bedroom,
-              leaveItemText: 'Leave the pills'),
+              text: 'Leave the pills'),
         ],
       ),
     );

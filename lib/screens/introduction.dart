@@ -3,6 +3,9 @@ import 'package:final_assignment_on_flutter/buttons_for_many_places/go_to_screen
 import 'package:final_assignment_on_flutter/text_files/introduction.dart';
 import 'package:flutter/material.dart';
 
+// The screen for the Introduction. You have two options here, one that starts
+// the game, and one that makes you lose the game.
+
 class Introduction extends StatelessWidget {
   const Introduction({super.key});
 
@@ -36,30 +39,16 @@ class Introduction extends StatelessWidget {
                   ),
                   const GoToScreenButton(
                       routeManagerLocation: RouteManager.cryEnding,
-                      doorText: 'Sit down and cry with your wife'),
+                      text: 'Sit down and cry with your wife'),
                   const SizedBox(
                     height: 10,
                   ),
-                  // ElevatedButton(
-                  //   onPressed: () {
-                  //     Navigator.of(context)
-                  //         .pushReplacementNamed(RouteManager.cryEnding);
-                  //   },
-                  //   child: const Text('Sit down and cry with your wife'),
-                  // ),
                   const GoToScreenButton(
                       routeManagerLocation: RouteManager.arrival,
-                      doorText: 'Go to Bob the Burly mans home'),
+                      text: 'Go to Bob the Burly mans home'),
                   const SizedBox(
                     height: 30,
                   ),
-                  // ElevatedButton(
-                  //   onPressed: () {
-                  //     Navigator.of(context)
-                  //         .pushReplacementNamed(RouteManager.arrival);
-                  //   },
-                  //   child: const Text('Go to Bob the Burly mans home'),
-                  // ),
                 ],
               ),
             )

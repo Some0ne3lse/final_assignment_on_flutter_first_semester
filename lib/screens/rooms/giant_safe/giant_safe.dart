@@ -1,5 +1,5 @@
 import 'package:final_assignment_on_flutter/buttons_for_many_places/bottom_bar.dart';
-import 'package:final_assignment_on_flutter/buttons_for_many_places/go_back_from_item.dart';
+import 'package:final_assignment_on_flutter/buttons_for_many_places/go_to_screen_button.dart';
 import 'package:final_assignment_on_flutter/lists/items.dart';
 import 'package:final_assignment_on_flutter/routes/routes.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/giant_safe/giant_safe_buttons/insert_hand_and_key.dart';
@@ -7,6 +7,11 @@ import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/image_
 import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/one_door_one_option.dart';
 import 'package:final_assignment_on_flutter/text_files/rooms/room_description.dart';
 import 'package:flutter/material.dart';
+
+// Once again we have a screen with different outcomes depending on you items.
+// Only having both items will give you the option to go to the password screen.
+// I could make it into a class when you only have one item, but I am short on
+// time
 
 class GiantSafe extends StatelessWidget {
   const GiantSafe({super.key});
@@ -50,10 +55,9 @@ class GiantSafe extends StatelessWidget {
                     const SizedBox(
                       height: 10,
                     ),
-                    const GoBackFromItem(
-                      routeManagerLocation: RouteManager.livingRoom,
-                      leaveItemText: 'Go to the Living Room',
-                    ),
+                    const GoToScreenButton(
+                        routeManagerLocation: RouteManager.livingRoom,
+                        text: 'Go to the Living Room'),
                     const SizedBox(
                       height: 30,
                     ),
@@ -90,10 +94,9 @@ class GiantSafe extends StatelessWidget {
                     const SizedBox(
                       height: 10,
                     ),
-                    const GoBackFromItem(
-                      routeManagerLocation: RouteManager.livingRoom,
-                      leaveItemText: 'Go to the Living Room',
-                    ),
+                    const GoToScreenButton(
+                        routeManagerLocation: RouteManager.livingRoom,
+                        text: 'Go to the Living Room'),
                     const SizedBox(
                       height: 30,
                     ),
@@ -126,10 +129,9 @@ class GiantSafe extends StatelessWidget {
                     const SizedBox(
                       height: 50,
                     ),
-                    const GoBackFromItem(
-                      routeManagerLocation: RouteManager.livingRoom,
-                      leaveItemText: 'Go to the Living Room',
-                    ),
+                    const GoToScreenButton(
+                        routeManagerLocation: RouteManager.livingRoom,
+                        text: 'Go to the Living Room'),
                     const SizedBox(
                       height: 30,
                     ),

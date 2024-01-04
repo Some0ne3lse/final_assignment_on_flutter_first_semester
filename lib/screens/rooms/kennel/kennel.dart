@@ -1,4 +1,4 @@
-import 'package:final_assignment_on_flutter/buttons_for_many_places/go_back_from_item.dart';
+import 'package:final_assignment_on_flutter/buttons_for_many_places/go_to_screen_button.dart';
 import 'package:final_assignment_on_flutter/routes/routes.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/garden/dog.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/image_and_text.dart';
@@ -20,6 +20,7 @@ class Kennel extends StatelessWidget {
         firstDoorText: 'Go to the Garden',
         firstDoorRoute: RouteManager.garden);
     if (dogSleeping == false) {
+      // If the dog isn't sleeping, you will not get into the kennel.
       mainContent = Scaffold(
         appBar: AppBar(
           title: const Text('Dog'),
@@ -38,9 +39,9 @@ class Kennel extends StatelessWidget {
                     SizedBox(
                       height: 50,
                     ),
-                    GoBackFromItem(
+                    GoToScreenButton(
                         routeManagerLocation: RouteManager.garden,
-                        leaveItemText: 'Go back to the garden'),
+                        text: 'Go back to the garden'),
                     SizedBox(
                       height: 30,
                     ),

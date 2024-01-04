@@ -1,3 +1,5 @@
+// Here we have the text for all of the good endings in the game.
+
 String giveUpOnLife() {
   return ('''As the dog runs towards you, you decide that a life as cruel as this is not worth it.
 It attacks you and bites you to death. You see a white light as you flow upwards. You see the gates of heaven. And behind them, more cake than you could ask for.

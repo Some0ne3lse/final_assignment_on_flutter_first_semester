@@ -23,7 +23,7 @@ class EntranceExamination extends StatelessWidget {
         leaveItemText: 'Leave the shoes',
         routeManagerLocation: RouteManager.entrance);
     if (pickedUpItems.any((item) => item.title == itemToCheck)) {
-      mainContent = NothingOfInterest();
+      mainContent = const NothingOfInterest();
     }
 
     return ScreenBase(

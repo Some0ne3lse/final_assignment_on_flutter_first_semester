@@ -1,3 +1,5 @@
+// Here we have the text for the introduction
+
 String introductionText() {
   return ('''It's late at night. It's your birthday and you looked forward to it all year.
 Your cake. Just the way your mother made it.

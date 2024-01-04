@@ -21,6 +21,7 @@ class Garden extends StatelessWidget {
         secondDoorText: 'Go to the Hall',
         secondDoorRoute: RouteManager.hall);
 
+    // If the dog hasn't been thrown the shoes yet, the DogAttack will start
     if (dogTamed == false) {
       mainContent = const DogAttack();
     }

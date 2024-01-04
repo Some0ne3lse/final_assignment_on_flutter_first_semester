@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+// Here I put two buttons in the same file. One for only the hand and one for
+// only the key.
+
 class InsertHand extends StatelessWidget {
   const InsertHand({
     super.key,

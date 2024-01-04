@@ -1,3 +1,5 @@
+// Here we have the two texts that you get when you enter the attack scenarios
+
 String dogAttack() {
   return ('''The dog runs toward you. What do you want to do?''');
 }

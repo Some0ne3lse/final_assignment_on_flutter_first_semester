@@ -6,6 +6,8 @@ import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/screen
 import 'package:final_assignment_on_flutter/text_files/rooms/room_examination.dart';
 import 'package:flutter/material.dart';
 
+// Here I don't have a boolean, so I could use the OneItemToPickUp class.
+
 class HiddenRoomExamination extends StatelessWidget {
   const HiddenRoomExamination({super.key});
 

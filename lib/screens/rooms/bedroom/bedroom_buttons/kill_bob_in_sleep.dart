@@ -2,7 +2,7 @@ import 'package:final_assignment_on_flutter/routes/routes.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/bedroom/bob_examination.dart';
 import 'package:flutter/material.dart';
 
-// This button is in a separate file, since there's a lot of code
+// This button is in a separate file, since there's a lot of code.
 
 class KillBobInSleep extends StatelessWidget {
   const KillBobInSleep({

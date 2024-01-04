@@ -1,3 +1,5 @@
+// Here we have the text for the arrival screen
+
 String arrivalText() {
   return ('''
 You arrive at Bob the Burly mans house. All the lights are turned off.

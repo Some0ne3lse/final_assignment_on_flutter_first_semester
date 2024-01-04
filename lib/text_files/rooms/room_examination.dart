@@ -1,3 +1,5 @@
+// Here we have all the examination texts
+
 String entranceExamination() {
   return ('''You look around the room.
 You find nothing interesting, except for a pair of shoes lying in the corner.

@@ -4,6 +4,8 @@ import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/image_
 import 'package:final_assignment_on_flutter/text_files/arrival.dart';
 import 'package:flutter/material.dart';
 
+// The screen for the arrival
+
 class Arrival extends StatelessWidget {
   const Arrival({super.key});
 
@@ -33,20 +35,10 @@ class Arrival extends StatelessWidget {
                   ),
                   const GoToScreenButton(
                       routeManagerLocation: RouteManager.entrance,
-                      doorText: 'Go inside'),
+                      text: 'Go inside'),
                   const SizedBox(
                     height: 30,
                   ),
-                  // ElevatedButton(
-                  //   onPressed: () {
-                  //     Navigator.of(context)
-                  //         .pushReplacementNamed(RouteManager.entrance);
-                  //   },
-                  //   child: const Text('Go inside'),
-                  // ),
-                  // const SizedBox(
-                  //   height: 30,
-                  // ),
                 ],
               ),
             )

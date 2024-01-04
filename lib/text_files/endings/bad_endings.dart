@@ -1,3 +1,5 @@
+// Here we have the text for all of the bad endings in the game.
+
 String cryBaby() {
   return ('''
 After breaking down and crying, your wife looks at you with sadness.

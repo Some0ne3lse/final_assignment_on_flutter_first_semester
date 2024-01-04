@@ -6,6 +6,10 @@ import 'package:final_assignment_on_flutter/screens/rooms/bedroom/bob_examinatio
 import 'package:final_assignment_on_flutter/screens/rooms/hall/hall.dart';
 import 'package:flutter/material.dart';
 
+// This button, just like the restart button resets all booleans and empties the
+// inventory. Then it sends you to the start screen. The only difference is the
+// text on the button. I kept it separate because I found it easier to read.
+
 class TryAgainButton extends StatelessWidget {
   const TryAgainButton({super.key});
 

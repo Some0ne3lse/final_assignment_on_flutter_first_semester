@@ -1,6 +1,11 @@
 import 'package:final_assignment_on_flutter/lists/items.dart';
 import 'package:flutter/material.dart';
 
+// This button is for combining sleeping pills and a doughnut
+// It has a separate class, so you can reuse it if you want to combine other
+// things in case you want to expand the game. This is possible since there is
+// no boolean.
+
 class CombineItems extends StatelessWidget {
   const CombineItems({
     super.key,

@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+// This is just for the top part of room examinations. It took a lot of space,
+// so I made it into it's own class. There is no bottomBar in room examinations.
+
 class ScreenBase extends StatelessWidget {
   const ScreenBase({
     super.key,

@@ -1,6 +1,8 @@
 import 'package:final_assignment_on_flutter/lists/items.dart';
 import 'package:flutter/material.dart';
 
+// This class is just for taking items that do not activate a boolean.
+
 class TakeItem extends StatelessWidget {
   const TakeItem({
     super.key,

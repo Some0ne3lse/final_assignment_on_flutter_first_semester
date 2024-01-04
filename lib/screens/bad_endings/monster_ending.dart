@@ -3,6 +3,8 @@ import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/image_
 import 'package:final_assignment_on_flutter/text_files/endings/bad_endings.dart';
 import 'package:flutter/material.dart';
 
+// This and all files in this folder are the bad endings for the story
+
 class Monster extends StatelessWidget {
   const Monster({super.key});
 

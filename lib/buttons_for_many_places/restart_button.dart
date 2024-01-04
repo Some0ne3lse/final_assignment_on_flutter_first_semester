@@ -6,6 +6,8 @@ import 'package:final_assignment_on_flutter/screens/rooms/bedroom/bob_examinatio
 import 'package:final_assignment_on_flutter/screens/rooms/hall/hall.dart';
 import 'package:flutter/material.dart';
 
+// This button is just for restarting the app.
+
 class RestartButton extends StatelessWidget {
   const RestartButton({super.key});
 
@@ -24,6 +26,8 @@ class RestartButton extends StatelessWidget {
                 onPressed: () => Navigator.pop(context),
                 child: const Text('NO!'),
               ),
+              // The TextButton below resets all booleans and empties the
+              // inventory. Then it sends you to the start screen.
               TextButton(
                 onPressed: () {
                   Navigator.of(context).pushNamedAndRemoveUntil(

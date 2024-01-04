@@ -1,4 +1,3 @@
-import 'package:final_assignment_on_flutter/buttons_for_many_places/go_back_from_item.dart';
 import 'package:final_assignment_on_flutter/buttons_for_many_places/go_to_screen_button.dart';
 import 'package:final_assignment_on_flutter/lists/items.dart';
 import 'package:final_assignment_on_flutter/routes/routes.dart';
@@ -7,6 +6,9 @@ import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/image_
 import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/screen_base.dart';
 import 'package:final_assignment_on_flutter/text_files/rooms/room_description.dart';
 import 'package:flutter/material.dart';
+
+// Here we have 2 different screen options, depending on whether or not you
+// picked up the axe
 
 class SleepingBob extends StatelessWidget {
   const SleepingBob({super.key});
@@ -25,13 +27,13 @@ class SleepingBob extends StatelessWidget {
           ),
           const GoToScreenButton(
               routeManagerLocation: RouteManager.bobAttack,
-              doorText: 'Try to take the book under the pillow'),
+              text: 'Try to take the book under the pillow'),
           const SizedBox(
             height: 10,
           ),
-          const GoBackFromItem(
+          const GoToScreenButton(
               routeManagerLocation: RouteManager.bedroom,
-              leaveItemText: 'Leave Bob alone'),
+              text: 'Leave Bob alone'),
         ],
       ),
     );
@@ -53,13 +55,13 @@ class SleepingBob extends StatelessWidget {
             ),
             const GoToScreenButton(
                 routeManagerLocation: RouteManager.bobAttack,
-                doorText: 'Try to take the book under the pillow'),
+                text: 'Try to take the book under the pillow'),
             const SizedBox(
               height: 10,
             ),
-            const GoBackFromItem(
+            const GoToScreenButton(
                 routeManagerLocation: RouteManager.bedroom,
-                leaveItemText: 'Leave Bob alone'),
+                text: 'Leave Bob alone'),
           ],
         ),
       );
