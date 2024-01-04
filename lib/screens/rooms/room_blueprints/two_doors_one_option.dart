@@ -53,7 +53,8 @@ class TwoDoorsOneOption extends StatelessWidget {
                     height: 10,
                   ),
                   GoToScreenButton(
-                      doorRoute: firstDoorRoute, doorText: firstDoorText),
+                      routeManagerLocation: firstDoorRoute,
+                      doorText: firstDoorText),
                   const SizedBox(
                     height: 10,
                   ),
@@ -65,7 +66,8 @@ class TwoDoorsOneOption extends StatelessWidget {
                   //   child: Text(firstDoorText),
                   // ),
                   GoToScreenButton(
-                      doorRoute: secondDoorRoute, doorText: secondDoorText),
+                      routeManagerLocation: secondDoorRoute,
+                      doorText: secondDoorText),
                   const SizedBox(
                     height: 30,
                   ),

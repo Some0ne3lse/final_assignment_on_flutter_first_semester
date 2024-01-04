@@ -26,7 +26,7 @@ class StartScreen extends StatelessWidget {
                 height: 20,
               ),
               const GoToScreenButton(
-                  doorRoute: RouteManager.introduction,
+                  routeManagerLocation: RouteManager.introduction,
                   doorText: 'Start The Hunt'),
               const SizedBox(
                 height: 30,

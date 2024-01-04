@@ -6,8 +6,8 @@ import 'package:final_assignment_on_flutter/screens/rooms/bedroom/bob_examinatio
 import 'package:final_assignment_on_flutter/screens/rooms/hall/hall.dart';
 import 'package:flutter/material.dart';
 
-class ExitButton extends StatelessWidget {
-  const ExitButton({super.key});
+class RestartButton extends StatelessWidget {
+  const RestartButton({super.key});
 
   @override
   Widget build(BuildContext context) {

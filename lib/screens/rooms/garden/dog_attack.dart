@@ -23,18 +23,19 @@ class DogAttack extends StatelessWidget {
             height: 50,
           ),
           const GoToScreenButton(
-              doorRoute: RouteManager.hall, doorText: 'Run back inside'),
+              routeManagerLocation: RouteManager.hall,
+              doorText: 'Run back inside'),
           const SizedBox(
             height: 10,
           ),
           const GoToScreenButton(
-              doorRoute: RouteManager.petDogEnding,
+              routeManagerLocation: RouteManager.petDogEnding,
               doorText: 'Try to pet the dog'),
           const SizedBox(
             height: 10,
           ),
           const GoToScreenButton(
-              doorRoute: RouteManager.giveUpOnLifeDogNoAxe,
+              routeManagerLocation: RouteManager.giveUpOnLifeDogNoAxe,
               doorText: 'Give up on life'),
         ],
       ),
@@ -54,18 +55,19 @@ class DogAttack extends StatelessWidget {
               height: 50,
             ),
             const GoToScreenButton(
-                doorRoute: RouteManager.hall, doorText: 'Run back inside'),
+                routeManagerLocation: RouteManager.hall,
+                doorText: 'Run back inside'),
             const SizedBox(
               height: 10,
             ),
             const GoToScreenButton(
-                doorRoute: RouteManager.petDogEnding,
+                routeManagerLocation: RouteManager.petDogEnding,
                 doorText: 'Try to pet the dog'),
             const SizedBox(
               height: 10,
             ),
             const GoToScreenButton(
-                doorRoute: RouteManager.monster,
+                routeManagerLocation: RouteManager.monster,
                 doorText: 'Try to kill the dog with axe'),
             const SizedBox(
               height: 10,
@@ -75,7 +77,7 @@ class DogAttack extends StatelessWidget {
               height: 10,
             ),
             const GoToScreenButton(
-                doorRoute: RouteManager.giveUpOnLifeDog,
+                routeManagerLocation: RouteManager.giveUpOnLifeDog,
                 doorText: 'Give up on life'),
             const SizedBox(
               height: 10,
@@ -95,12 +97,13 @@ class DogAttack extends StatelessWidget {
               height: 50,
             ),
             const GoToScreenButton(
-                doorRoute: RouteManager.hall, doorText: 'Run back inside'),
+                routeManagerLocation: RouteManager.hall,
+                doorText: 'Run back inside'),
             const SizedBox(
               height: 10,
             ),
             const GoToScreenButton(
-                doorRoute: RouteManager.petDogEnding,
+                routeManagerLocation: RouteManager.petDogEnding,
                 doorText: 'Try to pet the dog'),
             const SizedBox(
               height: 10,
@@ -110,7 +113,7 @@ class DogAttack extends StatelessWidget {
               height: 10,
             ),
             const GoToScreenButton(
-                doorRoute: RouteManager.giveUpOnLifeDogNoAxe,
+                routeManagerLocation: RouteManager.giveUpOnLifeDogNoAxe,
                 doorText: 'Give up on life'),
           ],
         ),
@@ -127,24 +130,25 @@ class DogAttack extends StatelessWidget {
               height: 50,
             ),
             const GoToScreenButton(
-                doorRoute: RouteManager.hall, doorText: 'Run back inside'),
+                routeManagerLocation: RouteManager.hall,
+                doorText: 'Run back inside'),
             const SizedBox(
               height: 10,
             ),
             const GoToScreenButton(
-                doorRoute: RouteManager.petDogEnding,
+                routeManagerLocation: RouteManager.petDogEnding,
                 doorText: 'Try to pet the dog'),
             const SizedBox(
               height: 10,
             ),
             const GoToScreenButton(
-                doorRoute: RouteManager.monster,
+                routeManagerLocation: RouteManager.monster,
                 doorText: 'Try to kill the dog with axe'),
             const SizedBox(
               height: 10,
             ),
             const GoToScreenButton(
-                doorRoute: RouteManager.giveUpOnLifeDog,
+                routeManagerLocation: RouteManager.giveUpOnLifeDog,
                 doorText: 'Give up on life'),
           ],
         ),

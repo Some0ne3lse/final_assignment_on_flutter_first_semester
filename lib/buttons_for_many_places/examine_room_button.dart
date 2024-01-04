@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+// This is the button to examine rooms. It is different from go to screen,
+// since we only use pushNamed instead of pushNamedAndRemoveUntil.
+// This is so you can go back from the screen to the room.
+
 class ExamineRoomButton extends StatelessWidget {
   const ExamineRoomButton({
     super.key,

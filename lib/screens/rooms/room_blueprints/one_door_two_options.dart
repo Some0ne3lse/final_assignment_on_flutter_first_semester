@@ -73,7 +73,8 @@ class OneDoorTwoOptions extends StatelessWidget {
                   //   child: Text(optionTwoText),
                   // ),
                   GoToScreenButton(
-                      doorRoute: firstDoorRoute, doorText: firstDoorText),
+                      routeManagerLocation: firstDoorRoute,
+                      doorText: firstDoorText),
                   const SizedBox(
                     height: 30,
                   ),

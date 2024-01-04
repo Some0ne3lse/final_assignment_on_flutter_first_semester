@@ -24,7 +24,7 @@ class SleepingBob extends StatelessWidget {
             height: 50,
           ),
           const GoToScreenButton(
-              doorRoute: RouteManager.bobAttack,
+              routeManagerLocation: RouteManager.bobAttack,
               doorText: 'Try to take the book under the pillow'),
           const SizedBox(
             height: 10,
@@ -52,7 +52,7 @@ class SleepingBob extends StatelessWidget {
               height: 10,
             ),
             const GoToScreenButton(
-                doorRoute: RouteManager.bobAttack,
+                routeManagerLocation: RouteManager.bobAttack,
                 doorText: 'Try to take the book under the pillow'),
             const SizedBox(
               height: 10,

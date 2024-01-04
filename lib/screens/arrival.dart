@@ -32,7 +32,8 @@ class Arrival extends StatelessWidget {
                     height: 50,
                   ),
                   const GoToScreenButton(
-                      doorRoute: RouteManager.entrance, doorText: 'Go inside'),
+                      routeManagerLocation: RouteManager.entrance,
+                      doorText: 'Go inside'),
                   const SizedBox(
                     height: 30,
                   ),

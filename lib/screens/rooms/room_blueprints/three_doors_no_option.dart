@@ -50,7 +50,8 @@ class ThreeDoorsNoOption extends StatelessWidget {
                     height: 50,
                   ),
                   GoToScreenButton(
-                      doorRoute: firstDoorRoute, doorText: firstDoorText),
+                      routeManagerLocation: firstDoorRoute,
+                      doorText: firstDoorText),
                   const SizedBox(
                     height: 10,
                   ),
@@ -62,7 +63,8 @@ class ThreeDoorsNoOption extends StatelessWidget {
                   //   child: Text(firstDoorText),
                   // ),
                   GoToScreenButton(
-                      doorRoute: secondDoorRoute, doorText: secondDoorText),
+                      routeManagerLocation: secondDoorRoute,
+                      doorText: secondDoorText),
                   const SizedBox(
                     height: 10,
                   ),
@@ -74,7 +76,8 @@ class ThreeDoorsNoOption extends StatelessWidget {
                   //   child: Text(secondDoorText),
                   // ),
                   GoToScreenButton(
-                      doorRoute: thirdDoorRoute, doorText: thirdDoorText),
+                      routeManagerLocation: thirdDoorRoute,
+                      doorText: thirdDoorText),
                   const SizedBox(
                     height: 30,
                   ),

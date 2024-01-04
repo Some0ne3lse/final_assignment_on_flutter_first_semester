@@ -23,13 +23,13 @@ class BobAttack extends StatelessWidget {
             height: 50,
           ),
           const GoToScreenButton(
-              doorRoute: RouteManager.runAwayFromBob,
+              routeManagerLocation: RouteManager.runAwayFromBob,
               doorText: 'Run away from Bob'),
           const SizedBox(
             height: 10,
           ),
           const GoToScreenButton(
-              doorRoute: RouteManager.giveUpOnLifeBob,
+              routeManagerLocation: RouteManager.giveUpOnLifeBob,
               doorText: 'Give up on life'),
         ],
       ),
@@ -51,13 +51,13 @@ class BobAttack extends StatelessWidget {
               height: 10,
             ),
             const GoToScreenButton(
-                doorRoute: RouteManager.runAwayFromBob,
+                routeManagerLocation: RouteManager.runAwayFromBob,
                 doorText: 'Run away from Bob'),
             const SizedBox(
               height: 10,
             ),
             const GoToScreenButton(
-                doorRoute: RouteManager.giveUpOnLifeBob,
+                routeManagerLocation: RouteManager.giveUpOnLifeBob,
                 doorText: 'Give up on life'),
           ],
         ),

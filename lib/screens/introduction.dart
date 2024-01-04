@@ -35,7 +35,7 @@ class Introduction extends StatelessWidget {
                     height: 50,
                   ),
                   const GoToScreenButton(
-                      doorRoute: RouteManager.cryEnding,
+                      routeManagerLocation: RouteManager.cryEnding,
                       doorText: 'Sit down and cry with your wife'),
                   const SizedBox(
                     height: 10,
@@ -48,7 +48,7 @@ class Introduction extends StatelessWidget {
                   //   child: const Text('Sit down and cry with your wife'),
                   // ),
                   const GoToScreenButton(
-                      doorRoute: RouteManager.arrival,
+                      routeManagerLocation: RouteManager.arrival,
                       doorText: 'Go to Bob the Burly mans home'),
                   const SizedBox(
                     height: 30,

@@ -2,6 +2,9 @@ import 'package:final_assignment_on_flutter/buttons_for_many_places/restart_butt
 import 'package:final_assignment_on_flutter/routes/routes.dart';
 import 'package:flutter/material.dart';
 
+// This is the bar on the bottom on the screen in the rooms
+// It can show you the inventory or you can restart the game
+
 class BottomBar extends StatelessWidget {
   const BottomBar({
     super.key,
@@ -29,7 +32,7 @@ class BottomBar extends StatelessWidget {
               ],
             ),
           ),
-          const ExitButton(),
+          const RestartButton(),
         ],
       ),
     );

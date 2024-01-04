@@ -52,7 +52,8 @@ class OneDoorOneOption extends StatelessWidget {
                     height: 10,
                   ),
                   GoToScreenButton(
-                      doorRoute: firstDoorRoute, doorText: firstDoorText),
+                      routeManagerLocation: firstDoorRoute,
+                      doorText: firstDoorText),
                   const SizedBox(
                     height: 30,
                   ),
