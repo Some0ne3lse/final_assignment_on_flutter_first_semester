@@ -1,6 +1,6 @@
 import 'package:final_assignment_on_flutter/buttons_for_many_places/go_to_screen_button.dart';
+import 'package:final_assignment_on_flutter/screens/rooms/bedroom/bedroom_buttons/take_book.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/bedroom/bedroom_buttons/take_hand.dart';
-import 'package:final_assignment_on_flutter/buttons_for_many_places/take_item.dart';
 import 'package:final_assignment_on_flutter/lists/items.dart';
 import 'package:final_assignment_on_flutter/routes/routes.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/examine_room_blueprints/nothing_of_interest.dart';
@@ -12,6 +12,8 @@ import 'package:flutter/material.dart';
 // I wanted different options for what you can do, depending on what items
 // you've picked up. Therefore there 6 different versions of this examination.
 
+bool bookTaken = false;
+
 class DeadBob extends StatelessWidget {
   const DeadBob({super.key});
 
@@ -22,19 +24,12 @@ class DeadBob extends StatelessWidget {
     // so I made it into booleans, so I could also check if an item is not there
     bool sawTaken;
     bool handTaken;
-    bool bookTaken;
     String sawCheck = 'Saw';
-    String bookCheck = 'Book';
     String handCheck = 'Hand';
     if (pickedUpItems.any((item) => item.title == sawCheck)) {
       sawTaken = true;
     } else {
       sawTaken = false;
-    }
-    if (pickedUpItems.any((item) => item.title == bookCheck)) {
-      bookTaken = true;
-    } else {
-      bookTaken = false;
     }
     if (pickedUpItems.any((item) => item.title == handCheck)) {
       handTaken = true;
@@ -57,11 +52,7 @@ class DeadBob extends StatelessWidget {
             const SizedBox(
               height: 10,
             ),
-            const TakeItem(
-              item: 'Book',
-              itemDescription: 'It\'s a book filled with recipes for cakes.',
-              takeAction: 'Take the book',
-            ),
+            const TakeBook(),
             const SizedBox(
               height: 10,
             ),
@@ -103,11 +94,7 @@ class DeadBob extends StatelessWidget {
             const SizedBox(
               height: 50,
             ),
-            const TakeItem(
-              item: 'Book',
-              itemDescription: 'It\'s a book filled with recipes for cakes.',
-              takeAction: 'Take the book',
-            ),
+            const TakeBook(),
             const SizedBox(
               height: 10,
             ),
@@ -128,11 +115,7 @@ class DeadBob extends StatelessWidget {
             const SizedBox(
               height: 50,
             ),
-            const TakeItem(
-              item: 'Book',
-              itemDescription: 'It\'s a book filled with recipes for cakes.',
-              takeAction: 'Take the book',
-            ),
+            const TakeBook(),
             const SizedBox(
               height: 10,
             ),

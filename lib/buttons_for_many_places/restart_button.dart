@@ -3,6 +3,8 @@ import 'package:final_assignment_on_flutter/routes/routes.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/basement/basement_examination.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/bedroom/bedroom_examination.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/bedroom/bob_examination.dart';
+import 'package:final_assignment_on_flutter/screens/rooms/bedroom/dead_bob.dart';
+import 'package:final_assignment_on_flutter/screens/rooms/entrance/entrance_examination.dart';
 import 'package:final_assignment_on_flutter/screens/rooms/hall/hall.dart';
 import 'package:flutter/material.dart';
 
@@ -34,6 +36,8 @@ class RestartButton extends StatelessWidget {
                       RouteManager.startScreen,
                       (Route<dynamic> route) => false);
                   pickedUpItems.clear();
+                  shoesTaken = false;
+                  bookTaken = false;
                   pillsTaken = false;
                   hiddenDoorFound = false;
                   dogTamed = false;

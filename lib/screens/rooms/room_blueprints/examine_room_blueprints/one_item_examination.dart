@@ -40,9 +40,6 @@ class OneItemExamination extends StatelessWidget {
           ),
           GoToScreenButton(
               routeManagerLocation: routeManagerLocation, text: leaveItemText),
-          // GoBackFromItem(
-          //     routeManagerLocation: routeManagerLocation,
-          //     leaveItemText: leaveItemText),
           const SizedBox(
             height: 30,
           ),
