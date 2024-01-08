@@ -16,3 +16,6 @@ be a lot of screenshots.
 
 I added a gap of 10 between all buttons. This made the phone version a little uglier, but the web
 version much prettier
+
+It has been tested on the small phone android simulator, the Pixel 7 pro, the biggest and smallest
+iPhone simulators, and the chrome web app

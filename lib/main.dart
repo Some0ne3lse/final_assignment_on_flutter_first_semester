@@ -30,6 +30,7 @@ class MyGame extends StatelessWidget {
         ),
         dialogBackgroundColor: Colors.white,
       ),
+      // This activates the RouteManager and sends you to the first screen
       initialRoute: RouteManager.startScreen,
       onGenerateRoute: RouteManager.generateRoute,
     );

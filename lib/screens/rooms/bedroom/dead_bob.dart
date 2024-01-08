@@ -12,6 +12,9 @@ import 'package:flutter/material.dart';
 // I wanted different options for what you can do, depending on what items
 // you've picked up. Therefore there 6 different versions of this examination.
 
+// This bool makes sure that the book doesn't show up again after inserting it
+// in the mechanism in the basement
+
 bool bookTaken = false;
 
 class DeadBob extends StatelessWidget {

@@ -4,7 +4,7 @@ import 'package:final_assignment_on_flutter/buttons_for_many_places/try_item.dar
 import 'package:final_assignment_on_flutter/screens/rooms/room_blueprints/image_and_text.dart';
 import 'package:flutter/material.dart';
 
-// This is the blueprint for only one item to pick up
+// This is the blueprint for only one item to pick up when there is no boolean
 
 class OneItemToPickUp extends StatelessWidget {
   const OneItemToPickUp({
